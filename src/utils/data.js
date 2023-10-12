@@ -1,5 +1,22 @@
 import { FaCreditCard, FaBook } from "react-icons/fa";
-import { Facebook, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
+import {
+  Facebook,
+  Instagram,
+  LinkedIn,
+  Twitter,
+  Accessible,
+  LibraryBooks,
+  Book,
+  History,
+  Person,
+  Event,
+  Lightbulb,
+  Support,
+  Work,
+  Group,
+  Home,
+  SportsEsports,
+} from "@mui/icons-material";
 import img1 from "../assets/slider1.jpg";
 import img2 from "../assets/slider2.jpg";
 import img3 from "../assets/slider3.jpg";
@@ -23,31 +40,47 @@ export const sublinks = [
   {
     page: "Home",
     links: [
-      { label: "All News", icon: <FaBook />, url: "" },
-      { label: "Events", icon: <FaBook />, url: "" },
-      { label: "Gallery", icon: <FaBook />, url: "" },
+      { label: "All News", icon: <FaBook />, url: "Home/news" },
+      { label: "Events", icon: <FaBook />, url: "Home/events" },
+      { label: "Gallery", icon: <FaBook />, url: "Home/gallery" },
     ],
   },
   {
     page: "About",
     links: [
-      { label: "Mission and Vision", icon: <FaCreditCard />, url: "/products" },
+      {
+        label: "Mission and Vision",
+        icon: <FaCreditCard />,
+        url: "About/vision&misson",
+      },
       {
         label: "University Objectives",
         icon: <FaCreditCard />,
-        url: "/products",
+        url: "About/objectives",
       },
-      { label: "Core Values", icon: <FaCreditCard />, url: "/products" },
+      { label: "Core Values", icon: <FaCreditCard />, url: "About/corevalues" },
     ],
   },
   {
     page: "Academics",
     links: [
-      { label: "Colleges and Schools", icon: <FaBook />, url: "/products" },
-      { label: "Academic Calender", icon: <FaBook />, url: "/products" },
-      { label: "Academic Programmes", icon: <FaBook />, url: "/products" },
-      { label: "Center of Excellence", icon: <FaBook />, url: "/products" },
-      { label: "Academic Research", icon: <FaBook />, url: "/products" },
+      {
+        label: "Colleges and Schools",
+        icon: <FaBook />,
+        url: "Academics/colleges&schools",
+      },
+      {
+        label: "Academic Calender",
+        icon: <FaBook />,
+        url: "Academics/calender",
+      },
+      {
+        label: "Academic Programmes",
+        icon: <FaBook />,
+        url: "Academics/programmes",
+      },
+      { label: "Center of Excellence", icon: <FaBook />, url: "Academics" },
+      { label: "Academic Research", icon: <FaBook />, url: "Academics" },
     ],
   },
   {
@@ -61,10 +94,14 @@ export const sublinks = [
   {
     page: "Resources",
     links: [
-      { label: "Library", icon: <FaBook />, url: "/products" },
-      { label: "Human Resources", icon: <FaBook />, url: "/products" },
-      { label: "News Digest", icon: <FaBook />, url: "/products" },
-      { label: "Facilities Management", icon: <FaBook />, url: "/products" },
+      { label: "Library", icon: <FaBook />, url: "Resources/library" },
+      { label: "Human Resources", icon: <FaBook />, url: "Resources/hr" },
+      { label: "ICT Department", icon: <FaBook />, url: "Resources/ict" },
+      {
+        label: "Student Affairs",
+        icon: <FaBook />,
+        url: "Resources/studentAffairs",
+      },
     ],
   },
   {
@@ -1903,5 +1940,148 @@ export const departments = [
     School: "Continuing & Adult Education",
     College: "TriState College of Continuing & Adult Education",
     Id: 190,
+  },
+];
+
+export const libraryFeatures = [
+  {
+    title: "Online Catalog Access",
+    description:
+      "Explore the university's extensive collection of books, journals, and digital resources through our user-friendly online catalog, available 24/7.",
+    icon: <LibraryBooks />,
+  },
+  {
+    title: "Resource Reservations",
+    description:
+      "Reserve study rooms, multimedia equipment, and other resources in advance to ensure you have the necessary tools for your academic success.",
+    icon: <Book />,
+  },
+  {
+    title: "Research Assistance",
+    description:
+      "Our knowledgeable librarians are ready to assist you with research inquiries, citation guidance, and accessing specialized databases.",
+    icon: <Group />,
+  },
+  {
+    title: "Interlibrary Loan Services",
+    description:
+      "If we don't have a specific resource you need, take advantage of our interlibrary loan services to access materials from other institutions.",
+    icon: <Accessible />,
+  },
+  {
+    title: "Digital Archives",
+    description:
+      "Discover historical documents, manuscripts, and university archives in our digital collection, providing a valuable resource for research and nostalgia.",
+    icon: <History />,
+  },
+];
+
+export const schoolResourceContents = [
+  {
+    title: "Job Openings",
+    description:
+      "Explore current job openings within our university and join our academic community. We offer a wide range of career opportunities in various academic and administrative areas.",
+  },
+  {
+    title: "Faculty Directory",
+    description:
+      "Find information about our esteemed faculty members, their expertise, and contact details. Our dedicated professors are committed to providing quality education and research support.",
+  },
+  {
+    title: "Staff Directory",
+    description:
+      "Access contact information for our dedicated staff members who support the university's operations. Our staff is here to assist you with administrative needs and ensure the smooth functioning of the institution.",
+  },
+  {
+    title: "HR Policies",
+    description:
+      "Learn about the university's HR policies and guidelines to ensure a positive work environment. We prioritize a fair and inclusive workplace for all employees.",
+  },
+  {
+    title: "Employee Benefits",
+    description:
+      "Discover the comprehensive benefits offered to our faculty and staff, including health, retirement, and professional development programs. We aim to provide competitive and rewarding benefits to support your well-being and career growth.",
+  },
+  {
+    title: "Employee Assistance Program",
+    description:
+      "Explore the support services available to employees, including counseling and resources for work-life balance. We understand the importance of well-being, and our program is here to assist you in times of need.",
+  },
+  {
+    title: "Academic Resources",
+    description:
+      "Access a wide range of academic resources, including libraries, research centers, and laboratories. We provide state-of-the-art facilities to enhance your learning and research experience.",
+  },
+  {
+    title: "Student Support Services",
+    description:
+      "Learn about the student support services available to provide guidance, counseling, and assistance to our students. We are committed to helping students achieve academic success.",
+  },
+  {
+    title: "Campus Facilities",
+    description:
+      "Discover our campus facilities, including classrooms, sports centers, and recreational areas. We offer a vibrant and inclusive campus environment for our community.",
+  },
+  {
+    title: "Events and Announcements",
+    description:
+      "Stay updated with the latest university events and announcements. We host a variety of academic, cultural, and social events to engage and inform our community.",
+  },
+];
+
+export const studentAffairsPoints = [
+  {
+    icon: <Person />,
+    title: "Personalized Support",
+    description:
+      "Our dedicated staff provides personalized support to address students' academic and personal needs. Whether you need academic guidance, counseling, or assistance with personal challenges, we are here to help you navigate your university journey and ensure your success.",
+  },
+  {
+    icon: <Book />,
+    title: "Academic Advising",
+    description:
+      "Academic advising is at the heart of our student support system. Our advisors work closely with you to choose the right courses, plan your degree, and develop academic success strategies. We are committed to helping you achieve your academic goals and make the most of your university experience.",
+  },
+  {
+    icon: <Event />,
+    title: "Student Events",
+    description:
+      "The university experience goes beyond the classroom. Our vibrant campus life offers a wide range of social, cultural, and extracurricular activities. Join clubs, attend cultural festivals, and engage in events that enrich your social life and create lasting memories.",
+  },
+  {
+    icon: <Lightbulb />,
+    title: "Leadership Opportunities",
+    description:
+      "Leadership development is a key focus at Hillside University. We offer a variety of leadership programs, clubs, and student organizations that provide you with the chance to grow as a leader, foster valuable skills, and make a positive impact on your community.",
+  },
+  {
+    icon: <Support />,
+    title: "Wellness Support",
+    description:
+      "Your well-being is important to us. Our student affairs department provides access to counseling, health services, and resources to help you maintain your physical and mental well-being. We are here to support your holistic development.",
+  },
+  {
+    icon: <Work />,
+    title: "Career Services",
+    description:
+      "Your future career is as important to us as your current studies. Our career services team offers career guidance, job placement support, and internship opportunities. We aim to prepare you for a successful transition into the professional world.",
+  },
+  {
+    icon: <LibraryBooks />,
+    title: "Academic Resources",
+    description:
+      "Access a wealth of academic resources, including libraries, research centers, and laboratories. These resources are designed to enhance your learning and research experience, providing valuable tools for academic success.",
+  },
+  {
+    icon: <Home />,
+    title: "Housing Assistance",
+    description:
+      "Our housing assistance program helps students find safe and convenient living arrangements, both on and off-campus. We aim to provide comfortable living spaces that support your academic pursuits.",
+  },
+  {
+    icon: <SportsEsports />,
+    title: "Sports and Recreation",
+    description:
+      "Engage in sports and recreation activities to stay active and build a sense of community. We offer various sports facilities and opportunities for students to pursue their athletic interests and enjoy a healthy lifestyle.",
   },
 ];

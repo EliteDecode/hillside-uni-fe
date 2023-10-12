@@ -9,7 +9,7 @@ const Objectives = () => {
   return (
     <Box
       id="University Objectives"
-      className="bg-[#f7f7f7] mt-10"
+      className="bg-[#f7f7f7] mt-0"
       data-aos="fade-down"
       data-aos-duration="1200"
       data-aos-easing="ease-in-sine">

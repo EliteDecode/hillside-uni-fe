@@ -443,15 +443,166 @@ Stripe Styles
 /* News section */
 
 .news-section {
-  background: url("/src/assets/news.jpg");
+  background: url("/src/assets/application2.jpg");
   background-size: cover;
   height: 55vh;
-  background-position: 0px -100px;
+  background-position: 0px 100px;
   background-color: rgba(0, 0, 0, 0.75);
   background-blend-mode: overlay;
   background-attachment: fixed;
 }
 
+/* Galley section */
+.gallery-section {
+  background: url("/src/assets/gallery.jpg");
+  background-size: cover;
+  height: 55vh;
+  background-position: 0px 0px;
+  background-color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+/* Events section */
+.events-section {
+  background: url("/src/assets/events.jpg");
+  background-size: cover;
+  height: 55vh;
+  background-position: 0px 150px;
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+/* visionNdMission section */
+.vissionandmission-section {
+  background: url("/src/assets/mission.jpg");
+  background-size: cover;
+  height: 55vh;
+  background-position: 0px 150px;
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+/* objective section */
+.objectives-section {
+  background: url("/src/assets/obj.jpg");
+  background-size: cover;
+  height: 55vh;
+  background-position: 0px -150px;
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+/* core values section */
+.corevalues-section {
+  background: url("/src/assets/corevalues.jpg");
+  background-size: cover;
+  height: 55vh;
+  background-position: 0px 150px;
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+/*collges and schools */
+.collegesandschools-section {
+  background: url("/src/assets/college.JPG");
+  background-size: cover;
+  height: 55vh;
+  background-position: 0px 90px;
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+/*academic and calender */
+.academiccalender-section {
+  background: url("/src/assets/about.jpg");
+  background-size: cover;
+  height: 55vh;
+  background-position: 0px -50px;
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+/* Academic programmes */
+
+.academicprogrammes-section {
+  background: url("/src/assets/slider1.jpg");
+  background-size: cover;
+  height: 55vh;
+  background-position: 0px 100px;
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+/* Resources section */
+.resources-section {
+  background: url("/src/assets/library4.jpg");
+  background-size: cover;
+  height: 55vh;
+  background-position: 0px 0px;
+  background-color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+/* Library section */
+.library-section {
+  background: url("/src/assets/library1.jpg");
+  background-size: cover;
+  height: 55vh;
+  background-position: 0px 100px;
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+/* Ict section */
+.ict-section {
+  background: url("/src/assets/ict.jpg");
+  background-size: cover;
+  height: 55vh;
+  background-position: 0px 100px;
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+/* Human resources section */
+.humanresources-section {
+  background: url("/src/assets/hr2.jpg");
+  background-size: cover;
+  height: 55vh;
+  background-position: 0px 100px;
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+/* Student affairs section */
+.studentaffairs-section {
+  background: url("/src/assets/affairs.jpg");
+  background-size: cover;
+  height: 55vh;
+  background-position: 0px 100px;
+  background-color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+/* ICT section */
+.ict {
+  background: url("/src/assets/library2.jpg");
+  background-size: cover;
+  background-position: 0px 0px;
+
+  background-attachment: fixed;
+}
 /* academics page */
 
 .academics-section {

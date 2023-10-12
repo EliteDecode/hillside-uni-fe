@@ -47,7 +47,9 @@ const SingleSchool = () => {
                     title: <Link to="/Academics">Academics</Link>,
                   },
                   {
-                    title: <Link to="/Academics">Colleges</Link>,
+                    title: (
+                      <Link to="/Academics/colleges&schools">Colleges</Link>
+                    ),
                   },
                   {
                     title: (

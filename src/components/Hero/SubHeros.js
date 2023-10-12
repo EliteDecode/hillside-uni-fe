@@ -3,7 +3,7 @@ import React from "react";
 
 const SubHeros = ({ section }) => {
   return (
-    <Box className={`${section}-section subHero py-10`}>
+    <Box className={`${section.replace(/[&, ]/g, "")}-section subHero py-10`}>
       <Box className="container">
         <Box className="sm:w-[55%] w-[100%]">
           <Box>

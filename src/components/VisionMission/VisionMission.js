@@ -11,7 +11,8 @@ const VisionMission = () => {
       id="Mission and Vision"
       data-aos="fade-down"
       data-aos-duration="1200"
-      data-aos-easing="ease-in-sine">
+      data-aos-easing="ease-in-sine"
+      className="mb-5">
       <Box className="container">
         <Title title="Mission & Vision" subtitle="Our Mission & Vision" />
         <Box>

@@ -41,10 +41,10 @@ const Submenu = () => {
         </Link>
         <div className={`  submenu-center `}>
           {links.map((link, index) => {
-            const { icon, label } = link;
+            const { url, icon, label } = link;
             return (
               <React.Fragment key={index}>
-                <Link to={`/${page}`} className="space-y-4 w-full ">
+                <Link to={`/${url}`} className="space-y-4 w-full ">
                   {icon} {label}
                 </Link>
               </React.Fragment>

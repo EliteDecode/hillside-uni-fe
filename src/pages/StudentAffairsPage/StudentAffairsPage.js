@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
 import Navbar from "../../components/Navbar/Index";
 import { useGlobalContext } from "../../utils/context";
+import Subscribe from "../../components/Subscribe/Subscribe";
+import NavFooter from "../../components/Footer/Footer";
 import AOS from "aos";
 import SubHeros from "../../components/Hero/SubHeros";
-import News from "../../components/News/News";
+import StudentAffairs from "../../components/StudentAffairs/StudentAffairs";
 
-const NewsPage = () => {
+const StudentAffairsPage = () => {
   const { closeSubmenu } = useGlobalContext();
 
   useEffect(() => {
@@ -17,11 +19,14 @@ const NewsPage = () => {
     <div>
       <Navbar />
       <div onMouseOver={closeSubmenu}>
-        <SubHeros section="news" />
-        <News />
+        <SubHeros section="student affairs" />
+        <StudentAffairs />
+
+        <Subscribe />
+        <NavFooter />
       </div>
     </div>
   );
 };
 
-export default NewsPage;
+export default StudentAffairsPage;

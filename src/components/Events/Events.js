@@ -10,7 +10,7 @@ import EventIcon from "@mui/icons-material/Event";
 import { upcomingEvents } from "../../utils/data";
 import ButtonCustome from "../general/ButtonCustome";
 
-const Events = () => {
+const Events = ({ events }) => {
   return (
     <Box
       id="Events"
@@ -38,7 +38,7 @@ const Events = () => {
             <Typography
               variant="h1"
               sx={{ fontSize: "35px", fontWeight: "bold", color: "#fff" }}>
-              Academic calender
+              Events
             </Typography>
             <Box sx={{ margin: "5% 0% 0% 0%" }}>
               <List
@@ -66,15 +66,17 @@ const Events = () => {
                 ))}
               </List>
             </Box>
-            <Box sx={{ position: "absolute", bottom: 10, right: 10 }}>
-              <ButtonCustome
-                size="small"
-                type="fill"
-                color="#1d6400"
-                text="See All Events"
-                capitalzie={true}
-              />
-            </Box>
+            {events && (
+              <Box sx={{ position: "absolute", bottom: 10, right: 10 }}>
+                <ButtonCustome
+                  size="small"
+                  type="fill"
+                  color="#1d6400"
+                  text="See All Events"
+                  capitalzie={true}
+                />
+              </Box>
+            )}
           </Grid>
         </Grid>
       </Box>

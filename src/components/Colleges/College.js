@@ -49,7 +49,7 @@ const College = () => {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Link to={`colleges/${college.college}`}>
+                    <Link to={`/Academics/colleges/${college.college}`}>
                       <Button
                         size="small"
                         variant="contained"
