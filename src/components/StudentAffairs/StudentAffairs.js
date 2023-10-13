@@ -15,7 +15,7 @@ const StudentAffairs = () => {
         <Box>
           <Grid container rowSpacing={4}>
             {studentAffairsPoints.map((Affairs, index) => (
-              <Grid item sm={12} md={4} className="p-5" spacing={2}>
+              <Grid item sm={12} md={4} className="sm:p-5 p-0" spacing={2}>
                 <Box
                   className="border shadow-md rounded-md p-4 bg-white"
                   key={index}>

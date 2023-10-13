@@ -1,17 +1,10 @@
-import {
-  Box,
-  Grid,
-  ListItem,
-  ListItemAvatar,
-  ListItemText,
-  Typography,
-} from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import Title from "../general/Title";
-import hrImg from "../../assets/hr.jpg";
-import { libraryFeatures, schoolResourceContents } from "../../utils/data";
-import { Avatar } from "antd";
-const Hr = () => {
+import hostelImg from "../../assets/hostels.jpg";
+import hostel2Img from "../../assets/hostel2.jpg";
+import { residenceDetails, schoolResourceContents } from "../../utils/data";
+const Residence = () => {
   return (
     <Box
       className=" py-10 bg-[#f7f7f7]"
@@ -19,20 +12,17 @@ const Hr = () => {
       data-aos-duration="1200"
       data-aos-easing="ease-in-sine">
       <Box className="container">
-        <Title title="Human Resources" subtitle=" Human Resources" />
-        <Box className=" shadow-md rounded-md bg-white">
+        <Title title="Halls of Residence" subtitle=" Our Halls of Residence" />
+        <Box className="p-3 shadow-md rounded-md bg-white">
           <Grid container rowSpacing={4}>
-            <Grid
-              item
-              sm={12}
-              md={5}
-              className="flex items-center justify-center ">
-              <img src={hrImg} className="rounded-md" />
+            <Grid item sm={12} md={6} className="my-4 ">
+              <img src={hostelImg} className="rounded-md w-full mb-8" />
+              <img src={hostel2Img} className="rounded-md w-full" />
             </Grid>
-            <Grid item sm={12} md={7} className="sm:p-5 p-0">
+            <Grid item sm={12} md={6} className="sm:sm:p-5 p-0 p-0">
               <Box>
                 <Grid container spacing={2}>
-                  {schoolResourceContents.map((resource, index) => (
+                  {residenceDetails.map((resource, index) => (
                     <Grid item sm={6} md={6} key={index}>
                       <Box className="border shadow-md rounded-md p-4 bg-white">
                         <Typography
@@ -69,4 +59,4 @@ const Hr = () => {
   );
 };
 
-export default Hr;
+export default Residence;

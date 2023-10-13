@@ -129,7 +129,7 @@ const Programs = () => {
               </List>
             </Box>
           </Grid>
-          <Box className="p-5">
+          <Box className="sm:p-5 p-0">
             <Button
               size="small"
               variant="contained"

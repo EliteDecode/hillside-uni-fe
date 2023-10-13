@@ -33,7 +33,7 @@ const VisionMission = () => {
                   </Typography>
                 </Box>
               </Box>
-              <Box className="p-5 bg-[#f7f7f7] border rounded-md shadow-md mt-5">
+              <Box className="sm:p-5 p-0 bg-[#f7f7f7] border rounded-md shadow-md mt-5">
                 <Typography
                   variant="h5"
                   sx={{
@@ -68,7 +68,7 @@ const VisionMission = () => {
                   </Typography>
                 </Box>
               </Box>
-              <Box className="p-5 bg-[#f7f7f7] border rounded-md shadow-md mt-5">
+              <Box className="sm:p-5 p-0 bg-[#f7f7f7] border rounded-md shadow-md mt-5">
                 <Typography
                   variant="h5"
                   sx={{
@@ -104,7 +104,7 @@ const VisionMission = () => {
                   </Typography>
                 </Box>
               </Box>
-              <Box className="p-5 bg-[#f7f7f7] border rounded-md shadow-md mt-5">
+              <Box className="sm:p-5 p-0 bg-[#f7f7f7] border rounded-md shadow-md mt-5">
                 <Typography
                   variant="h5"
                   sx={{

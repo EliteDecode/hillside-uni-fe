@@ -17,6 +17,7 @@ import {
   Home,
   SportsEsports,
 } from "@mui/icons-material";
+
 import img1 from "../assets/slider1.jpg";
 import img2 from "../assets/slider2.jpg";
 import img3 from "../assets/slider3.jpg";
@@ -35,6 +36,7 @@ import BuildIcon from "@mui/icons-material/Build";
 import engImg from "../assets/eng.jpg";
 import lawimg from "../assets/law.jpg";
 import agricImg from "../assets/agric.jpg";
+import { BsBuildingFillExclamation } from "react-icons/bs";
 
 export const sublinks = [
   {
@@ -107,10 +109,18 @@ export const sublinks = [
   {
     page: "Student Life",
     links: [
-      { label: "Residence", icon: <FaBook />, url: "/products" },
-      { label: "Sports and Recreation", icon: <FaBook />, url: "/products" },
-      { label: "Socials", icon: <FaBook />, url: "/products" },
-      { label: "Food Services", icon: <FaBook />, url: "/products" },
+      { label: "Residence", icon: <FaBook />, url: "Student Life/residence" },
+      {
+        label: "Sports and Recreation",
+        icon: <FaBook />,
+        url: "Student Life/sports",
+      },
+      { label: "Socials", icon: <FaBook />, url: "Student Life/socials" },
+      {
+        label: "Food Services",
+        icon: <FaBook />,
+        url: "Student Life/foodService",
+      },
     ],
   },
   // {
@@ -2083,5 +2093,99 @@ export const studentAffairsPoints = [
     title: "Sports and Recreation",
     description:
       "Engage in sports and recreation activities to stay active and build a sense of community. We offer various sports facilities and opportunities for students to pursue their athletic interests and enjoy a healthy lifestyle.",
+  },
+];
+
+export const residenceDetails = [
+  {
+    icon: <BsBuildingFillExclamation />,
+    title: "Residence Halls",
+    description:
+      "Our campus features modern and comfortable residence halls, providing students with a safe and convenient place to live during their university experience. Explore a variety of room and housing options to suit your preferences and needs.",
+  },
+  {
+    icon: <BsBuildingFillExclamation />,
+    title: "Classrooms and Labs",
+    description:
+      "Our state-of-the-art classrooms and well-equipped laboratories offer a conducive environment for academic learning and research. We provide the latest technology and resources to support your educational journey.",
+  },
+  {
+    icon: <BsBuildingFillExclamation />,
+    title: "Hostel Accommodation",
+    description:
+      "Experience comfortable and attractive hostel accommodations that make you feel at home. Our hostels are designed to offer a welcoming and supportive environment for students.",
+  },
+  {
+    icon: <BsBuildingFillExclamation />,
+    title: "Libraries and Resources",
+    description:
+      "Access extensive libraries and academic resources, including research materials, digital databases, and knowledgeable librarians to assist with your studies and research projects.",
+  },
+  {
+    icon: <BsBuildingFillExclamation />,
+    title: "Dining Facilities",
+    description:
+      "Enjoy a variety of dining options on campus, from cafeterias to restaurants, offering delicious and nutritious meals to keep you fueled throughout the day.",
+  },
+  {
+    icon: <BsBuildingFillExclamation />,
+    title: "Fitness and Recreation",
+    description:
+      "Stay active and healthy with our fitness and recreation facilities. We provide gyms, sports fields, and recreational spaces for students to engage in physical activities and maintain a balanced lifestyle.",
+  },
+  {
+    icon: <BsBuildingFillExclamation />,
+    title: "Medical Services",
+    description:
+      "Your health is our priority. We offer medical services, clinics, and healthcare resources to address your health and well-being needs during your university journey.",
+  },
+  {
+    icon: <BsBuildingFillExclamation />,
+    title: "Campus Security",
+    description:
+      "Our campus is equipped with security measures to ensure a safe and secure environment for all students. We take your safety seriously and provide 24/7 security services.",
+  },
+];
+
+export const foodFeatures = [
+  {
+    title: "Delicious Dining Options",
+    description:
+      "Enjoy a diverse range of mouthwatering dishes from various cuisines, all prepared with the finest ingredients.",
+  },
+  {
+    title: "Healthy and Nutritious Menus",
+    description:
+      "Our food service focuses on providing nutritious meals that support your well-being and dietary needs.",
+  },
+  {
+    title: "Convenient Locations",
+    description:
+      "Hillside Superstores are strategically located across the campus, making it easy to access delicious food options.",
+  },
+  {
+    title: "Cafeterias and Restaurants",
+    description:
+      "Choose from our cafeterias for quick bites or dine at our restaurants for a more upscale experience.",
+  },
+  {
+    title: "Friendly and Knowledgeable Staff",
+    description:
+      "Our staff is dedicated to providing excellent service and helping you make the best dining choices.",
+  },
+  {
+    title: "Special Dietary Accommodations",
+    description:
+      "We offer options for various dietary preferences, including vegetarian, vegan, and gluten-free meals.",
+  },
+  {
+    title: "Affordable Meal Plans",
+    description:
+      "Explore budget-friendly meal plans that cater to students' financial needs.",
+  },
+  {
+    title: "Hours to Suit Your Schedule",
+    description:
+      "Hillside Superstores have flexible operating hours to accommodate your busy university life.",
   },
 ];

@@ -564,12 +564,57 @@ Stripe Styles
 }
 
 /* Ict section */
-.ict-section {
+.ictdepartment-section {
   background: url("/src/assets/ict.jpg");
   background-size: cover;
   height: 55vh;
   background-position: 0px 100px;
   background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+/* Ict section */
+.hallsofresidence-section {
+  background: url("/src/assets/hostels.jpg");
+  background-size: cover;
+  height: 55vh;
+  background-position: 0px 0px;
+  background-color: rgba(0, 0, 0, 0.65);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+/* Studnet Life section */
+.studentlife-section,
+.sportsandrecreation-section {
+  background: url("/src/assets/hostel2.jpg");
+  background-size: cover;
+  height: 55vh;
+  background-position: 0px 0px;
+  background-color: rgba(0, 0, 0, 0.65);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+/* Human resources section */
+.foodservice-section {
+  background: url("/src/assets/store1.jpg");
+  background-size: cover;
+  height: 55vh;
+  background-position: 0px 100px;
+  background-color: rgba(0, 0, 0, 0.65);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+/* Human resources section */
+.sociallife-section {
+  background: url("/src/assets/calender.jpg");
+  background-size: cover;
+  height: 55vh;
+  background-position: 0px 100px;
+  background-color: rgba(0, 0, 0, 0.65);
   background-blend-mode: overlay;
   background-attachment: fixed;
 }

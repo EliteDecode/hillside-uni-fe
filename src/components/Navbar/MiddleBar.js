@@ -37,7 +37,9 @@ const MiddleBar = () => {
                   <Link to={`/${link.page}`} onClick={closeSubmenu}>
                     <li
                       className={`flex px-3  py-0.5 items-center ${
-                        location.pathname.includes(`/${link.page}`)
+                        location.pathname
+                          .replace(/%20| /g, "")
+                          .includes(`/${link.page.replace(/%20| /g, "")}`)
                           ? "activeClass"
                           : ""
                       }`}

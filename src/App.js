@@ -25,6 +25,11 @@ import LibraryPage from "./pages/LibraryPage/LibraryPage";
 import IctPage from "./pages/IctPage/IctPage";
 import HrPage from "./pages/HrPage/HrPage";
 import StudentAffairsPage from "./pages/StudentAffairsPage/StudentAffairsPage";
+import StudentLife from "./pages/StudentLife/StudentLife";
+import ResidencePage from "./pages/ResidencePage/ResidencePage";
+import SportPage from "./pages/Sports/SportPage";
+import FoodPage from "./pages/FoodPage/FoodPage";
+import SocialPage from "./pages/SocialsPage/SocialPage";
 
 // import Admission from "./components/Admission";
 // import StudentLife from "./components/StudentLife";
@@ -73,6 +78,11 @@ const App = () => {
           path="/resources/studentAffairs"
           element={<StudentAffairsPage />}
         />
+        <Route path="/student life" element={<StudentLife />} />
+        <Route path="/student life/residence" element={<ResidencePage />} />
+        <Route path="/student life/sports" element={<SportPage />} />
+        <Route path="/student life/foodService" element={<FoodPage />} />
+        <Route path="/student life/socials" element={<SocialPage />} />
       </Routes>
     </Router>
   );

@@ -5,10 +5,13 @@ import Subscribe from "../../components/Subscribe/Subscribe";
 import NavFooter from "../../components/Footer/Footer";
 import AOS from "aos";
 import SubHeros from "../../components/Hero/SubHeros";
-import Hr from "../../components/Hr/Hr";
+import Residence from "../../components/Residence/Residence";
+import Sport from "../../components/Sports/Sport";
+import Socials from "../../components/Socials/Socials";
+import Food from "../../components/Food/Food";
 import Breadcrumbs from "../../components/general/Breadcrumbs";
 
-const HrPage = () => {
+const FoodPage = () => {
   const { closeSubmenu } = useGlobalContext();
 
   useEffect(() => {
@@ -20,10 +23,10 @@ const HrPage = () => {
     <div>
       <Navbar />
       <div onMouseOver={closeSubmenu}>
-        <SubHeros section="human resources" />
-        <Breadcrumbs primaryPage="Resources" secondaryPage="Human Resources" />
+        <SubHeros section="food service" />
+        <Breadcrumbs primaryPage="Student Life" secondaryPage="Food Service" />
+        <Food />
 
-        <Hr />
         <Subscribe />
         <NavFooter />
       </div>
@@ -31,4 +34,4 @@ const HrPage = () => {
   );
 };
 
-export default HrPage;
+export default FoodPage;
