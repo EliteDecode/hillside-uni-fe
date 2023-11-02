@@ -15,7 +15,7 @@ const Socials = () => {
             <Grid item sm={12} md={12} className="my-4 ">
               <div class="container mx-auto sm:p-4 p-0">
                 <div class=" my-8">
-                  <h1 class="sm:text-4xl text-xl font-bold mb-4">
+                  <h1 class="sm:text-2xl text-xl font-bold mb-4">
                     Social Unit at Hillside University of Science and Technology
                   </h1>
                   <p class="sm:text-lg text-sm">
@@ -28,7 +28,7 @@ const Socials = () => {
                 </div>
 
                 <div class="my-8">
-                  <h2 class="sm:text-2xl text-lg font-bold mb-4">
+                  <h2 class="sm:text-lg text-md font-bold mb-4">
                     Activities and Initiatives
                   </h2>
                   <p class="mb-2">
@@ -54,9 +54,7 @@ const Socials = () => {
                 </div>
 
                 <div class="my-8">
-                  <h2 class="sm:text-2xl text-lg font-bold mb-4">
-                    Our Mission
-                  </h2>
+                  <h2 class="sm:text-lg text-md font-bold mb-4">Our Mission</h2>
                   <p class="mb-2">The mission of the Social Unit is to:</p>
                   <ul class="list-disc list-inside">
                     <li>
@@ -79,7 +77,7 @@ const Socials = () => {
                 </div>
 
                 <div class="my-8">
-                  <h2 class="sm:text-2xl text-lg font-bold mb-4">
+                  <h2 class="sm:text-lg text-md font-bold mb-4">
                     Get Involved
                   </h2>
                   <p class="mb-2">

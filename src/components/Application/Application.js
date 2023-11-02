@@ -2,6 +2,7 @@ import { Box, Button, Grid, Typography } from "@mui/material";
 import React from "react";
 import Title from "../general/Title";
 import applicationImg from "../../assets/application1.jpg";
+import { Link } from "react-router-dom";
 
 const Applications = () => {
   return (
@@ -25,33 +26,33 @@ const Applications = () => {
             </Grid>
             <Grid item sm={12} md={6}>
               <Box className="custom-bg-red rounded-r-lg  text-center p-12 ">
-                <Box className="my-12 ">
+                <Box className="my-8 ">
                   <Typography
                     variant="h3"
                     sx={{
                       fontWeight: "bold",
                       color: "#fff",
-                      fontSize: "45px",
+                      fontSize: "35px",
                     }}>
                     Apply For Admission
                   </Typography>
                   <Typography
                     variant="h6"
                     sx={{
-                      fontSize: "21px",
+                      fontSize: "18px",
                       color: "#fff",
                       opacity: "0.8",
                       marginTop: "2%",
                     }}>
-                    2023 Applications are Now Open
+                    2023/2024 Applications coming soon
                   </Typography>
                   <Typography
                     variant="h6"
                     style={{
                       color: "#fff",
                       opacity: "0.6",
-                      fontSize: "15px",
-                      marginTop: "5%",
+                      fontSize: "13px",
+                      marginTop: "2%",
                     }}>
                     We create and sustain an environment that is conducive for
                     teaching, learning and promotes the development of
@@ -59,24 +60,26 @@ const Applications = () => {
                   </Typography>
 
                   <Box className="mt-16">
-                    <Button
-                      size="large"
-                      variant="outlined"
-                      disableElevation
-                      sx={{
-                        bgcolor: "#fff",
-                        color: "#5e0001",
-                        fontSize: "15px",
-                        fontWeight: "bold",
-                        border: "1px solid #fff",
-                        "&:hover": {
-                          bgcolor: "transparent",
-                          color: "#fff",
+                    <Link to="/admission">
+                      <Button
+                        size="large"
+                        variant="outlined"
+                        disableElevation
+                        sx={{
+                          bgcolor: "#fff",
+                          color: "#5e0001",
+                          fontSize: "15px",
+                          fontWeight: "bold",
                           border: "1px solid #fff",
-                        },
-                      }}>
-                      How to Apply
-                    </Button>
+                          "&:hover": {
+                            bgcolor: "transparent",
+                            color: "#fff",
+                            border: "1px solid #fff",
+                          },
+                        }}>
+                        How to Apply
+                      </Button>
+                    </Link>
                   </Box>
                 </Box>
               </Box>

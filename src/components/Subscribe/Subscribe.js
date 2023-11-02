@@ -16,13 +16,13 @@ const Subscribe = () => {
             <img
               src={subscribeImg}
               alt="subscribe "
-              className="mb-10 sm:w-[100px] w-[60px]"
+              className="mb-10 sm:w-[60px] w-[60px]"
             />
           </Box>
           <Typography
             variant="h1"
             sx={{
-              fontSize: "33px",
+              fontSize: "28px",
               fontWeight: "600",
               color: "#f7f7f7",
               "@media (max-width: 767px)": {
@@ -41,6 +41,7 @@ const Subscribe = () => {
                 background: "transparent",
                 color: "#5e0001",
                 fontWeight: "bold",
+                fontSize: "13px",
               }}
             />
             <Button
@@ -50,7 +51,7 @@ const Subscribe = () => {
                 background: "#5e0001",
                 borderRadius: "25px",
                 padding: "10px 4px",
-                fontSize: "15px",
+                fontSize: "12px",
                 fontWeight: "bold",
                 width: "20%",
                 color: "#fff",

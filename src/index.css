@@ -277,7 +277,7 @@ Stripe Styles
 }
 
 .nav-logo {
-  width: 65%;
+  width: 50%;
 }
 
 .submenu.show {
@@ -409,7 +409,7 @@ Stripe Styles
 /*subscribe*/
 
 .subHero {
-  height: 55vh;
+  padding: "15% 0%";
 }
 
 @media (min-width: 0px) and (max-width: 575px) {
@@ -434,18 +434,52 @@ Stripe Styles
 .about-section {
   background: url("/src/assets/about.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px -100px;
   background-color: rgba(0, 0, 0, 0.75);
   background-blend-mode: overlay;
   background-attachment: fixed;
 }
+
+/* 
+admissions */
+
+.admission-section {
+  background: url("/src/assets/about.jpg");
+  background-size: cover;
+  padding: "15% 0%";
+  background-position: 0px -100px;
+  background-color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
 /* News section */
 
 .news-section {
   background: url("/src/assets/application2.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
+  background-position: 0px 100px;
+  background-color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+.publicInformation-section {
+  background: url("/src/assets/application2.jpg");
+  background-size: cover;
+  padding: "15% 0%";
+  background-position: 0px 100px;
+  background-color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+.contact-section {
+  background: url("/src/assets/ict.jpg");
+  background-size: cover;
+  padding: "15% 0%";
   background-position: 0px 100px;
   background-color: rgba(0, 0, 0, 0.75);
   background-blend-mode: overlay;
@@ -456,7 +490,7 @@ Stripe Styles
 .gallery-section {
   background: url("/src/assets/gallery.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 0px;
   background-color: rgba(0, 0, 0, 0.75);
   background-blend-mode: overlay;
@@ -467,7 +501,7 @@ Stripe Styles
 .events-section {
   background: url("/src/assets/events.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 150px;
   background-color: rgba(0, 0, 0, 0.55);
   background-blend-mode: overlay;
@@ -478,7 +512,7 @@ Stripe Styles
 .vissionandmission-section {
   background: url("/src/assets/mission.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 150px;
   background-color: rgba(0, 0, 0, 0.55);
   background-blend-mode: overlay;
@@ -489,7 +523,7 @@ Stripe Styles
 .objectives-section {
   background: url("/src/assets/obj.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px -150px;
   background-color: rgba(0, 0, 0, 0.55);
   background-blend-mode: overlay;
@@ -500,7 +534,7 @@ Stripe Styles
 .corevalues-section {
   background: url("/src/assets/corevalues.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 150px;
   background-color: rgba(0, 0, 0, 0.55);
   background-blend-mode: overlay;
@@ -511,7 +545,7 @@ Stripe Styles
 .collegesandschools-section {
   background: url("/src/assets/college.JPG");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 90px;
   background-color: rgba(0, 0, 0, 0.55);
   background-blend-mode: overlay;
@@ -522,7 +556,7 @@ Stripe Styles
 .academiccalender-section {
   background: url("/src/assets/about.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px -50px;
   background-color: rgba(0, 0, 0, 0.55);
   background-blend-mode: overlay;
@@ -534,7 +568,7 @@ Stripe Styles
 .academicprogrammes-section {
   background: url("/src/assets/slider1.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 100px;
   background-color: rgba(0, 0, 0, 0.55);
   background-blend-mode: overlay;
@@ -545,7 +579,7 @@ Stripe Styles
 .resources-section {
   background: url("/src/assets/library4.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 0px;
   background-color: rgba(0, 0, 0, 0.75);
   background-blend-mode: overlay;
@@ -556,7 +590,7 @@ Stripe Styles
 .library-section {
   background: url("/src/assets/library1.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 100px;
   background-color: rgba(0, 0, 0, 0.55);
   background-blend-mode: overlay;
@@ -567,7 +601,7 @@ Stripe Styles
 .ictdepartment-section {
   background: url("/src/assets/ict.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 100px;
   background-color: rgba(0, 0, 0, 0.55);
   background-blend-mode: overlay;
@@ -578,7 +612,7 @@ Stripe Styles
 .hallsofresidence-section {
   background: url("/src/assets/hostels.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 0px;
   background-color: rgba(0, 0, 0, 0.65);
   background-blend-mode: overlay;
@@ -590,7 +624,7 @@ Stripe Styles
 .sportsandrecreation-section {
   background: url("/src/assets/hostel2.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 0px;
   background-color: rgba(0, 0, 0, 0.65);
   background-blend-mode: overlay;
@@ -601,7 +635,7 @@ Stripe Styles
 .foodservice-section {
   background: url("/src/assets/store1.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 100px;
   background-color: rgba(0, 0, 0, 0.65);
   background-blend-mode: overlay;
@@ -612,7 +646,7 @@ Stripe Styles
 .sociallife-section {
   background: url("/src/assets/calender.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 100px;
   background-color: rgba(0, 0, 0, 0.65);
   background-blend-mode: overlay;
@@ -623,7 +657,7 @@ Stripe Styles
 .humanresources-section {
   background: url("/src/assets/hr2.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 100px;
   background-color: rgba(0, 0, 0, 0.55);
   background-blend-mode: overlay;
@@ -634,7 +668,7 @@ Stripe Styles
 .studentaffairs-section {
   background: url("/src/assets/affairs.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 100px;
   background-color: rgba(0, 0, 0, 0.75);
   background-blend-mode: overlay;
@@ -653,7 +687,7 @@ Stripe Styles
 .academics-section {
   background: url("/src/assets/slider4.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 0px;
   background-color: rgba(0, 0, 0, 0.75);
   background-blend-mode: overlay;
@@ -665,7 +699,7 @@ Stripe Styles
 .COLLEGEOFBUSINESSLAWEDUCATIONALSCIENCES-section {
   background: url("/src/assets/law.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 0px;
   background-color: rgba(0, 0, 0, 0.75);
   background-blend-mode: overlay;
@@ -675,7 +709,7 @@ Stripe Styles
 .COLLEGEOFAGRICULTURELIFEENVIRONMENTALSCIENCES-section {
   background: url("/src/assets/agric.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 140px;
   background-color: rgba(0, 0, 0, 0.75);
   background-blend-mode: overlay;
@@ -685,7 +719,7 @@ Stripe Styles
 .COLLEGEOFENGINEERINGSCIENCESTECHNOLOGY-section {
   background: url("/src/assets/eng.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 140px;
   background-color: rgba(0, 0, 0, 0.75);
   background-blend-mode: overlay;
@@ -695,7 +729,7 @@ Stripe Styles
 .DEPARTMENT-section {
   background: url("/src/assets/slider4.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 140px;
   background-color: rgba(0, 0, 0, 0.75);
   background-blend-mode: overlay;
@@ -705,7 +739,7 @@ Stripe Styles
 .SCHOOL-section {
   background: url("/src/assets/about.jpg");
   background-size: cover;
-  height: 55vh;
+  padding: "15% 0%";
   background-position: 0px 140px;
   background-color: rgba(0, 0, 0, 0.75);
   background-blend-mode: overlay;

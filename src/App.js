@@ -30,6 +30,11 @@ import ResidencePage from "./pages/ResidencePage/ResidencePage";
 import SportPage from "./pages/Sports/SportPage";
 import FoodPage from "./pages/FoodPage/FoodPage";
 import SocialPage from "./pages/SocialsPage/SocialPage";
+import Admission from "./pages/Admission/Admission";
+import PublicInformation from "./pages/PublicInformation/PublicInformation";
+import ContactUsPage from "./pages/ContactUsPage/ContactUsPage";
+import SingleNews from "./pages/SingleNews/SingleNews";
+import SingleEvents from "./pages/SingleEvents/SingleEvents";
 
 // import Admission from "./components/Admission";
 // import StudentLife from "./components/StudentLife";
@@ -44,7 +49,9 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/home/gallery" element={<GalleryPage />} />
         <Route path="/home/news" element={<NewsPage />} />
+        <Route path="/home/news/:newsId" element={<SingleNews />} />
         <Route path="/home/events" element={<EventPage />} />
+        <Route path="/home/events/:eventId" element={<SingleEvents />} />
         <Route path="/about" element={<About />} />
         <Route path="/about/vision&misson" element={<VissionMission />} />
         <Route path="/about/objectives" element={<ObjectivePage />} />
@@ -83,6 +90,11 @@ const App = () => {
         <Route path="/student life/sports" element={<SportPage />} />
         <Route path="/student life/foodService" element={<FoodPage />} />
         <Route path="/student life/socials" element={<SocialPage />} />
+
+        <Route path="/admission" element={<Admission />} />
+
+        <Route path="/public information" element={<PublicInformation />} />
+        <Route path="/contact" element={<ContactUsPage />} />
       </Routes>
     </Router>
   );

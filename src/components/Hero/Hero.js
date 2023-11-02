@@ -9,7 +9,7 @@ const Hero = () => (
     {heroContents.map((content, index) => (
       <Box className={`${content.class}`}>
         <Box className="container">
-          <Box className="sm:w-[55%] w-[100%] hero-text">
+          <Box className="sm:w-[58%] w-[100%] hero-text">
             <Box>
               <Typography
                 data-aos="fade-down"
@@ -17,7 +17,7 @@ const Hero = () => (
                 variant="subtitle2"
                 sx={{
                   color: "#f7f7f7",
-                  fontSize: "25px",
+                  fontSize: "18px",
                   "@media (max-width: 567px)": {
                     fontSize: "14px",
                   },
@@ -33,8 +33,9 @@ const Hero = () => (
                 sx={{
                   color: "#fff",
                   fontWeight: "bold",
-                  fontSize: "60px",
-                  lineHeight: "4rem",
+                  fontSize: "55px",
+                  lineHeight: "3.4rem",
+                  marginTop: "1%",
 
                   "@media (max-width: 567px)": {
                     fontSize: "44px",
@@ -48,10 +49,10 @@ const Hero = () => (
                 data-aos="fade-down"
                 data-aos-duration="1000"
                 sx={{
-                  fontSize: "18px",
+                  fontSize: "14px",
                   color: "#d1d5db",
                   marginTop: "1%",
-                  lineHeight: "1.7rem",
+                  lineHeight: "1.4rem",
 
                   "@media (max-width: 567px)": {
                     fontSize: "15px",
@@ -66,7 +67,7 @@ const Hero = () => (
                 data-aos="fade-down"
                 data-aos-duration="800">
                 <ButtonCustome
-                  size="large"
+                  size="small"
                   color="#5e0001"
                   text={content.btn1}
                   type="fill"
@@ -74,13 +75,13 @@ const Hero = () => (
                 />
 
                 <Button
-                  size="large"
+                  size="small"
                   variant="outlined"
                   disableElevation
                   sx={{
                     bgcolor: "#fff",
                     color: "#5e0001",
-                    fontSize: "15px",
+                    fontSize: "12px",
                     fontWeight: "bold",
                     border: "1px solid #fff",
                     "&:hover": {

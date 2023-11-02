@@ -1,5 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import Title from "../general/Title";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
@@ -9,8 +9,22 @@ import Avatar from "@mui/material/Avatar";
 import EventIcon from "@mui/icons-material/Event";
 import { upcomingEvents } from "../../utils/data";
 import ButtonCustome from "../general/ButtonCustome";
+import { useApiGlobalContext } from "../../utils/apiContext";
+import EventsLoader from "../Loader/EventsLoader";
 
 const Calender = () => {
+  const { calenderYear, loading, getCalenderByYear } = useApiGlobalContext();
+
+  function getCurrentYear() {
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
+    return currentYear.toString();
+  }
+
+  useEffect(() => {
+    getCalenderByYear(2024);
+  }, []);
+
   return (
     <Box
       id="Academic Calender"
@@ -47,33 +61,49 @@ const Calender = () => {
                   maxWidth: 360,
                   bgcolor: "transparent",
                 }}>
-                {upcomingEvents.map((event, index) => (
-                  <ListItem key={index}>
-                    <ListItemAvatar>
-                      <Avatar sx={{ bgcolor: "#1d6400" }}>
-                        <EventIcon />
-                      </Avatar>
-                    </ListItemAvatar>
-                    <ListItemText
-                      sx={{
-                        color: "#f7f7f7",
-                      }}
-                      secondaryTypographyProps={{ color: "#f7f7f790" }}
-                      primary={event.title}
-                      secondary={event.date}
-                    />
-                  </ListItem>
-                ))}
+                {loading ? (
+                  <>
+                    {upcomingEvents.map((event, index) => (
+                      <EventsLoader />
+                    ))}
+                  </>
+                ) : (
+                  <>
+                    {calenderYear?.slice(0, 8).map((event, index) => (
+                      <ListItem key={index}>
+                        <ListItemAvatar>
+                          <Avatar sx={{ bgcolor: "#1d6400" }}>
+                            <EventIcon />
+                          </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText
+                          sx={{
+                            color: "#f7f7f7",
+                          }}
+                          secondaryTypographyProps={{
+                            color: "#f7f7f790",
+                            fontSize: "13px",
+                          }}
+                          primaryTypographyProps={{
+                            fontSize: "13px",
+                          }}
+                          primary={event?.title}
+                          secondary={new Date(event?.startDate).toLocaleString(
+                            undefined,
+                            {
+                              year: "numeric",
+                              month: "long",
+                              day: "numeric",
+
+                              hour12: true,
+                            }
+                          )}
+                        />
+                      </ListItem>
+                    ))}
+                  </>
+                )}
               </List>
-            </Box>
-            <Box sx={{ position: "absolute", bottom: 10, right: 10 }}>
-              <ButtonCustome
-                size="small"
-                type="fill"
-                color="#1d6400"
-                text="View Calender"
-                capitalzie={true}
-              />
             </Box>
           </Grid>
         </Grid>

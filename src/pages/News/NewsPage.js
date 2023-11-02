@@ -7,9 +7,11 @@ import News from "../../components/News/News";
 import Subscribe from "../../components/Subscribe/Subscribe";
 import NavFooter from "../../components/Footer/Footer";
 import Breadcrumbs from "../../components/general/Breadcrumbs";
+import { useApiGlobalContext } from "../../utils/apiContext";
 
 const NewsPage = () => {
   const { closeSubmenu } = useGlobalContext();
+  const { news, loading } = useApiGlobalContext();
 
   useEffect(() => {
     AOS.init();
@@ -22,7 +24,7 @@ const NewsPage = () => {
       <div onMouseOver={closeSubmenu}>
         <SubHeros section="news" />
         <Breadcrumbs primaryPage="Home" secondaryPage="All News" />
-        <News />
+        <News items={news} loading={loading} category="news" />
         <Subscribe />
         <NavFooter />
       </div>

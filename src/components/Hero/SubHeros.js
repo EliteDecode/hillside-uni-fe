@@ -5,7 +5,7 @@ const SubHeros = ({ section }) => {
   return (
     <Box className={`${section.replace(/[&, ]/g, "")}-section subHero py-10`}>
       <Box className="container">
-        <Box className="sm:w-[55%] w-[100%]">
+        <Box className="sm:w-[55%] w-[100%] py-10">
           <Box>
             <Typography
               data-aos="fade-down"
@@ -13,14 +13,13 @@ const SubHeros = ({ section }) => {
               variant="subtitle2"
               sx={{
                 color: "#f7f7f780",
-                fontSize: "23px",
+                fontSize: "18px",
                 "@media (max-width: 567px)": {
                   fontSize: "14px",
                 },
                 opacity: "1",
                 fontWeight: "bold",
                 textTransform: "capitalize",
-                marginTop: 5,
               }}>
               {section === "about"
                 ? `${section} us`
@@ -35,8 +34,8 @@ const SubHeros = ({ section }) => {
               sx={{
                 color: "#fff",
                 fontWeight: "bold",
-                fontSize: "60px",
-                lineHeight: "4rem",
+                fontSize: "50px",
+                lineHeight: "3.5rem",
 
                 "@media (max-width: 567px)": {
                   fontSize: "44px",

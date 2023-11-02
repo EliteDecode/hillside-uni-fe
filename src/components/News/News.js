@@ -5,9 +5,12 @@ import logo from "../../assets/logo.png";
 import { newsArray } from "../../utils/data";
 import { Avatar, Card } from "antd";
 import ButtonCustome from "../general/ButtonCustome";
+import { useApiGlobalContext } from "../../utils/apiContext";
+import NewsLoader from "../Loader/NewsLoader";
+import { Link } from "react-router-dom";
 
 const { Meta } = Card;
-const News = () => {
+const News = ({ items, loading, category }) => {
   return (
     <Box
       id="All News"
@@ -18,43 +21,72 @@ const News = () => {
       <Box className="container">
         <Title title="News" subtitle="All News" />
 
-        <Grid container spacing={4}>
-          {newsArray.map((news, index) => {
-            const { image, title, description, date } = news;
+        {loading ? (
+          <Grid container spacing={4}>
+            {newsArray.map((news, index) => {
+              return <NewsLoader />;
+            })}
+          </Grid>
+        ) : (
+          <Grid container spacing={4}>
+            {items?.slice(0, 6).map((news, index) => {
+              const { image, title, description, createdAt, id, eventsDate } =
+                news;
 
-            return (
-              <Grid item sm={12} xs={12} md={4} key={index}>
-                <Card
-                  style={{
-                    width: "100%",
-                  }}
-                  className="shadow-lg"
-                  cover={<img alt="Logo of poster" src={image} />}>
-                  <Meta
-                    title={title}
-                    description={
-                      description.length > 200
-                        ? ` ${description.slice(0, 200)}...`
-                        : description
-                    }
-                  />
-                  <Box className="flex items-center justify-between mt-8">
-                    <Box className="flex space-x-2 items-center">
-                      <Avatar src={logo} />
-                      <Typography variant="subtitle2">{date}</Typography>
-                    </Box>
-                    <ButtonCustome
-                      size="small"
-                      color="#1d6400"
-                      text="Read More"
-                      type="transparent"
+              return (
+                <Grid item sm={12} xs={12} md={4} key={index}>
+                  <Card
+                    style={{
+                      width: "100%",
+                    }}
+                    className="shadow-lg"
+                    cover={
+                      <img
+                        alt="Logo of poster"
+                        src={`${process.env.REACT_APP_API_URL}/uploads/images/${image}`}
+                      />
+                    }>
+                    <Meta
+                      title={title}
+                      description={
+                        description.length > 200
+                          ? ` ${description.slice(0, 200)}...`
+                          : description
+                      }
                     />
-                  </Box>
-                </Card>
-              </Grid>
-            );
-          })}
-        </Grid>
+                    <Box className="flex items-center justify-between mt-8">
+                      <Box className="flex space-x-2 items-center">
+                        <Avatar src={logo} />
+                        <Typography variant="subtitle2">
+                          {new Date(
+                            createdAt ? createdAt : eventsDate
+                          ).toLocaleString(undefined, {
+                            year: "numeric",
+                            month: "long",
+                            day: "numeric",
+
+                            hour12: true,
+                          })}
+                        </Typography>
+                      </Box>
+                      <Link
+                        to={
+                          category === "news" ? `news/${id}` : `events/${id}`
+                        }>
+                        <ButtonCustome
+                          size="small"
+                          color="#1d6400"
+                          text="Read More"
+                          type="transparent"
+                        />
+                      </Link>
+                    </Box>
+                  </Card>
+                </Grid>
+              );
+            })}
+          </Grid>
+        )}
       </Box>
     </Box>
   );

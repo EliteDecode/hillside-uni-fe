@@ -31,12 +31,12 @@ const MiddleBar = () => {
             <div className=" flex justify-between items-center w-[15%] ">
               <img src={logo} className="nav-logo" alt="" />
             </div>
-            <div className=" flex items-center justify-between w-[80%]">
-              <ul className="nav-links space-x-2 flex items-center  ">
+            <div className=" flex items-center justify-between w-[83%]">
+              <ul className="nav-links space-x-1 flex items-center  ">
                 {mainLinks.map((link, index) => (
                   <Link to={`/${link.page}`} onClick={closeSubmenu}>
                     <li
-                      className={`flex px-3  py-0.5 items-center ${
+                      className={`flex px-2  py-0.5 items-center ${
                         location.pathname
                           .replace(/%20| /g, "")
                           .includes(`/${link.page.replace(/%20| /g, "")}`)
@@ -45,7 +45,7 @@ const MiddleBar = () => {
                       }`}
                       key={index}>
                       <button
-                        className={`link-btn flex items-center  font-semibold text-[16px] `}
+                        className={`link-btn flex items-center  font-semibold text-[13px] `}
                         onMouseOver={displaySubmenu}>
                         {link.page}
                       </button>
@@ -55,7 +55,7 @@ const MiddleBar = () => {
                 ))}
                 <li>
                   <Button
-                    size="large"
+                    size="small"
                     variant="contained"
                     disableElevation
                     sx={{
@@ -63,6 +63,7 @@ const MiddleBar = () => {
                       color: "#fff",
                       fontSize: "12px",
                       fontWeight: "bold",
+                      marginLeft: 5,
                     }}>
                     Explore
                   </Button>

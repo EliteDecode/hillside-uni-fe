@@ -44,7 +44,10 @@ const College = () => {
                       color="text.secondary">
                       College of
                     </Typography>
-                    <Typography variant="h5" component="div">
+                    <Typography
+                      variant="h5"
+                      component="div"
+                      sx={{ fontSize: "20px" }}>
                       {college.name}
                     </Typography>
                   </CardContent>
@@ -56,7 +59,7 @@ const College = () => {
                         disableElevation
                         sx={{
                           bgcolor: "#5e0001",
-                          fontSize: "15px",
+                          fontSize: "11px",
                           fontWeight: "bold",
                           textTransform: "capitalize",
                           "&:hover": {

@@ -64,7 +64,7 @@ const NavFooter = () => {
                     <Typography
                       variant="h4"
                       sx={{
-                        fontSize: "26px",
+                        fontSize: "22px",
                         fontWeight: "bold",
                         opacity: "0.8",
                         "@media (max-width: 567px)": {
@@ -76,7 +76,7 @@ const NavFooter = () => {
                     <Typography
                       variant="h4"
                       sx={{
-                        fontSize: "15px",
+                        fontSize: "12px",
                         fontWeight: "bold",
                         opacity: "0.6",
                         "@media (max-width: 567px)": {
@@ -91,7 +91,7 @@ const NavFooter = () => {
                     <Typography
                       variant="h4"
                       sx={{
-                        fontSize: "17px",
+                        fontSize: "11px",
                         fontWeight: "bold",
                         opacity: "1",
                         "@media (max-width: 567px)": {
@@ -103,14 +103,14 @@ const NavFooter = () => {
                     <Typography
                       variant="h4"
                       sx={{
-                        fontSize: "17px",
+                        fontSize: "11px",
                         fontWeight: "bold",
                         opacity: "1",
                         "@media (max-width: 567px)": {
                           fontSize: "14px",
                         },
                       }}>
-                      info@hust.com.ng
+                      enquiries@hust.edu.ng.ng
                     </Typography>
                   </Box>
 
@@ -128,7 +128,7 @@ const NavFooter = () => {
                     <Typography
                       variant="h4"
                       sx={{
-                        fontSize: "17px",
+                        fontSize: "11px",
                         fontWeight: "bold",
                         opacity: "1",
                         "@media (max-width: 567px)": {
@@ -140,14 +140,14 @@ const NavFooter = () => {
                     <Typography
                       variant="h4"
                       sx={{
-                        fontSize: "17px",
+                        fontSize: "11px",
                         fontWeight: "bold",
                         opacity: "1",
                         "@media (max-width: 567px)": {
                           fontSize: "14px",
                         },
                       }}>
-                      info@hust.com.ng
+                      enquiries@hust.edu.ng.ng
                     </Typography>
                   </Box>
                 </Box>
@@ -162,28 +162,36 @@ const NavFooter = () => {
                 <Box>
                   <Typography
                     variant="h3"
-                    sx={{ fontWeight: "bold", fontSize: "25px" }}
+                    sx={{ fontWeight: "bold", fontSize: "20px" }}
                     className="footer-headers">
                     About Us
                   </Typography>
-                  <ul className="sm:space-y-2 space-y-1 footer-list">
+                  <ul className="sm:space-y-1 space-y-1 footer-list">
                     <li>
-                      <a href="" className="font-semibold opacity-70">
+                      <a
+                        href=""
+                        className="font-semibold opacity-70 text-[13px]">
                         Our Mission
                       </a>
                     </li>
                     <li>
-                      <a href="" className="font-semibold opacity-70">
+                      <a
+                        href=""
+                        className="font-semibold opacity-70 text-[13px]">
                         Our Vision
                       </a>
                     </li>
                     <li>
-                      <a href="" className="font-semibold opacity-70">
+                      <a
+                        href=""
+                        className="font-semibold opacity-70 text-[13px]">
                         Our Core Values
                       </a>
                     </li>
                     <li>
-                      <a href="" className="font-semibold opacity-70">
+                      <a
+                        href=""
+                        className="font-semibold opacity-70 text-[13px]">
                         Our Strategic Positions
                       </a>
                     </li>
@@ -192,28 +200,36 @@ const NavFooter = () => {
                 <Box className="" sx={{ marginTop: "10%" }}>
                   <Typography
                     variant="h3"
-                    sx={{ fontWeight: "bold", fontSize: "25px" }}
+                    sx={{ fontWeight: "bold", fontSize: "20px" }}
                     className="footer-headers">
                     Our Resources
                   </Typography>
-                  <ul className="sm:space-y-2 space-y-1 footer-list">
+                  <ul className="sm:space-y-1 space-y-1 footer-list">
                     <li>
-                      <a href="" className="font-semibold opacity-70">
+                      <a
+                        href=""
+                        className="font-semibold opacity-70 text-[13px]">
                         Library
                       </a>
                     </li>
                     <li>
-                      <a href="" className="font-semibold opacity-70">
+                      <a
+                        href=""
+                        className="font-semibold opacity-70 text-[13px]">
                         Registry
                       </a>
                     </li>
                     <li>
-                      <a href="" className="font-semibold opacity-70">
+                      <a
+                        href=""
+                        className="font-semibold opacity-70 text-[13px]">
                         Consultancy
                       </a>
                     </li>
                     <li>
-                      <a href="" className="font-semibold opacity-70">
+                      <a
+                        href=""
+                        className="font-semibold opacity-70 text-[13px]">
                         Training Manual
                       </a>
                     </li>
@@ -224,23 +240,29 @@ const NavFooter = () => {
                 <Box>
                   <Typography
                     variant="h3"
-                    sx={{ fontWeight: "bold", fontSize: "25px" }}
+                    sx={{ fontWeight: "bold", fontSize: "20px" }}
                     className="footer-headers">
                     Admissions
                   </Typography>
-                  <ul className="sm:space-y-2 space-y-1 footer-list">
+                  <ul className="sm:space-y-1 space-y-1 footer-list">
                     <li>
-                      <a href="" className="font-semibold opacity-70">
+                      <a
+                        href=""
+                        className="font-semibold opacity-70 text-[13px]">
                         How to Apply
                       </a>
                     </li>
                     <li>
-                      <a href="" className="font-semibold opacity-70">
+                      <a
+                        href=""
+                        className="font-semibold opacity-70 text-[13px]">
                         Requirements
                       </a>
                     </li>
                     <li>
-                      <a href="" className="font-semibold opacity-70">
+                      <a
+                        href=""
+                        className="font-semibold opacity-70 text-[13px]">
                         Tuition Fees
                       </a>
                     </li>
@@ -249,23 +271,29 @@ const NavFooter = () => {
                 <Box className="" sx={{ marginTop: "10%" }}>
                   <Typography
                     variant="h3"
-                    sx={{ fontWeight: "bold", fontSize: "25px" }}
+                    sx={{ fontWeight: "bold", fontSize: "20px" }}
                     className="footer-headers">
                     Student Life
                   </Typography>
-                  <ul className="sm:space-y-2 space-y-1 footer-list">
+                  <ul className="sm:space-y-1 space-y-1 footer-list">
                     <li>
-                      <a href="" className="font-semibold opacity-70">
+                      <a
+                        href=""
+                        className="font-semibold opacity-70 text-[13px]">
                         Residence
                       </a>
                     </li>
                     <li>
-                      <a href="" className="font-semibold opacity-70">
+                      <a
+                        href=""
+                        className="font-semibold opacity-70 text-[13px]">
                         Socials
                       </a>
                     </li>
                     <li>
-                      <a href="" className="font-semibold opacity-70">
+                      <a
+                        href=""
+                        className="font-semibold opacity-70 text-[13px]">
                         Sports
                       </a>
                     </li>
@@ -276,23 +304,29 @@ const NavFooter = () => {
                 <Box>
                   <Typography
                     variant="h3"
-                    sx={{ fontWeight: "bold", fontSize: "25px" }}
+                    sx={{ fontWeight: "bold", fontSize: "20px" }}
                     className="footer-headers">
                     Academics
                   </Typography>
-                  <ul className="sm:space-y-2 space-y-1 footer-list">
+                  <ul className="sm:space-y-1 space-y-1 footer-list">
                     <li>
-                      <a href="" className="font-semibold opacity-70">
+                      <a
+                        href=""
+                        className="font-semibold opacity-70 text-[13px]">
                         Colleges
                       </a>
                     </li>
                     <li>
-                      <a href="" className="font-semibold opacity-70">
+                      <a
+                        href=""
+                        className="font-semibold opacity-70 text-[13px]">
                         Academic Calender
                       </a>
                     </li>
                     <li>
-                      <a href="" className="font-semibold opacity-70">
+                      <a
+                        href=""
+                        className="font-semibold opacity-70 text-[13px]">
                         Academic Programmes
                       </a>
                     </li>
@@ -301,23 +335,29 @@ const NavFooter = () => {
                 <Box className="" sx={{ marginTop: "10%" }}>
                   <Typography
                     variant="h3"
-                    sx={{ fontWeight: "bold", fontSize: "25px" }}
+                    sx={{ fontWeight: "bold", fontSize: "20px" }}
                     className="footer-headers">
                     Updates
                   </Typography>
-                  <ul className="sm:space-y-2 space-y-1 footer-list">
+                  <ul className="sm:space-y-1 space-y-1 footer-list">
                     <li>
-                      <a href="" className="font-semibold opacity-70">
+                      <a
+                        href=""
+                        className="font-semibold opacity-70 text-[13px]">
                         News
                       </a>
                     </li>
                     <li>
-                      <a href="" className="font-semibold opacity-70">
+                      <a
+                        href=""
+                        className="font-semibold opacity-70 text-[13px]">
                         Events
                       </a>
                     </li>
                     <li>
-                      <a href="" className="font-semibold opacity-70">
+                      <a
+                        href=""
+                        className="font-semibold opacity-70 text-[13px]">
                         Articles
                       </a>
                     </li>

@@ -44,8 +44,11 @@ const Submenu = () => {
             const { url, icon, label } = link;
             return (
               <React.Fragment key={index}>
-                <Link to={`/${url}`} className="space-y-4 w-full ">
-                  {icon} {label}
+                <Link
+                  to={`/${url}`}
+                  className=" w-full text-[11px] flex items-center">
+                  <span> {icon}</span>{" "}
+                  <span className="text-[12px]">{label}</span>
                 </Link>
               </React.Fragment>
             );

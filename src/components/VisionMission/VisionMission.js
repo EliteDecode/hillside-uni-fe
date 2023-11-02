@@ -18,16 +18,16 @@ const VisionMission = () => {
         <Box>
           <Grid container rowSpacing={8} columnSpacing={2}>
             <Grid item sm={12} md={4}>
-              <Box className="px-3 py-10 border rounded-l-full  bg-[#1d6400]">
+              <Box className="px-3 py-4 border rounded-l-full  bg-[#1d6400]">
                 <Box className="flex items-center justify-center flex-col">
-                  <img src={aimImg} alt="HUST vision" width="70px" />
+                  <img src={aimImg} alt="HUST vision" width="50px" />
                   <Typography
                     variant="h4"
                     sx={{
                       fontWeight: "bold",
                       color: "#fff",
                       marginTop: 3,
-                      fontSize: "30px",
+                      fontSize: "23px",
                     }}>
                     Our Mission
                   </Typography>
@@ -37,11 +37,11 @@ const VisionMission = () => {
                 <Typography
                   variant="h5"
                   sx={{
-                    fontSize: "16px",
+                    fontSize: "12px",
                     opacity: "0.7",
-                    lineHeight: "1.8rem",
+                    lineHeight: "1.3rem",
                   }}>
-                  <span className="text-[45px] font-bold text-[#5e0001]">
+                  <span className="text-[25px] font-bold text-[#5e0001]">
                     {" "}
                     To
                   </span>{" "}
@@ -53,16 +53,16 @@ const VisionMission = () => {
               </Box>
             </Grid>
             <Grid item sm={12} md={4}>
-              <Box className="px-3 py-10 border  bg-[#5e0001]">
+              <Box className="px-3 py-4 border  bg-[#5e0001]">
                 <Box className="flex items-center justify-center flex-col">
-                  <img src={visionImg} alt="HUST vision" width="70px" />
+                  <img src={visionImg} alt="HUST vision" width="50px" />
                   <Typography
                     variant="h4"
                     sx={{
                       fontWeight: "bold",
                       color: "#fff",
                       marginTop: 3,
-                      fontSize: "30px",
+                      fontSize: "23px",
                     }}>
                     Our Vision
                   </Typography>
@@ -72,11 +72,11 @@ const VisionMission = () => {
                 <Typography
                   variant="h5"
                   sx={{
-                    fontSize: "16px",
+                    fontSize: "12px",
                     opacity: "0.7",
-                    lineHeight: "1.8rem",
+                    lineHeight: "1.3rem",
                   }}>
-                  <span className="text-[45px] font-bold text-[#1d6400]">
+                  <span className="text-[25px] font-bold text-[#1d6400]">
                     {" "}
                     Our
                   </span>{" "}
@@ -89,16 +89,16 @@ const VisionMission = () => {
               </Box>
             </Grid>
             <Grid item sm={12} md={4}>
-              <Box className="px-3 py-10 border rounded-r-full bg-[#1d6400]">
+              <Box className="px-3 py-4 border rounded-r-full bg-[#1d6400]">
                 <Box className="flex items-center justify-center flex-col">
-                  <img src={missionImg} alt="HUST vision" width="70px" />
+                  <img src={missionImg} alt="HUST vision" width="50px" />
                   <Typography
                     variant="h4"
                     sx={{
                       fontWeight: "bold",
                       color: "#fff",
                       marginTop: 3,
-                      fontSize: "30px",
+                      fontSize: "23px",
                     }}>
                     Our Goal
                   </Typography>
@@ -108,11 +108,11 @@ const VisionMission = () => {
                 <Typography
                   variant="h5"
                   sx={{
-                    fontSize: "16px",
+                    fontSize: "12px",
                     opacity: "0.7",
-                    lineHeight: "1.8rem",
+                    lineHeight: "1.3rem",
                   }}>
-                  <span className="text-[45px] font-bold text-[#5e0001]">
+                  <span className="text-[25px] font-bold text-[#5e0001]">
                     {" "}
                     The
                   </span>{" "}

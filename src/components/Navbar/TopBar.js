@@ -6,7 +6,7 @@ import { Typography } from "antd";
 
 const TopBar = () => {
   return (
-    <Box className="p-2 custom-bg-red">
+    <Box className="p-1 custom-bg-red">
       <Box className="container">
         <Box className=" flex flex-wrap items-center justify-between   ">
           <Box className="flex items-center sm:justify-around justify-between sm:w-auto  w-full space-x-4 sm:mb-0 mb-2">
@@ -18,8 +18,12 @@ const TopBar = () => {
                 sx={{
                   bgcolor: "#f7f7f780",
                   color: "#5e0001",
-                  fontSize: "12px",
+                  fontSize: "10px",
                   fontWeight: "bold",
+                  "&:hover": {
+                    background: "#5e0001",
+                    color: "#fff",
+                  },
                 }}>
                 Follow Us
               </Button>
@@ -32,36 +36,36 @@ const TopBar = () => {
           </Box>
           <Box className="sm:flex hidden flex-wrap items-center sm:space-x-4 space-x-1 ">
             <Box className="flex items-center sm:mr-0 mr-4 ">
-              <LocationOn sx={{ color: "#f7f7f790" }} />
+              <LocationOn sx={{ color: "#f7f7f790", fontSize: "14px" }} />
               <Typography
                 variant="subtitle2"
                 style={{
                   color: "#f7f7f7",
-                  fontSize: "11px",
+                  fontSize: "9px",
                   fontWeight: "bold",
                 }}>
                 Okemisi, Ekiti , Nigeria
               </Typography>
             </Box>
             <Box className="flex items-center">
-              <MailTwoTone sx={{ color: "#f7f7f790" }} />
+              <MailTwoTone sx={{ color: "#f7f7f790", fontSize: "14px" }} />
               <Typography
                 variant="subtitle2"
                 style={{
                   color: "#f7f7f7",
-                  fontSize: "11px",
+                  fontSize: "9px",
                   fontWeight: "bold",
                 }}>
                 enquiries@hust.edu.ng
               </Typography>
             </Box>
             <Box className="flex items-center sm:mt-0 mt-1 ">
-              <PhoneCallback sx={{ color: "#f7f7f790", fontSize: "19px" }} />
+              <PhoneCallback sx={{ color: "#f7f7f790", fontSize: "14px" }} />
               <Typography
                 variant="subtitle2"
                 style={{
                   color: "#f7f7f7",
-                  fontSize: "11px",
+                  fontSize: "9px",
                   fontWeight: "bold",
                 }}>
                 +234-(901)-070-7383

@@ -63,8 +63,14 @@ const Programs = () => {
                           sx={{
                             color: "#000",
                           }}
-                          secondaryTypographyProps={{ color: "#00080" }}
-                          primaryTypographyProps={{ fontWeight: "bolder" }}
+                          secondaryTypographyProps={{
+                            color: "#00080",
+                            fontSize: "12px",
+                          }}
+                          primaryTypographyProps={{
+                            fontWeight: "bolder",
+                            fontSize: "14px",
+                          }}
                           primary={value.shortName}
                           secondary={value.name}
                         />
@@ -117,8 +123,14 @@ const Programs = () => {
                           sx={{
                             color: "#000",
                           }}
-                          secondaryTypographyProps={{ color: "#00080" }}
-                          primaryTypographyProps={{ fontWeight: "bolder" }}
+                          secondaryTypographyProps={{
+                            color: "#00080",
+                            fontSize: "12px",
+                          }}
+                          primaryTypographyProps={{
+                            fontWeight: "bolder",
+                            fontSize: "14px",
+                          }}
                           primary={value.shortName}
                           secondary={value.name}
                         />

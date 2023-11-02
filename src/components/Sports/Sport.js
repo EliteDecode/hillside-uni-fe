@@ -15,10 +15,10 @@ const Sport = () => {
             <Grid item sm={12} md={12} className="my-4 ">
               <div class="container mx-auto sm:p-4 p-0">
                 <div class=" my-8">
-                  <h1 class="sm:text-4xl text-xl font-bold mb-4">
+                  <h1 class="sm:text-2xl text-xl font-bold mb-4">
                     Sport Unit at Hillside University of Science Technology
                   </h1>
-                  <p class="sm:text-lg text-sm">
+                  <p class="sm:text-md text-sm">
                     The fundamental goal of the Sport Unit is to help each
                     student develop a healthy spirit, mind, and body. Sports
                     participation in Hillside University of Science Technology
@@ -35,7 +35,7 @@ const Sport = () => {
                 </div>
 
                 <div class="my-8">
-                  <h2 class="sm:text-2xl text-lg font-bold mb-4">
+                  <h2 class="sm:text-lg text-md font-bold mb-4">
                     Athletic Events and Contests
                   </h2>
                   <p class="mb-2">
@@ -59,7 +59,7 @@ const Sport = () => {
                 </div>
 
                 <div class="my-8">
-                  <h2 class="sm:text-2xl text-lg font-bold mb-4">Focus</h2>
+                  <h2 class="sm:text-lg text-md font-bold mb-4">Focus</h2>
                   <p class="mb-2">
                     Our major focus is in intramural and Competitive Sports. The
                     university sports unit organizes sporting activities for
@@ -91,7 +91,7 @@ const Sport = () => {
                 </div>
 
                 <div class="my-8">
-                  <h2 class="sm:text-2xl text-lg font-bold mb-4">Objectives</h2>
+                  <h2 class="sm:text-lg text-md font-bold mb-4">Objectives</h2>
                   <ul class="list-disc list-inside">
                     <li>
                       To encourage a large number of people to participate in

@@ -2,6 +2,7 @@ import React from "react";
 import { FaTimes } from "react-icons/fa";
 import { useGlobalContext } from "../../utils/context";
 import { sublinks } from "../../utils/data";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
@@ -21,14 +22,14 @@ const Sidebar = () => {
             return (
               <article key={index}>
                 <h4 className="mb-2 font-bold">{page}</h4>
-                <div className="sidebar-sublinks">
+                <div className="sidebar-sublinks" onClick={closeSidebar}>
                   {links.map((link, index) => {
                     const { url, icon, label } = link;
                     return (
-                      <a key={index} href={url}>
+                      <Link to={`/${url}`}>
                         {icon}
                         {label}
-                      </a>
+                      </Link>
                     );
                   })}
                 </div>

@@ -5,13 +5,17 @@ import { Box } from "@mui/material";
 const Breadcrumbs = ({ primaryPage, secondaryPage }) => (
   <Box className="container">
     <Breadcrumb
-      className="text-[19px] my-5"
+      className=" my-5 text-[11px]"
       items={[
         {
-          title: <Link to={`/${primaryPage}`}>{primaryPage}</Link>,
+          title: (
+            <Link to={`/${primaryPage}`} className="text-[11px]">
+              {primaryPage}
+            </Link>
+          ),
         },
         {
-          title: secondaryPage,
+          title: <span className="text-[11px]">{secondaryPage}</span>,
         },
       ]}
     />

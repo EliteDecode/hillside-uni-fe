@@ -9,8 +9,12 @@ import Avatar from "@mui/material/Avatar";
 import EventIcon from "@mui/icons-material/Event";
 import { upcomingEvents } from "../../utils/data";
 import ButtonCustome from "../general/ButtonCustome";
+import { useApiGlobalContext } from "../../utils/apiContext";
+import EventsLoader from "../Loader/EventsLoader";
+import { Link } from "react-router-dom";
 
-const Events = ({ events }) => {
+const Events = () => {
+  const { events, loading } = useApiGlobalContext();
   return (
     <Box
       id="Events"
@@ -47,23 +51,49 @@ const Events = ({ events }) => {
                   maxWidth: 360,
                   bgcolor: "transparent",
                 }}>
-                {upcomingEvents.map((event, index) => (
-                  <ListItem key={index}>
-                    <ListItemAvatar>
-                      <Avatar sx={{ bgcolor: "#1d6400" }}>
-                        <EventIcon />
-                      </Avatar>
-                    </ListItemAvatar>
-                    <ListItemText
-                      sx={{
-                        color: "#f7f7f7",
-                      }}
-                      secondaryTypographyProps={{ color: "#f7f7f790" }}
-                      primary={event.title}
-                      secondary={event.date}
-                    />
-                  </ListItem>
-                ))}
+                {loading ? (
+                  <>
+                    {upcomingEvents.map((event, index) => (
+                      <EventsLoader />
+                    ))}
+                  </>
+                ) : (
+                  <>
+                    {events?.slice(0, 6).map((event, index) => (
+                      <Link to={`events/${event?.id}`}>
+                        <ListItem key={index}>
+                          <ListItemAvatar>
+                            <Avatar sx={{ bgcolor: "#1d6400" }}>
+                              <EventIcon />
+                            </Avatar>
+                          </ListItemAvatar>
+                          <ListItemText
+                            sx={{
+                              color: "#f7f7f7",
+                            }}
+                            secondaryTypographyProps={{
+                              color: "#f7f7f790",
+                              fontSize: "13px",
+                            }}
+                            primaryTypographyProps={{
+                              fontSize: "13px",
+                            }}
+                            primary={event?.title}
+                            secondary={new Date(
+                              event?.eventsDate
+                            ).toLocaleString(undefined, {
+                              year: "numeric",
+                              month: "long",
+                              day: "numeric",
+
+                              hour12: true,
+                            })}
+                          />
+                        </ListItem>
+                      </Link>
+                    ))}
+                  </>
+                )}
               </List>
             </Box>
             {events && (

@@ -88,9 +88,9 @@ export const sublinks = [
   {
     page: "Admission",
     links: [
-      { label: "How to Apply", icon: <FaBook />, url: "/products" },
-      { label: "Requirements", icon: <FaBook />, url: "/products" },
-      { label: "Tuition Fees", icon: <FaBook />, url: "/products" },
+      { label: "How to Apply", icon: <FaBook />, url: "Admission" },
+      { label: "Requirements", icon: <FaBook />, url: "Admission" },
+      { label: "Tuition Fees", icon: <FaBook />, url: "Admission" },
     ],
   },
   {
@@ -133,17 +133,17 @@ export const sublinks = [
   {
     page: "Public Information",
     links: [
-      { label: "Policies", icon: <FaBook />, url: "/products" },
-      { label: "Make Enquiries", icon: <FaBook />, url: "/products" },
-      { label: "Our Patners", icon: <FaBook />, url: "/products" },
+      { label: "Policies", icon: <FaBook />, url: "Public Information" },
+      { label: "Make Enquiries", icon: <FaBook />, url: "Public Information" },
+      { label: "Our Patners", icon: <FaBook />, url: "Public Information" },
     ],
   },
   {
     page: "Contact",
     links: [
-      { label: "info@hust.com", icon: <FaBook />, url: "/products" },
-      { label: "contact@hust.com", icon: <FaBook />, url: "/products" },
-      { label: "+234 (901)-128-1920", icon: <FaBook />, url: "/products" },
+      { label: "enquiries@hust.edu.ng", icon: <FaBook />, url: "Contact" },
+      { label: "contact@hust.com", icon: <FaBook />, url: "Contact" },
+      { label: "+234 (901)-128-1920", icon: <FaBook />, url: "Contact" },
     ],
   },
 ];
@@ -188,10 +188,10 @@ export const mainLinks = [
 ];
 
 export const TopLinks = [
-  <Facebook sx={{ color: "#f7f7f7", opacity: "0.5" }} />,
-  <Instagram sx={{ color: "#f7f7f7", opacity: "0.5" }} />,
-  <LinkedIn sx={{ color: "#f7f7f7", opacity: "0.5" }} />,
-  <Twitter sx={{ color: "#f7f7f7", opacity: "0.5" }} />,
+  <Facebook sx={{ color: "#f7f7f7", opacity: "0.5", fontSize: "15px" }} />,
+  <Instagram sx={{ color: "#f7f7f7", opacity: "0.5", fontSize: "15px" }} />,
+  <LinkedIn sx={{ color: "#f7f7f7", opacity: "0.5", fontSize: "15px" }} />,
+  <Twitter sx={{ color: "#f7f7f7", opacity: "0.5", fontSize: "15px" }} />,
 ];
 
 /* Hero Content */
@@ -209,7 +209,7 @@ export const heroContents = [
   {
     class: "content-2",
     subtitle: "Our Mission",
-    title: "Shaping  Futures In Science and Technology",
+    title: "Shaping Futures In Science and Technology",
     subtitle2:
       "Dedicated to Excellence in Education, Inspiring a Passion for Learnin and Building a Foundation for Success",
     btn1: "About Us",

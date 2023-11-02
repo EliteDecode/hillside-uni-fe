@@ -10,7 +10,7 @@ const Title = ({ subtitle, title }) => {
           fontWeight: 600,
           padding: "4px 0px",
           color: "#5e0001",
-          fontSize: "29px",
+          fontSize: "25px",
           marginTop: "4%",
 
           "@media (max-width:767px)": {
@@ -29,9 +29,9 @@ const Title = ({ subtitle, title }) => {
         }}></Box>
       <Typography
         sx={{
-          fontSize: "45px",
+          fontSize: "40px",
           fontWeight: "Bold",
-          marginTop: "2%",
+          marginTop: "1%",
           "@media (max-width:767px)": {
             fontSize: "35px",
           },

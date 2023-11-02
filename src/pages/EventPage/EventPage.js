@@ -7,9 +7,12 @@ import Events from "../../components/Events/Events";
 import Subscribe from "../../components/Subscribe/Subscribe";
 import NavFooter from "../../components/Footer/Footer";
 import Breadcrumbs from "../../components/general/Breadcrumbs";
+import News from "../../components/News/News";
+import { useApiGlobalContext } from "../../utils/apiContext";
 
 const EventPage = () => {
   const { closeSubmenu } = useGlobalContext();
+  const { events, loading } = useApiGlobalContext();
 
   useEffect(() => {
     AOS.init();
@@ -22,7 +25,7 @@ const EventPage = () => {
       <div onMouseOver={closeSubmenu}>
         <SubHeros section="events" />
         <Breadcrumbs primaryPage="Home" secondaryPage="All Events" />
-        <Events events={false} />
+        <News items={events} loading={loading} category="events" />
         <NavFooter />
       </div>
     </div>

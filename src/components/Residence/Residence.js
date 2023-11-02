@@ -37,9 +37,9 @@ const Residence = () => {
                         <Typography
                           variant="subtitle"
                           sx={{
-                            marginTop: "3%",
+                            marginTop: "2%",
                             opacity: 0.8,
-                            fontSize: "14px",
+                            fontSize: "11px",
                             "@media (max-width: 575px)": {
                               fontSize: "13px",
                             },

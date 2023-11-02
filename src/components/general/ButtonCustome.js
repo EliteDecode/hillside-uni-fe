@@ -10,7 +10,7 @@ const ButtonCustome = ({ size, color, text, type, capitalzie }) => {
       sx={{
         bgcolor: type === "transparent" ? "transparent" : color,
         color: type === "transparent" ? color : "#fff",
-        fontSize: "15px",
+        fontSize: "12px",
         fontWeight: "bold",
         textTransform: capitalzie ? "capitalize" : "uppercase",
         border:

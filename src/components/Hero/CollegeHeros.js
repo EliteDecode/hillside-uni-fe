@@ -6,11 +6,11 @@ const CollegeHeros = ({ section, title }) => {
     <Box
       className={`${section
         .replace(/[&, ]/g, "")
-        .toUpperCase()}-section  subHero py-10 ${
+        .toUpperCase()}-section  subHero py-16 ${
         section.includes("School") ? "SCHOOL-section" : ""
       }`}>
       <Box className="container">
-        <Box className="sm:w-[64%] w-[100%]">
+        <Box className="sm:w-[68%] w-[100%]">
           <Box>
             <Typography
               data-aos="fade-down"
@@ -18,14 +18,13 @@ const CollegeHeros = ({ section, title }) => {
               variant="subtitle2"
               sx={{
                 color: "#f7f7f780",
-                fontSize: "23px",
+                fontSize: "18px",
                 "@media (max-width: 567px)": {
                   fontSize: "14px",
                 },
                 opacity: "1",
                 fontWeight: "bold",
                 textTransform: "Uppercase",
-                marginTop: 5,
               }}>
               HUST{" "}
             </Typography>
@@ -36,8 +35,8 @@ const CollegeHeros = ({ section, title }) => {
               sx={{
                 color: "#fff",
                 fontWeight: "bold",
-                fontSize: "60px",
-                lineHeight: "4rem",
+                fontSize: "45px",
+                lineHeight: "3.4rem",
                 width: "100%",
                 textTransform: "uppercase",
 
