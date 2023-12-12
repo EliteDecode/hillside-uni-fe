@@ -71,7 +71,7 @@ const NavFooter = () => {
           <Box>
             <Grid container spacing={4}>
               <Grid item sm={12} md={3} className="">
-                <Box className="flex justify-between items-center sm:w-[85%] w-[20%] ">
+                <Box className="flex justify-between items-center sm:w-[47%] w-[20%] ">
                   <img src={logo} className="nav-logo" alt="hust logo" />
                 </Box>
                 <Box className="mt-5 space-y-6">

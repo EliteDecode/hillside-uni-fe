@@ -603,7 +603,7 @@ export const collegeSchools = [
   },
   {
     id: 18,
-    name: "School of Clinical Sciences",
+    name: "Clinical Sciences",
     school: "School of Clinical Sciences",
     college: "TRISTATE COLLEGE OF HEALTH AND ALLIED MEDICAL SCIENCES",
   },
@@ -803,18 +803,24 @@ export const departments = [
     School: "Agriculture",
     College: "College of Agriculture, Life & Environmental Sciences",
     Id: 1,
+    Content:
+      "Candidates will be admitted into Agribusiness through UTME and HUST Post-UTME Screening. In addition to UTME score, the candidate should possess five credit passes in WAEC, NECO, IGSCE or its equivalent to include English Language, Mathematics, Agricultural Science and any other two subjects from the following list: Chemistry, Physics or Biology and Economics in not more than two sittings.",
   },
   {
     name: "Agricultural Economics",
     School: "Agriculture",
     College: "College of Agriculture, Life & Environmental Sciences",
     Id: 2,
+    Content:
+      "Candidates will be admitted into Agricultural Economics through UTME and HUST Post-UTME Screening. In addition to UTME score, the candidate should possess five credit passes in WAEC, NECO, IGSCE or its equivalent to include English Language, Mathematics, Agricultural Science and any other two subjects from the following list: Chemistry, Physics or Biology and Economics in not more than two sittings.",
   },
   {
     name: "Microbiology",
     School: "Basic, Applied and Life Sciences",
     College: "College of Agriculture, Life & Environmental Sciences",
     Id: 3,
+    Content:
+      "Candidates will be admitted into Microbiology through UTME and HUST Post-UTME Screening. The entry requirements shall be at least credit level passes in five subjects including English language, mathematics, biology, chemistry, and physics in WAEC, NECO, IGSCE or its equivalent. In addition, an acceptable pass in the unified tertiary matriculation examination (UTME) is required.",
   },
 
   {
@@ -822,6 +828,8 @@ export const departments = [
     School: "Basic, Applied and Life Sciences",
     College: "College of Agriculture, Life & Environmental Sciences",
     Id: 4,
+    Content:
+      "Candidates will be admitted into Forensic Science through UTME and HUST Post-UTME Screening. The minimum academic requirement is credit level passes at WAEC, NECO, IGSCE or its equivalent in English Language, Mathematics, Biology, Chemistry and Physics at not more than two sittings. In addition, an acceptable pass in the following Unified Tertiary Matriculation Examination (UTME) subjects is also required for admission; English, Biology, Chemistry and Physics",
   },
 
   {
@@ -829,12 +837,16 @@ export const departments = [
     School: "Basic, Applied and Life Sciences",
     College: "College of Agriculture, Life & Environmental Sciences",
     Id: 5,
+    Content:
+      "Candidates will be admitted into Environmental Management and Toxicology through UTME and HUST Post-UTME Screening. Candidates who have successfully completed WAEC, NECO, IGSCE or its equivalent and obtained five credits in Mathematics, English Language, Physics, Chemistry and Biology or Agricultural Science, in not more than two sittings. Candidate must have acceptable score in the UTME with relevant subject combination",
   },
   {
     name: "Petroleum Chemistry",
     School: "Basic, Applied and Life Sciences",
     College: "College of Agriculture, Life & Environmental Sciences",
     Id: 6,
+    Content:
+      "Candidates will be admitted into Petroleum Chemistry through UTME and HUST Post-UTME Screening. The candidate must have in addition a minimum of credit level pass in five subjects at not more than two sittings in WAEC, NECO, IGSCE or its equivalent. The required credit level passes are; English language, Mathematics, Chemistry, Physics and any relevant Science Subject. The UTME subjects are; English Language, Mathematics, Chemistry and Physics.",
   },
 
   {
@@ -842,12 +854,18 @@ export const departments = [
     School: "Business Economics & Technology Management",
     College: "College of Business, Law & Educational Sciences",
     Id: 7,
+
+    Content:
+      "Candidates will be admitted into Accounting through UTME and HUST Post-UTME Screening. In addition to UTME requirements, the prospective candidate for a 4-year degree programme is expected to have obtained credit passes in five subjects in WAEC, NECO, IGSCE or its equivalent including English Language, Mathematics and any other three (3) from Principles of Accounting, Commerce, Economics and any other relevant commercial subjects at not more than two sittings.",
   },
   {
     name: "Economics",
     School: "Business Economics & Technology Management",
     College: "College of Business, Law & Educational Sciences",
     Id: 8,
+
+    Content:
+      "Candidates will be admitted into Economics through UTME and HUST Post-UTME Screening. In addition to UTME requirements, the prospective candidate for a 4-year degree programme is expected to have obtained credit passes in five WAEC, NECO, IGSCE subjects or its equivalent including English Language, Mathematics, Economics and any of, Commerce, Principles of Accounting, Business Methods and any other relevant commercial subjects at not more than two sittings.",
   },
 
   {
@@ -855,6 +873,9 @@ export const departments = [
     School: "Business Economics & Technology Management",
     College: "College of Business, Law & Educational Sciences",
     Id: 9,
+
+    Content:
+      "Candidates will be admitted into Logistics and Supply Chain Management through UTME and HUST Post-UTME Screening. In addition to UTME requirements, the prospective candidate for a 4-year degree programme is expected to have obtained credit passes in five WAEC, NECO, IGSCE subjects or its equivalent including English Language and Mathematics, Economics and any of, Financial Accounting, Marketing, Commerce and Business Methods at not more than two sittings.",
   },
 
   {
@@ -862,6 +883,8 @@ export const departments = [
     School: "Communication, Culture & Media Studies",
     College: "College of Business, Law & Educational Sciences",
     Id: 10,
+    Content:
+      "Candidates will be admitted into Mass Communication through UTME and HUST Post-UTME Screening. In addition to acceptable passes in UTME, candidates must obtain at credit level, passes in WAEC, NECO, IGSCE or its equivalent in five subjects including Mathematics, English Language and three other arts or social science subjects in not more than two sittings.",
   },
 
   {
@@ -869,6 +892,8 @@ export const departments = [
     School: "Computing Sciences",
     College: "College of Engineering And Computing Sciences",
     Id: 11,
+    Content:
+      "Candidates will be admitted into Computing and Artificial Intelligence through UTME and HUST Post-UTME Screening. In addition to appropriate UTME Score, a candidate must possess five WAEC, NECO, IGSCE or its equivalent credits passes including English Language, Mathematics, Physics and any other relevant Science subjects in not more than two sittings.",
   },
 
   {
@@ -876,6 +901,8 @@ export const departments = [
     School: "Computing Sciences",
     College: "College of Engineering And Computing Sciences",
     Id: 12,
+    Content:
+      "Candidates will be admitted into Data Science through UTME and HUST Post-UTME Screening. In addition to appropriate UTME Score, a candidate must possess five WAEC, NECO, IGSCE or its equivalent credits passes including English Language, Mathematics, Physics and any other relevant Science subjects in not more than two sittings.",
   },
 
   {
@@ -883,12 +910,16 @@ export const departments = [
     School: "Computing Sciences",
     College: "College of Engineering And Computing Sciences",
     Id: 13,
+    Content:
+      "Candidates will be admitted into Software Engineering through UTME and HUST Post-UTME Screening. In addition to appropriate UTME Score, a candidate must possess five WAEC, NECO, IGSCE or its equivalent credits passes including English Language, Mathematics, Physics and any other relevant Science subjects in not more than two sittings.",
   },
   {
     name: "Cyber Security",
     School: "Computing Sciences",
     College: "College of Engineering And Computing Sciences",
     Id: 14,
+    Content:
+      "Candidates will be admitted into Cyber Security through UTME and HUST Post-UTME Screening. In addition to appropriate UTME Score, a candidate must possess five WAEC, NECO, IGSCE or its equivalent credits passes including English Language, Mathematics, Physics and any other relevant Science subjects in not more than two sittings.",
   },
 
   {
@@ -896,6 +927,8 @@ export const departments = [
     School: "Engineering Sciences & Technology",
     College: "College of Engineering And Computing Sciences",
     Id: 15,
+    Content:
+      "Candidates will be admitted into Mechanical Engineering through UTME and HUST Post-UTME Screening. For the five-year degree programme, in addition to acceptable passes in the Unified Tertiary Matriculation Examination (UTME), the minimum admission requirement is credit level passes in WAEC, NECO, IGSCE or its equivalent in at least five subjects, which must include English Language, Mathematics, Physics, Chemistry and other acceptable science subjects at not more than two sittings.",
   },
 
   {
@@ -903,18 +936,24 @@ export const departments = [
     School: "Engineering Sciences & Technology",
     College: "College of Engineering And Computing Sciences",
     Id: 16,
+    Content:
+      "Candidates will be admitted into Civil and Construction Engineering through UTME and HUST Post-UTME Screening. For the five-year degree programme, in addition to acceptable passes in the Unified Tertiary Matriculation Examination (UTME), the minimum admission requirement is credit level passes in WAEC, NECO, IGSCE or its equivalent in at least five subjects, which must include English Language, Mathematics, Physics, Chemistry and other acceptable science subjects at not more than two sittings",
   },
   {
     name: "Mechatronics Engineering",
     School: "Engineering Sciences & Technology",
     College: "College of Engineering And Computing Sciences",
     Id: 17,
+    Content:
+      "Candidates will be admitted into Mechatronic Engineering through UTME and HUST Post-UTME Screening. For the five-year degree programme, in addition to acceptable passes in the Unified Tertiary Matriculation Examination (UTME), the minimum admission requirement is credit level passes in WAEC, NECO, IGSCE or its equivalent in at least five subjects, which must include English Language, Mathematics, Physics, Chemistry and other acceptable science subjects at not more than two sittings.",
   },
   {
     name: "Industrial & Production Engineering",
     School: "Engineering Sciences & Technology",
     College: "College of Engineering And Computing Sciences",
     Id: 18,
+    Content:
+      "Candidates will be admitted into Industrial and Production Engineering through UTME and HUST Post-UTME Screening. For the five-year degree programme, in addition to acceptable passes in the Unified Tertiary Matriculation Examination (UTME), the minimum admission requirement is credit level passes in WAEC, NECO, IGSCE or its equivalent in at least five subjects, which must include English Language, Mathematics, Physics, Chemistry and other acceptable science subjects at not more than two sittings.",
   },
 
   {
@@ -922,6 +961,8 @@ export const departments = [
     School: "Power Engineering",
     College: "College of Engineering And Computing Sciences",
     Id: 19,
+    Content:
+      "Candidates will be admitted into Aerospace Engineering through UTME and HUST Post-UTME Screening. For the five-year degree programme, in addition to acceptable passes in the Unified Tertiary Matriculation Examination (UTME), the minimum admission requirement is credit level passes in WAEC, NECO, IGSCE or its equivalent in at least five subjects, which must include English Language, Mathematics, Physics, Chemistry and other acceptable science subjects at not more than two sittings.",
   },
 
   {
@@ -929,6 +970,8 @@ export const departments = [
     School: "Power Engineering",
     College: "College of Engineering And Computing Sciences",
     Id: 20,
+    Content:
+      "Candidates will be admitted into Electrical Engineering through UTME and HUST Post-UTME Screening. For the five-year degree programme, in addition to acceptable passes in the Unified Tertiary Matriculation Examination (UTME), the minimum admission requirement is credit level passes in WAEC, NECO, IGSCE or its equivalent in at least five subjects, which must include English Language, Mathematics, Physics, Chemistry and other acceptable science subjects at not more than two sittings.",
   },
 
   {
@@ -936,6 +979,8 @@ export const departments = [
     School: "Power Engineering",
     College: "College of Engineering And Computing Sciences",
     Id: 21,
+    Content:
+      "Candidates will be admitted into Systems Engineering through UTME and HUST Post-UTME Screening. For the five-year degree programme, in addition to acceptable passes in the Unified Tertiary Matriculation Examination (UTME), the minimum admission requirement is credit level passes in WAEC, NECO, IGSCE or its equivalent in at least five subjects, which must include English Language, Mathematics, Physics, Chemistry and other acceptable science subjects at not more than two sittings.",
   },
 
   {
@@ -943,6 +988,8 @@ export const departments = [
     School: "Power Engineering",
     College: "College of Engineering And Computing Sciences",
     Id: 22,
+    Content:
+      "Candidates will be admitted into Chemical Engineering through UTME and HUST Post-UTME Screening. For the five-year degree programme, in addition to acceptable passes in the Unified Tertiary Matriculation Examination (UTME), the minimum admission requirement is credit level passes in WAEC, NECO, IGSCE or its equivalent in at least five subjects, which must include English Language, Mathematics, Physics, Chemistry and other acceptable science subjects at not more than two sittings.",
   },
 
   {
@@ -950,6 +997,7 @@ export const departments = [
     School: "Dentistry",
     College: "TriState College of Health & Allied Medical Sciences",
     Id: 23,
+    Content: "",
   },
 
   {
@@ -957,6 +1005,8 @@ export const departments = [
     School: "Allied Health",
     College: "TriState College of Health & Allied Medical Sciences",
     Id: 24,
+    Content:
+      "Candidates will be admitted into Dentistry through UTME and HUST Post-UTME Screening. In addition to acceptable scores in the Unified Tertiary Matriculation Examination (UTME), candidates to be admitted into the degree programme shall possess a credit pass in each of the following: Physics, Chemistry, Biology, Mathematics and English language at WAEC, NECO, IGSCE or its equivalent at one sitting.",
   },
 
   {
@@ -964,6 +1014,8 @@ export const departments = [
     School: "Allied Health",
     College: "TriState College of Health & Allied Medical Sciences",
     Id: 25,
+    Content:
+      "Candidates will be admitted into Audiology through UTME and HUST Post-UTME Screening. The minimum academic requirements is credit level passes in five subjects at WAEC, NECO, IGSCE or its equivalent including English Language, Mathematics, Physics, Chemistry and Biology at not more than two (2) sittings and an acceptable pass mark at the Unified Tertiary Matriculation Examination.",
   },
 
   {
@@ -971,6 +1023,8 @@ export const departments = [
     School: "Allied Health",
     College: "TriState College of Health & Allied Medical Sciences",
     Id: 26,
+    Content:
+      "Candidates will be admitted into Nutrition and Dietetics through UTME and HUST Post-UTME Screening. Candidates must satisfy the university minimum requirements of five credits passes at WAEC, NECO, IGSCE or its equivalent, which must include Mathematic, Physics, Biology, Chemistry and English Language.",
   },
 
   {
@@ -978,6 +1032,8 @@ export const departments = [
     School: "Basic Medical Sciences",
     College: "TriState College of Health & Allied Medical Sciences",
     Id: 27,
+    Content:
+      "Candidates will be admitted into Physiology through UTME and HUST Post-UTME Screening. In addition to the UTME requirements, candidates seeking admission into the Human Anatomy degree programme must possess a minimum of five credit passes in WAEC, NECO, IGSCE or its equivalent to include English Language, Mathematics, Physics, Chemistry and Biology at not more than two (2) sittings.",
   },
 
   {
@@ -985,18 +1041,24 @@ export const departments = [
     School: "Medicine",
     College: "TriState College of Health & Allied Medical Sciences",
     Id: 28,
+    Content:
+      "Throughout the course of study, the student is required to maintain a professional code of conduct as embodied in the fundamental ethical principles of the Optometry profession. Candidates will be admitted into Optometry through UTME and HUST Post-UTME Screening. Candidate for admission must have a minimum of Five WAEC, NECO, IGSCE credits or its equivalents at one sitting in English, Mathematics, Physics, Chemistry, and Biology.",
   },
   {
     name: "Anatomy",
     School: "Basic Medical Sciences",
     College: "TriState College of Health & Allied Medical Sciences",
     Id: 29,
+    Content:
+      "Candidates will be admitted into Anatomy through UTME and HUST Post-UTME Screening. In addition to the UTME requirements, candidates seeking admission into the Human Anatomy degree programme must possess a minimum of five credit passes in WAEC, NECO, IGSCE or its equivalent to include English Language, Mathematics, Physics, Chemistry and Biology at not more than two (2) sittings.",
   },
   {
     name: "Biochemistry",
     School: "Basic Medical Sciences",
     College: "TriState College of Health & Allied Medical Sciences",
     Id: 30,
+    Content:
+      "Candidates will be admitted into Biochemistry through UTME and HUST Post-UTME Screening. In addition to the UTME requirements, candidates seeking admission into the Human Anatomy degree programme must possess a minimum of five credit passes in WAEC, NECO, IGSCE or its equivalent to include English Language, Mathematics, Physics, Chemistry and Biology at not more than two (2) sittings.",
   },
 
   {
@@ -1004,6 +1066,8 @@ export const departments = [
     School: "Allied Health",
     College: "TriState College of Health & Allied Medical Sciences",
     Id: 31,
+    Content:
+      "Candidates will be admitted into Medical Laboratory Science through UTME and HUST Post-UTME Screening. In addition to appropriate UTME scores, the candidate must score five credits passes in Mathematics, Physics, Chemistry, Biology and English Language in not more than two sittings at WAEC, NECO, IGSCE or its equivalent.",
   },
 
   {
@@ -1011,19 +1075,25 @@ export const departments = [
     School: "Pharmaceutical Sciences",
     College: "TriState College of Health & Allied Medical Sciences",
     Id: 32,
+    Content:
+      "Candidates will be admitted into Pharmacy through UTME and HUST Post-UTME Screening. In addition to acceptable scores in the Unified Tertiary Matriculation Examination (UTME), candidates to be admitted into the degree programme shall possess a credit pass in each of the following: Physics, Chemistry, Biology, Mathematics and English language at WAEC, NECO, IGSCE or its equivalent at one sitting.",
   },
 
   {
-    name: "Clinical Sciences",
+    name: "Medicine",
     School: "Clinical Sciences",
     College: "TriState College of Health & Allied Medical Sciences",
     Id: 33,
+    Content:
+      "Candidates will be admitted into Medicine through UTME and HUST Post-UTME Screening. In addition to acceptable scores in the Unified Tertiary Matriculation Examination (UTME), candidates to be admitted into the degree programme shall possess a credit pass in each of the following: Physics, Chemistry, Biology, Mathematics and English language at WAEC, NECO, IGSCE or its equivalent at one sitting.",
   },
   {
     name: "Nursing",
     School: "Nursing",
     College: "TriState College of Health & Allied Medical Sciences",
     Id: 34,
+    Content:
+      "Candidates will be admitted into Nursing through UTME and HUST Post-UTME Screening. In addition to appropriate Unified Tertiary Matriculation Examination scores, candidate must obtain five credit passes including Mathematics, Physics, Chemistry, Biology and English Language at not more than two sittings in WAEC, NECO, IGSCE or its equivalent",
   },
 ];
 

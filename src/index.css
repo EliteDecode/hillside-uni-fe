@@ -89,6 +89,10 @@ Global Styles
   margin: auto;
 }
 
+ul li {
+  list-style: none !important;
+}
+
 @media (min-width: 0px) and (max-width: 567px) {
   .container {
     width: 92% !important;

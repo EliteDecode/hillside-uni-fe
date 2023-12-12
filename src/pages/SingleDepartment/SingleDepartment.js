@@ -77,41 +77,7 @@ const SingleDepartment = () => {
               />
 
               <Box>
-                <p className="text-gray-700">
-                  Agricultural Sciences play a vital role in addressing global
-                  food security and sustainability challenges. With a focus on
-                  crop management, soil health, and sustainable agriculture
-                  practices, Agricultural Sciences aim to maximize food
-                  production while minimizing environmental impact.
-                </p>
-                <p className="text-gray-700 mt-2">
-                  Experts in this field work on developing innovative solutions
-                  for efficient farming, optimizing crop yields, and ensuring
-                  the welfare of livestock. They also study the effects of
-                  climate change and explore ways to adapt agriculture to
-                  evolving environmental conditions.
-                </p>
-                <p className="text-gray-700 mt-2">
-                  From agronomy to animal science and agribusiness, Agricultural
-                  Sciences encompass a wide range of disciplines that contribute
-                  to the global agricultural industry.
-                </p>
-                <p className="text-gray-700 mt-2">
-                  One of the key areas of focus within Agricultural Sciences is
-                  sustainable farming practices. Sustainable agriculture
-                  promotes practices that are environmentally friendly,
-                  economically viable, and socially responsible. This includes
-                  organic farming, precision agriculture, and the use of
-                  cutting-edge technologies to reduce resource consumption.
-                </p>
-                <p className="text-gray-700 mt-2">
-                  Agricultural Sciences professionals are also at the forefront
-                  of research to develop new crop varieties that are more
-                  resistant to diseases and pests, resulting in higher yields
-                  and reduced reliance on pesticides. They work closely with
-                  farmers and agricultural organizations to implement these
-                  advancements in the field.
-                </p>
+                <p className="text-gray-700">{departmentDetails.Content}</p>
               </Box>
             </Box>
           </Box>
