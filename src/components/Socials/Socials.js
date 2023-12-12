@@ -9,7 +9,7 @@ const Socials = () => {
       data-aos-duration="1200"
       data-aos-easing="ease-in-sine">
       <Box className="container">
-        <Title title="Social Unit" subtitle="Our Social Unit" />
+        <Title title="" subtitle=" Social Unit" />
         <Box className="p-3 shadow-md rounded-md bg-white">
           <Grid container rowSpacing={4}>
             <Grid item sm={12} md={12} className="my-4 ">

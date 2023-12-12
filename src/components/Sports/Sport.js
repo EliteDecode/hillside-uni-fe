@@ -9,7 +9,7 @@ const Sport = () => {
       data-aos-duration="1200"
       data-aos-easing="ease-in-sine">
       <Box className="container">
-        <Title title="Sporting Unit" subtitle="Our Sporting Unit" />
+        <Title title="" subtitle="Sports Unit" />
         <Box className="p-3 shadow-md rounded-md bg-white">
           <Grid container rowSpacing={4}>
             <Grid item sm={12} md={12} className="my-4 ">
@@ -18,7 +18,7 @@ const Sport = () => {
                   <h1 class="sm:text-2xl text-xl font-bold mb-4">
                     Sport Unit at Hillside University of Science Technology
                   </h1>
-                  <p class="sm:text-md text-sm">
+                  <p class="sm:text-lg text-sm">
                     The fundamental goal of the Sport Unit is to help each
                     student develop a healthy spirit, mind, and body. Sports
                     participation in Hillside University of Science Technology
@@ -48,7 +48,7 @@ const Sport = () => {
                     Basketball (Male and Female), Volleyball (Male and Female),
                     Tennis, Football, Athletics (track and field events),
                     Scrabble, Table tennis, Badminton, and Swimming are just a
-                    few of the sports in which Team BU excels.
+                    few of the sports in which Team HUST excels.
                   </p>
                   <p>
                     The advantages of participation in exercises or physical

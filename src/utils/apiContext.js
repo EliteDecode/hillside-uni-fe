@@ -15,6 +15,58 @@ const ApiProvider = ({ children }) => {
   const [calenderYear, setCalenderYear] = useState([]);
   const [gallery, setGallery] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [subLoading, setSubLoading] = useState(false);
+
+  const addSubscribers = async (email) => {
+    setSubLoading(true);
+    try {
+      const data = await axios.post(
+        `${process.env.REACT_APP_API_URL}/subscribers`,
+        email
+      );
+
+      if (data) {
+        toast.success("You've successfully subscribed to our newsletter", {
+          onClose: () => {
+            setSubLoading(false);
+          },
+        });
+        return data;
+      }
+    } catch (error) {
+      setSubLoading(false);
+      toast.error(error.response.data.error);
+      toast.error(error.message);
+      toast.error(error.response.data?.message);
+    }
+  };
+
+  const sendMessage = async (info) => {
+    setLoading(true);
+    try {
+      const data = await axios.post(
+        `${process.env.REACT_APP_API_URL}/message`,
+        info
+      );
+
+      if (data) {
+        toast.success(
+          "You've successfully sent your message, you would be contacted shortly",
+          {
+            onClose: () => {
+              setLoading(false);
+            },
+          }
+        );
+        return data;
+      }
+    } catch (error) {
+      toast.error(error.response.data.error);
+      toast.error(error.message);
+      toast.error(error.response.data?.message);
+      setLoading(false);
+    }
+  };
 
   const getNews = async () => {
     setLoading(true);
@@ -28,11 +80,11 @@ const ApiProvider = ({ children }) => {
 
       return data;
     } catch (error) {
-      setLoading(false);
+      setLoading(true);
       console.log(error);
-      toast.error(error?.response?.data?.error);
-      toast.error(error?.message);
-      toast.error(error?.response?.data?.message);
+      // toast.error(error?.response?.data?.error);
+      // toast.error(error?.message);
+      // toast.error(error?.response?.data?.message);
     }
   };
 
@@ -47,9 +99,9 @@ const ApiProvider = ({ children }) => {
 
       return data;
     } catch (error) {
-      setLoading(false);
-      toast.error(error.response.data.error);
-      toast.error(error.response.data?.message);
+      setLoading(true);
+      // toast.error(error.response.data.error);
+      // toast.error(error.response.data?.message);
     }
   };
 
@@ -64,11 +116,11 @@ const ApiProvider = ({ children }) => {
 
       return data;
     } catch (error) {
-      setLoading(false);
+      setLoading(true);
       console.log(error);
-      toast.error(error?.response?.data?.error);
-      toast.error(error?.message);
-      toast.error(error?.response?.data?.message);
+      // toast.error(error?.response?.data?.error);
+      // toast.error(error?.message);
+      // toast.error(error?.response?.data?.message);
     }
   };
 
@@ -84,11 +136,11 @@ const ApiProvider = ({ children }) => {
 
       return data;
     } catch (error) {
-      setLoading(false);
+      setLoading(true);
       console.log(error);
-      toast.error(error?.response?.data?.error);
-      toast.error(error?.message);
-      toast.error(error?.response?.data?.message);
+      // toast.error(error?.response?.data?.error);
+      // toast.error(error?.message);
+      // toast.error(error?.response?.data?.message);
     }
   };
 
@@ -103,9 +155,9 @@ const ApiProvider = ({ children }) => {
 
       return data;
     } catch (error) {
-      setLoading(false);
-      toast.error(error.response.data.error);
-      toast.error(error.response.data?.message);
+      setLoading(true);
+      // toast.error(error.response.data.error);
+      // toast.error(error.response.data?.message);
     }
   };
 
@@ -120,11 +172,11 @@ const ApiProvider = ({ children }) => {
 
       return data;
     } catch (error) {
-      setLoading(false);
+      setLoading(true);
       console.log(error);
-      toast.error(error?.response?.data?.error);
-      toast.error(error?.message);
-      toast.error(error?.response?.data?.message);
+      // toast.error(error?.response?.data?.error);
+      // toast.error(error?.message);
+      // toast.error(error?.response?.data?.message);
     }
   };
 
@@ -139,11 +191,11 @@ const ApiProvider = ({ children }) => {
 
       return data;
     } catch (error) {
-      setLoading(false);
+      setLoading(true);
       console.log(error);
-      toast.error(error?.response?.data?.error);
-      toast.error(error?.message);
-      toast.error(error?.response?.data?.message);
+      // toast.error(error?.response?.data?.error);
+      // toast.error(error?.message);
+      // toast.error(error?.response?.data?.message);
     }
   };
 
@@ -158,9 +210,9 @@ const ApiProvider = ({ children }) => {
 
       return data;
     } catch (error) {
-      setLoading(false);
-      toast.error(error.response.data.error);
-      toast.error(error.response.data?.message);
+      setLoading(true);
+      // toast.error(error.response.data.error);
+      // toast.error(error.response.data?.message);
     }
   };
 
@@ -168,6 +220,7 @@ const ApiProvider = ({ children }) => {
     getNews();
     getEvents();
     getAllCalender();
+    getGallery();
   }, []);
 
   return (
@@ -186,9 +239,11 @@ const ApiProvider = ({ children }) => {
         gallery,
         getSingleEvents,
         getSingleNews,
+        addSubscribers,
+        subLoading,
+        sendMessage,
       }}>
       {children}
-      <ToastContainer />
     </AppContext.Provider>
   );
 };

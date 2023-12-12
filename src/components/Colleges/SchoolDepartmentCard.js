@@ -16,7 +16,7 @@ const SchoolDepartmentCard = ({ data, triggeredFrom }) => {
           to={
             triggeredFrom === "school"
               ? `/Academics/colleges/college/schools/${data.name}`
-              : `/Academics/colleges/college/schools/school/${data.name}`
+              : ``
           }>
           <Button
             variant="outlined"

@@ -21,7 +21,9 @@ const Sidebar = () => {
             const { links, page } = item;
             return (
               <article key={index}>
-                <h4 className="mb-2 font-bold">{page}</h4>
+                <Link to={`/${page}`} onClick={closeSidebar}>
+                  <h4 className="mb-2 font-bold">{page}</h4>
+                </Link>
                 <div className="sidebar-sublinks" onClick={closeSidebar}>
                   {links.map((link, index) => {
                     const { url, icon, label } = link;

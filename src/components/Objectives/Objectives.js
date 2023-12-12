@@ -14,7 +14,7 @@ const Objectives = () => {
       data-aos-duration="1200"
       data-aos-easing="ease-in-sine">
       <Box className="container">
-        <Title title="University Objectives" subtitle="Our Objectives" />
+        <Title title="" subtitle="Our Objectives" />
         <Box>
           <Grid container className="mt-2">
             <Grid item sm={12} md={6}>

@@ -277,7 +277,7 @@ Stripe Styles
 }
 
 .nav-logo {
-  width: 50%;
+  width: 90%;
 }
 
 .submenu.show {
@@ -408,14 +408,16 @@ Stripe Styles
 
 /*subscribe*/
 
+.rc-anchor-content,
+.grecaptcha-badge {
+  display: none !important;
+}
+
 .subHero {
   padding: "15% 0%";
 }
 
 @media (min-width: 0px) and (max-width: 575px) {
-  .subHero {
-    height: 70vh !important;
-  }
 }
 
 .subscribe {
@@ -536,6 +538,19 @@ admissions */
   background-size: cover;
   padding: "15% 0%";
   background-position: 0px 150px;
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+.boardofdirectors-section,
+.governingcouncil-section,
+.managements-section,
+.advert-section {
+  background: url("/src/assets/govern.jpg");
+  background-size: cover;
+  padding: "15% 0%";
+  background-position: 0px 0px;
   background-color: rgba(0, 0, 0, 0.55);
   background-blend-mode: overlay;
   background-attachment: fixed;
@@ -698,6 +713,16 @@ admissions */
 
 .COLLEGEOFBUSINESSLAWEDUCATIONALSCIENCES-section {
   background: url("/src/assets/law.jpg");
+  background-size: cover;
+  padding: "15% 0%";
+  background-position: 0px 0px;
+  background-color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+.TRISTATECOLLEGEOFHEALTHANDALLIEDMEDICALSCIENCES-section {
+  background: url("/src/assets/medical.jpg");
   background-size: cover;
   padding: "15% 0%";
   background-position: 0px 0px;

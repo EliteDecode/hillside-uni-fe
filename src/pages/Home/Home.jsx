@@ -10,21 +10,27 @@ import Gallery from "../../components/Gallery/Gallery";
 import Subscribe from "../../components/Subscribe/Subscribe";
 import NavFooter from "../../components/Footer/Footer";
 import AOS from "aos";
+import { useApiGlobalContext } from "../../utils/apiContext";
+import Disclaimer from "../../components/general/Disclaimer";
 
 const Home = () => {
   const { closeSubmenu } = useGlobalContext();
+  const [open, setOpen] = React.useState(false);
+  const { news, loading } = useApiGlobalContext();
 
   useEffect(() => {
     AOS.init();
     window.scrollTo(0, 0);
+    setOpen(true);
   }, []);
 
   return (
     <div>
       <Navbar />
+      <Disclaimer setOpen={setOpen} open={open} />
       <div onMouseOver={closeSubmenu}>
         <Hero />
-        <News />
+        <News items={news} loading={loading} category="news" />
         <Events />
         <CoreValues />
         <Applications />

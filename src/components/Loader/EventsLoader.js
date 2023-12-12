@@ -31,8 +31,18 @@ const EventsLoader = () => {
         primaryTypographyProps={{
           fontSize: "13px",
         }}>
-        <Skeleton width={100} height={15} animation="wave" />
-        <Skeleton width={80} height={10} animation="wave" />
+        <Skeleton
+          width={100}
+          height={15}
+          animation="wave"
+          sx={{ color: "#fff", bgcolor: "#fff" }}
+        />
+        <Skeleton
+          width={80}
+          height={10}
+          animation="wave"
+          sx={{ color: "#fff", bgcolor: "#fff" }}
+        />
       </ListItemText>
     </ListItem>
   );

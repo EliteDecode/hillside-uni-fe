@@ -8,6 +8,9 @@ import AOS from "aos";
 import SubHeros from "../../components/Hero/SubHeros";
 import VisionMission from "../../components/VisionMission/VisionMission";
 import Objectives from "../../components/Objectives/Objectives";
+import WhyUs from "../../components/WhyUs/WhyUs";
+import BoardOfRegeants from "../../components/BoardOfRegeants/BoardOfRegeants";
+import GoverningCouncil from "../../components/GoverningCouncil/GoverningCouncil";
 
 const About = () => {
   const { closeSubmenu } = useGlobalContext();
@@ -24,6 +27,9 @@ const About = () => {
         <SubHeros section="about" />
         <VisionMission />
         <Objectives />
+        <WhyUs />
+        <BoardOfRegeants />
+        <GoverningCouncil />
         <CoreValues />
         <Subscribe />
         <NavFooter />

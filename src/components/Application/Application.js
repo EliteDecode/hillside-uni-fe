@@ -2,9 +2,10 @@ import { Box, Button, Grid, Typography } from "@mui/material";
 import React from "react";
 import Title from "../general/Title";
 import applicationImg from "../../assets/application1.jpg";
+import applicationImg2 from "../../assets/apply2.jpg";
 import { Link } from "react-router-dom";
 
-const Applications = () => {
+const Applications = ({ main }) => {
   return (
     <Box
       className=" py-10 bg-[#f7f7f7]"
@@ -18,14 +19,14 @@ const Applications = () => {
           <Grid container className="">
             <Grid item sm={12} md={6}>
               <img
-                src={applicationImg}
+                src={main ? applicationImg2 : applicationImg}
                 alt="application"
                 width="100%"
                 className="rounded-l-lg"
               />
             </Grid>
             <Grid item sm={12} md={6}>
-              <Box className="custom-bg-red rounded-r-lg  text-center p-12 ">
+              <Box className="custom-bg-red rounded-r-lg  text-center p-10 ">
                 <Box className="my-8 ">
                   <Typography
                     variant="h3"
@@ -44,7 +45,7 @@ const Applications = () => {
                       opacity: "0.8",
                       marginTop: "2%",
                     }}>
-                    2023/2024 Applications coming soon
+                    2023/2024 Applications Coming Soon
                   </Typography>
                   <Typography
                     variant="h6"
@@ -60,7 +61,7 @@ const Applications = () => {
                   </Typography>
 
                   <Box className="mt-16">
-                    <Link to="/admission">
+                    <Link to="">
                       <Button
                         size="large"
                         variant="outlined"
@@ -77,7 +78,7 @@ const Applications = () => {
                             border: "1px solid #fff",
                           },
                         }}>
-                        How to Apply
+                        COMING SOON
                       </Button>
                     </Link>
                   </Box>

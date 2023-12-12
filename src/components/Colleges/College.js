@@ -42,7 +42,9 @@ const College = () => {
                       gutterBottom
                       variant="body1"
                       color="text.secondary">
-                      College of
+                      {college.college.includes("TRISTATE")
+                        ? "Tristate College of"
+                        : "College of"}
                     </Typography>
                     <Typography
                       variant="h5"

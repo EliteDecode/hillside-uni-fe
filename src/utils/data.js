@@ -36,7 +36,9 @@ import BuildIcon from "@mui/icons-material/Build";
 import engImg from "../assets/eng.jpg";
 import lawimg from "../assets/law.jpg";
 import agricImg from "../assets/agric.jpg";
+import medImg from "../assets/medical.jpg";
 import { BsBuildingFillExclamation } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 export const sublinks = [
   {
@@ -123,27 +125,48 @@ export const sublinks = [
       },
     ],
   },
-  // {
-  //   page: "Updates",
-  //   links: [
-  //     { label: "News", icon: <FaBook />, url: "/products" },
-  //     { label: "Events", icon: <FaBook />, url: "/products" },
-  //   ],
-  // },
+
+  {
+    page: "Board of Directors",
+    links: [
+      {
+        label: "Board of Regents",
+        icon: <FaBook />,
+        url: "Board of Directors/Board of Directors",
+      },
+      {
+        label: "Governing Council",
+        icon: <FaBook />,
+        url: "Board of Directors/Governing council",
+      },
+      {
+        label: "Managements",
+        icon: <FaBook />,
+        url: "Board of Directors/Managements",
+      },
+    ],
+  },
+
   {
     page: "Public Information",
     links: [
-      { label: "Policies", icon: <FaBook />, url: "Public Information" },
-      { label: "Make Enquiries", icon: <FaBook />, url: "Public Information" },
-      { label: "Our Patners", icon: <FaBook />, url: "Public Information" },
+      {
+        label: "Disclaimer",
+        icon: <FaBook />,
+        url: "Public Information",
+      },
+      {
+        label: "University Adverts",
+        icon: <FaBook />,
+        url: "Public Information/Advert",
+      },
     ],
   },
   {
     page: "Contact",
     links: [
-      { label: "enquiries@hust.edu.ng", icon: <FaBook />, url: "Contact" },
-      { label: "contact@hust.com", icon: <FaBook />, url: "Contact" },
-      { label: "+234 (901)-128-1920", icon: <FaBook />, url: "Contact" },
+      { label: "Make enquiries", icon: <FaBook />, url: "Contact" },
+      { label: "Send us a message", icon: <FaBook />, url: "Contact" },
     ],
   },
 ];
@@ -173,12 +196,12 @@ export const mainLinks = [
     page: "Student Life",
     sublinks: true,
   },
-  // {
-  //   page: "Updates",
-  //   sublinks: true,
-  // },
   {
     page: "Public Information",
+    sublinks: true,
+  },
+  {
+    page: "Board of Directors",
     sublinks: true,
   },
   {
@@ -188,10 +211,22 @@ export const mainLinks = [
 ];
 
 export const TopLinks = [
-  <Facebook sx={{ color: "#f7f7f7", opacity: "0.5", fontSize: "15px" }} />,
-  <Instagram sx={{ color: "#f7f7f7", opacity: "0.5", fontSize: "15px" }} />,
-  <LinkedIn sx={{ color: "#f7f7f7", opacity: "0.5", fontSize: "15px" }} />,
-  <Twitter sx={{ color: "#f7f7f7", opacity: "0.5", fontSize: "15px" }} />,
+  <Link to="https://instagram.com/hust_uni?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==">
+    {" "}
+    <Instagram sx={{ color: "#f7f7f7", opacity: "0.5", fontSize: "15px" }} />
+  </Link>,
+  <Link to="https://web.facebook.com/profile.php?id=100093139260751&notif_id=1699872689708600&notif_t=profile_plus_admin_invite&ref=notif">
+    {" "}
+    <Facebook sx={{ color: "#f7f7f7", opacity: "0.5", fontSize: "15px" }} />
+  </Link>,
+
+  <Link to="https://www.linkedin.com/company/hillside-university-of-science-and-technology-okemesi-ekiti">
+    <LinkedIn sx={{ color: "#f7f7f7", opacity: "0.5", fontSize: "15px" }} />
+  </Link>,
+  <Link to="https://twitter.com/Hust_uni">
+    {" "}
+    <Twitter sx={{ color: "#f7f7f7", opacity: "0.5", fontSize: "15px" }} />
+  </Link>,
 ];
 
 /* Hero Content */
@@ -200,7 +235,7 @@ export const heroContents = [
   {
     class: "content-1",
     subtitle: "Welcome to",
-    title: "Hillside Science and Technology",
+    title: "Hillside University of Science and Technology",
     subtitle2:
       "Where Innovation Meets Education and Pioneering Excellence in Science and Technology Education",
     btn1: "Apply Now",
@@ -211,17 +246,17 @@ export const heroContents = [
     subtitle: "Our Mission",
     title: "Shaping Futures In Science and Technology",
     subtitle2:
-      "Dedicated to Excellence in Education, Inspiring a Passion for Learnin and Building a Foundation for Success",
+      "Dedicated to Excellence in Education, Inspiring a Passion for Learning and Building a Foundation for Success",
     btn1: "About Us",
     btn2: "Latest News",
   },
   {
     class: "content-3",
     subtitle: "Our Expert Faculties",
-    title: "Excellent in Sci-Tech Education",
+    title: "Excellence in Sci-Technology Education",
     subtitle2:
       "Meet Our World-Class Faculties Igniting Innovation Through Research and Transforming Ideas into Solutions",
-    btn1: "Explore ",
+    btn1: "Explore",
     btn2: "Contact Us",
   },
 ];
@@ -412,9 +447,9 @@ export const galleryImages = [
     img: "https://img.freepik.com/free-photo/study-group-african-people_23-2149156390.jpg?size=626&ext=jpg&uid=R79909057&ga=GA1.2.1797571327.1691582797&semt=ais",
   },
   {
-    title: "Tech Innovation Hub",
+    title: "Technology Innovation Hub",
     description:
-      "The Tech Innovation Hub is a dynamic space for creativity and innovation. It fosters entrepreneurship, hosts tech startup incubators, and encourages students to think outside the box.",
+      "The Technology Innovation Hub is a dynamic space for creativity and innovation. It fosters entrepreneurship, hosts technologystartup incubators, and encourages students to think outside the box.",
     img: "https://img.freepik.com/free-photo/red-buildings-households_1127-2024.jpg?size=626&ext=jpg&uid=R79909057&ga=GA1.2.1797571327.1691582797&semt=ais",
   },
   {
@@ -430,9 +465,9 @@ export const galleryImages = [
     img: "https://img.freepik.com/free-photo/passageway_1127-3255.jpg?size=626&ext=jpg&uid=R79909057&ga=GA1.2.1797571327.1691582797&semt=ais",
   },
   {
-    title: "Tech Innovation Hub",
+    title: "Technology Innovation Hub",
     description:
-      "The Tech Innovation Hub is a dynamic space for creativity and innovation. It fosters entrepreneurship, hosts tech startup incubators, and encourages students to think outside the box.",
+      "The Technology Innovation Hub is a dynamic space for creativity and innovation. It fosters entrepreneurship, hosts technologystartup incubators, and encourages students to think outside the box.",
     img: "https://img.freepik.com/free-photo/red-buildings-households_1127-2024.jpg?size=626&ext=jpg&uid=R79909057&ga=GA1.2.1797571327.1691582797&semt=ais",
   },
   {
@@ -472,7 +507,7 @@ export const objectives = [
   {
     title: "Enhance Collaboration and Networking",
     description:
-      "We strive to create an environment that enhances collaboration and networking among students, faculty, and industry professionals. Our objective is to facilitate connections that lead to opportunities and partnerships in the tech sector.",
+      "We strive to create an environment that enhances collaboration and networking among students, faculty, and industry professionals. Our objective is to facilitate connections that lead to opportunities and partnerships in the technologysector.",
     icon: <GroupIcon />,
   },
 ];
@@ -494,15 +529,21 @@ export const colleges = [
     name: "ENGINEERING SCIENCES & TECHNOLOGY",
     imageUrl: engImg,
     id: 3,
-    college: "COLLEGE OF ENGINEERING SCIENCES & TECHNOLOGY",
+    college: "COLLEGE OF ENGINEERING AND COMPUTING SCIENCES",
+  },
+  {
+    name: "HEALTH AND ALLIED MEDICAL SCIENCES",
+    imageUrl: medImg,
+    id: 4,
+    college: "TRISTATE COLLEGE OF HEALTH AND ALLIED MEDICAL SCIENCES",
   },
 ];
 
 export const collegeSchools = [
   {
     id: 1,
-    name: "Agribusiness & Food Technology",
-    school: "School of Agribusiness & Food Technology",
+    name: "Agriculture",
+    school: "School of Agriculture",
     college: "COLLEGE OF AGRICULTURE, LIFE & ENVIRONMENTAL SCIENCES",
   },
   {
@@ -513,21 +554,9 @@ export const collegeSchools = [
   },
   {
     id: 3,
-    name: "Communication, Culture & Media Sciences",
-    school: "School of Communication, Culture & Media Sciences",
-    college: "COLLEGE OF AGRICULTURE, LIFE & ENVIRONMENTAL SCIENCES",
-  },
-  {
-    id: 4,
-    name: "Environmental & Earth Sciences",
-    school: "School of Environmental & Earth Sciences",
-    college: "COLLEGE OF AGRICULTURE, LIFE & ENVIRONMENTAL SCIENCES",
-  },
-  {
-    id: 5,
-    name: "Fashion & Hospitality Sciences",
-    school: "School of Fashion & Hospitality Sciences",
-    college: "COLLEGE OF AGRICULTURE, LIFE & ENVIRONMENTAL SCIENCES",
+    name: "Communication, Culture & Media Studies",
+    school: "School of Communication, Culture & Media Studies",
+    college: "COLLEGE OF BUSINESS, LAW & EDUCATIONAL SCIENCES",
   },
   {
     id: 6,
@@ -536,101 +565,59 @@ export const collegeSchools = [
     college: "COLLEGE OF BUSINESS, LAW & EDUCATIONAL SCIENCES",
   },
   {
-    id: 7,
-    name: "Law, Arbitration & Diplomacy",
-    school: "School of Law, Arbitration & Diplomacy",
-    college: "COLLEGE OF BUSINESS, LAW & EDUCATIONAL SCIENCES",
-  },
-  {
-    id: 8,
-    name: "Security Sciences & Technology",
-    school: "School of Security Sciences & Technology",
-    college: "COLLEGE OF BUSINESS, LAW & EDUCATIONAL SCIENCES",
-  },
-  {
-    id: 9,
-    name: "Technology Education & Innovation",
-    school: "School of Technology Education & Innovation",
-    college: "COLLEGE OF BUSINESS, LAW & EDUCATIONAL SCIENCES",
-  },
-  {
-    id: 10,
-    name: "Aerospace Engineering & Aviation Tech",
-    school: "School of Aerospace Engineering & Aviation Tech",
-    college: "COLLEGE OF ENGINEERING SCIENCES & TECHNOLOGY",
-  },
-  {
     id: 11,
-    name: "Computing & Artificial Intelligence & Communications Engineering",
-    school:
-      "School of Computing & Artificial Intelligence & Communications Engineering",
-    college: "COLLEGE OF ENGINEERING SCIENCES & TECHNOLOGY",
+    name: "Computing Sciences",
+    school: "School of Computing Sciences",
+    college: "COLLEGE OF ENGINEERING AND COMPUTING SCIENCES",
   },
-  {
-    id: 12,
-    name: "Defense Engineering & Military Sciences",
-    school: "School of Defense Engineering & Military Sciences",
-    college: "COLLEGE OF ENGINEERING SCIENCES & TECHNOLOGY",
-  },
+
   {
     id: 13,
     name: "Engineering Sciences & Technology",
     school: "School of Engineering Sciences & Technology",
-    college: "COLLEGE OF ENGINEERING SCIENCES & TECHNOLOGY",
+    college: "COLLEGE OF ENGINEERING AND COMPUTING SCIENCES",
   },
   {
     id: 14,
-    name: "Power Engineering & Geophysics",
-    school: "School of Power Engineering & Geophysics",
-    college: "COLLEGE OF ENGINEERING SCIENCES & TECHNOLOGY",
+    name: "Power Engineering",
+    school: "School of Power Engineering",
+    college: "COLLEGE OF ENGINEERING AND COMPUTING SCIENCES",
   },
   {
     id: 15,
-    name: "Health & Allied Medical Sciences",
-    school: "TriState College of Health & Allied Medical Sciences",
-    college: "TriState College of Health & Allied Medical Sciences",
+    name: "Allied Health",
+    school: "School of Allied Health",
+    college: "TRISTATE COLLEGE OF HEALTH AND ALLIED MEDICAL SCIENCES",
   },
   {
     id: 16,
     name: "Dentistry",
     school: "School of Dentistry",
-    college: "TriState College of Health & Allied Medical Sciences",
+    college: "TRISTATE COLLEGE OF HEALTH AND ALLIED MEDICAL SCIENCES",
   },
   {
     id: 17,
-    name: "Human Development",
-    school: "School of Human Development",
-    college: "TriState College of Health & Allied Medical Sciences",
+    name: "Basic Medical Sciences",
+    school: "School of Basic Medical Sciences",
+    college: "TRISTATE COLLEGE OF HEALTH AND ALLIED MEDICAL SCIENCES",
   },
   {
     id: 18,
-    name: "Medicine",
-    school: "School of Medicine",
-    college: "TriState College of Health & Allied Medical Sciences",
+    name: "School of Clinical Sciences",
+    school: "School of Clinical Sciences",
+    college: "TRISTATE COLLEGE OF HEALTH AND ALLIED MEDICAL SCIENCES",
   },
   {
     id: 19,
-    name: "Nursing & Maternal Health Sciences",
-    school: "School of Nursing & Maternal Health Sciences",
-    college: "TriState College of Health & Allied Medical Sciences",
+    name: "Nursing",
+    school: "School of Nursing & Midwifery Sciences",
+    college: "TRISTATE COLLEGE OF HEALTH AND ALLIED MEDICAL SCIENCES",
   },
   {
     id: 20,
     name: "Pharmaceutical Sciences",
     school: "School of Pharmaceutical Sciences",
-    college: "TriState College of Health & Allied Medical Sciences",
-  },
-  {
-    id: 21,
-    name: "Public & Allied Health Sciences",
-    school: "School of Public & Allied Health Sciences",
-    college: "TriState College of Health & Allied Medical Sciences",
-  },
-  {
-    id: 22,
-    name: "Veterinary Medicine & Animal Health",
-    school: "School of Veterinary Medicine & Animal Health",
-    college: "TriState College of Health & Allied Medical Sciences",
+    college: "TRISTATE COLLEGE OF HEALTH AND ALLIED MEDICAL SCIENCES",
   },
 ];
 
@@ -812,1144 +799,231 @@ export const mastersPrograms = [
 
 export const departments = [
   {
-    name: "Agricultural Sciences",
-    School: "Agribusiness & Food Technology",
+    name: "Agribusiness",
+    School: "Agriculture",
     College: "College of Agriculture, Life & Environmental Sciences",
     Id: 1,
   },
   {
-    name: "Agricultural Business Operations",
-    School: "Agribusiness & Food Technology",
+    name: "Agricultural Economics",
+    School: "Agriculture",
     College: "College of Agriculture, Life & Environmental Sciences",
     Id: 2,
   },
   {
-    name: "Agricultural Economics",
-    School: "Agribusiness & Food Technology",
+    name: "Microbiology",
+    School: "Basic, Applied and Life Sciences",
     College: "College of Agriculture, Life & Environmental Sciences",
     Id: 3,
   },
-  {
-    name: "Agricultural Extension & Rural Development",
-    School: "Agribusiness & Food Technology",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 4,
-  },
-  {
-    name: "Agronomy",
-    School: "Agribusiness & Food Technology",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 5,
-  },
-  {
-    name: "Animal Science",
-    School: "Agribusiness & Food Technology",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 6,
-  },
-  {
-    name: "Horticulture",
-    School: "Agribusiness & Food Technology",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 7,
-  },
-  {
-    name: "Fish, Wildlands Sciences & Management",
-    School: "Agribusiness & Food Technology",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 8,
-  },
-  {
-    name: "Biological Sciences",
-    School: "Basic, Applied and Life Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 9,
-  },
+
   {
     name: "Forensic Sciences",
     School: "Basic, Applied and Life Sciences",
     College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 10,
+    Id: 4,
   },
+
   {
-    name: "Forensic Biology",
+    name: "Environmental Management & Toxicology",
     School: "Basic, Applied and Life Sciences",
     College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 11,
+    Id: 5,
   },
   {
-    name: "Forensic Chemistry",
+    name: "Petroleum Chemistry",
     School: "Basic, Applied and Life Sciences",
     College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 12,
+    Id: 6,
   },
-  {
-    name: "Forensic Physics",
-    School: "Basic, Applied and Life Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 13,
-  },
-  {
-    name: "Forensic Psychology",
-    School: "Basic, Applied and Life Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 14,
-  },
-  {
-    name: "Chemical Sciences",
-    School: "Basic, Applied and Life Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 15,
-  },
-  {
-    name: "Mathematical Sciences",
-    School: "Basic, Applied and Life Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 16,
-  },
-  {
-    name: "Engineering Physics",
-    School: "Basic, Applied and Life Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 17,
-  },
-  {
-    name: "Physical Sciences",
-    School: "Basic, Applied and Life Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 18,
-  },
-  {
-    name: "Environmental Physical",
-    School: "Basic, Applied and Life Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 19,
-  },
-  {
-    name: "Medical Physics",
-    School: "Basic, Applied and Life Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 20,
-  },
-  {
-    name: "Computational Physics",
-    School: "Basic, Applied and Life Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 21,
-  },
-  {
-    name: "Cinematography & Film/Video Production",
-    School: "Communication, Culture & Media Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 22,
-  },
-  {
-    name: "Fine Arts",
-    School: "Communication, Culture & Media Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 23,
-  },
-  {
-    name: "Graphic Designs",
-    School: "Communication, Culture & Media Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 24,
-  },
-  {
-    name: "Music Information Systems",
-    School: "Communication, Culture & Media Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 25,
-  },
-  {
-    name: "Music Performance",
-    School: "Communication, Culture & Media Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 26,
-  },
-  {
-    name: "Global Cultural Studies",
-    School: "Communication, Culture & Media Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 27,
-  },
-  {
-    name: "International Affairs & Strategic Studies",
-    School: "Communication, Culture & Media Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 28,
-  },
-  {
-    name: "Management Information Systems",
-    School: "Communication, Culture & Media Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 29,
-  },
-  {
-    name: "Mass Communication",
-    School: "Communication, Culture & Media Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 30,
-  },
-  {
-    name: "Media Production & Post Production",
-    School: "Communication, Culture & Media Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 31,
-  },
-  {
-    name: "Television & Radio",
-    School: "Communication, Culture & Media Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 32,
-  },
-  {
-    name: "Media and Social Media",
-    School: "Communication, Culture & Media Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 33,
-  },
-  {
-    name: "Playwriting & Screenwriting",
-    School: "Communication, Culture & Media Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 34,
-  },
-  {
-    name: "Public Relations/Image Management",
-    School: "Communication, Culture & Media Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 35,
-  },
-  {
-    name: "Theater Design & Technical Production",
-    School: "Communication, Culture & Media Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 36,
-  },
-  {
-    name: "Architecture",
-    School: "Environmental & Earth Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 37,
-  },
-  {
-    name: "Building Technology/Construction Science",
-    School: "Environmental & Earth Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 38,
-  },
-  {
-    name: "Climatology Sciences",
-    School: "Environmental & Earth Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 39,
-  },
-  {
-    name: "Environmental & Estates Management",
-    School: "Environmental & Earth Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 40,
-  },
-  {
-    name: "Estates Management",
-    School: "Environmental & Earth Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 41,
-  },
-  {
-    name: "Industrial Design",
-    School: "Environmental & Earth Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 42,
-  },
-  {
-    name: "Quantity Surveying",
-    School: "Environmental & Earth Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 43,
-  },
-  {
-    name: "Surveying & Geoinformatics",
-    School: "Environmental & Earth Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 44,
-  },
-  {
-    name: "Urban & Regional Planning",
-    School: "Environmental & Earth Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 45,
-  },
-  {
-    name: "Geographic Information Systems",
-    School: "Environmental & Earth Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 46,
-  },
-  {
-    name: "Geography",
-    School: "Environmental & Earth Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 47,
-  },
-  {
-    name: "Geology",
-    School: "Environmental & Earth Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 48,
-  },
-  {
-    name: "Project Engineering & Management",
-    School: "Environmental & Earth Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 49,
-  },
-  {
-    name: "Catering & Hospitality Management",
-    School: "Fashion & Hospitality Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 50,
-  },
-  {
-    name: "Fashion Design & Management",
-    School: "Fashion & Hospitality Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 51,
-  },
-  {
-    name: "Textile Technology",
-    School: "Fashion & Hospitality Sciences",
-    College: "College of Agriculture, Life & Environmental Sciences",
-    Id: 52,
-  },
+
   {
     name: "Accounting",
     School: "Business Economics & Technology Management",
     College: "College of Business, Law & Educational Sciences",
-    Id: 53,
+    Id: 7,
   },
   {
     name: "Economics",
     School: "Business Economics & Technology Management",
     College: "College of Business, Law & Educational Sciences",
-    Id: 54,
+    Id: 8,
   },
+
   {
-    name: "Applied Economics",
+    name: "Logistics and Supply Chain Management",
     School: "Business Economics & Technology Management",
     College: "College of Business, Law & Educational Sciences",
-    Id: 55,
+    Id: 9,
   },
+
   {
-    name: "Business Data Analytics",
-    School: "Business Economics & Technology Management",
+    name: "Mass Communication",
+    School: "Communication, Culture & Media Studies",
     College: "College of Business, Law & Educational Sciences",
-    Id: 56,
+    Id: 10,
   },
+
   {
-    name: "Financial Information Systems",
-    School: "Business Economics & Technology Management",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 57,
+    name: "Computing & Artificial Intelligence",
+    School: "Computing Sciences",
+    College: "College of Engineering And Computing Sciences",
+    Id: 11,
   },
-  {
-    name: "Financial Mathematics",
-    School: "Business Economics & Technology Management",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 58,
-  },
-  {
-    name: "Financial Technology",
-    School: "Business Economics & Technology Management",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 59,
-  },
-  {
-    name: "Health Systems Management",
-    School: "Business Economics & Technology Management",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 60,
-  },
-  {
-    name: "International Business/Development",
-    School: "Business Economics & Technology Management",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 61,
-  },
-  {
-    name: "Management Information Systems",
-    School: "Business Economics & Technology Management",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 62,
-  },
-  {
-    name: "Management Sciences",
-    School: "Business Economics & Technology Management",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 63,
-  },
-  {
-    name: "Music Management",
-    School: "Business Economics & Technology Management",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 64,
-  },
-  {
-    name: "Projects Management",
-    School: "Business Economics & Technology Management",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 65,
-  },
-  {
-    name: "Transport Systems Management & Technology",
-    School: "Business Economics & Technology Management",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 66,
-  },
-  {
-    name: "Criminal Justice Administration",
-    School: "Law, Arbitration & Diplomacy",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 67,
-  },
-  {
-    name: "Global Conflict Studies",
-    School: "Law, Arbitration & Diplomacy",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 68,
-  },
-  {
-    name: "Law",
-    School: "Law, Arbitration & Diplomacy",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 69,
-  },
-  {
-    name: "Criminology",
-    School: "Law, Arbitration & Diplomacy",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 70,
-  },
-  {
-    name: "Arbitration & Diplomacy",
-    School: "Law, Arbitration & Diplomacy",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 71,
-  },
-  {
-    name: "Security Sciences",
-    School: "Security Sciences & Technology",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 72,
-  },
-  {
-    name: "Security Systems Engineering",
-    School: "Security Sciences & Technology",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 73,
-  },
-  {
-    name: "Agricultural Education",
-    School: "Technology Education & Innovation",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 74,
-  },
-  {
-    name: "Computer Science",
-    School: "Technology Education & Innovation",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 75,
-  },
-  {
-    name: "Health Education",
-    School: "Technology Education & Innovation",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 76,
-  },
-  {
-    name: "Human Kinetics/Physical Education",
-    School: "Technology Education & Innovation",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 77,
-  },
-  {
-    name: "Mathematics",
-    School: "Technology Education & Innovation",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 78,
-  },
-  {
-    name: "Physics",
-    School: "Technology Education & Innovation",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 79,
-  },
-  {
-    name: "Technology Education",
-    School: "Technology Education & Innovation",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 80,
-  },
-  {
-    name: "Vocational Education",
-    School: "Technology Education & Innovation",
-    College: "College of Business, Law & Educational Sciences",
-    Id: 81,
-  },
-  {
-    name: "Aerospace Engineering",
-    School: "Aerospace Engineering & Aviation Tech",
-    College: "College of Engineering Sciences & Technology",
-    Id: 82,
-  },
-  {
-    name: "Aviation Technology",
-    School: "Aerospace Engineering & Aviation Tech",
-    College: "College of Engineering Sciences & Technology",
-    Id: 83,
-  },
-  {
-    name: "Computing & Data Sciences",
-    School: "Computing & Artificial Intelligence & Communications Engineering",
-    College: "College of Engineering Sciences & Technology",
-    Id: 84,
-  },
-  {
-    name: "Artificial Intelligence",
-    School: "Computing & Artificial Intelligence & Communications Engineering",
-    College: "College of Engineering Sciences & Technology",
-    Id: 85,
-  },
-  {
-    name: "Computational & Applied Mathematics",
-    School: "Computing & Artificial Intelligence & Communications Engineering",
-    College: "College of Engineering Sciences & Technology",
-    Id: 86,
-  },
-  {
-    name: "Computational Modeling & Data Analytics",
-    School: "Computing & Artificial Intelligence & Communications Engineering",
-    College: "College of Engineering Sciences & Technology",
-    Id: 87,
-  },
+
   {
     name: "Data Science",
-    School: "Computing & Artificial Intelligence & Communications Engineering",
-    College: "College of Engineering Sciences & Technology",
-    Id: 88,
+    School: "Computing Sciences",
+    College: "College of Engineering And Computing Sciences",
+    Id: 12,
   },
-  {
-    name: "Modeling, Virtual Environments & Simulation",
-    School: "Computing & Artificial Intelligence & Communications Engineering",
-    College: "College of Engineering Sciences & Technology",
-    Id: 89,
-  },
-  {
-    name: "Computing & Systems Engineering",
-    School: "Computing & Artificial Intelligence & Communications Engineering",
-    College: "College of Engineering Sciences & Technology",
-    Id: 90,
-  },
-  {
-    name: "Computer Engineering Sciences",
-    School: "Computing & Artificial Intelligence & Communications Engineering",
-    College: "College of Engineering Sciences & Technology",
-    Id: 91,
-  },
-  {
-    name: "Computer Information Systems",
-    School: "Computing & Artificial Intelligence & Communications Engineering",
-    College: "College of Engineering Sciences & Technology",
-    Id: 92,
-  },
-  {
-    name: "Electronics & Electrical Engineering",
-    School: "Computing & Artificial Intelligence & Communications Engineering",
-    College: "College of Engineering Sciences & Technology",
-    Id: 93,
-  },
+
   {
     name: "Software Engineering",
-    School: "Computing & Artificial Intelligence & Communications Engineering",
-    College: "College of Engineering Sciences & Technology",
-    Id: 94,
+    School: "Computing Sciences",
+    College: "College of Engineering And Computing Sciences",
+    Id: 13,
   },
   {
-    name: "Game & Interactive Media Design",
-    School: "Computing & Artificial Intelligence & Communications Engineering",
-    College: "College of Engineering Sciences & Technology",
-    Id: 95,
+    name: "Cyber Security",
+    School: "Computing Sciences",
+    College: "College of Engineering And Computing Sciences",
+    Id: 14,
   },
+
   {
-    name: "Telecommunications & Information Systems Engineering",
-    School: "Computing & Artificial Intelligence & Communications Engineering",
-    College: "College of Engineering Sciences & Technology",
-    Id: 96,
+    name: "Mechanical Engineering",
+    School: "Engineering Sciences & Technology",
+    College: "College of Engineering And Computing Sciences",
+    Id: 15,
   },
-  {
-    name: "Defense Systems Engineering",
-    School: "Defense Engineering & Military Sciences",
-    College: "College of Engineering Sciences & Technology",
-    Id: 97,
-  },
-  {
-    name: "Naval & Maritime Engineering",
-    School: "Defense Engineering & Military Sciences",
-    College: "College of Engineering Sciences & Technology",
-    Id: 98,
-  },
-  {
-    name: "Robotics Engineering",
-    School: "Defense Engineering & Military Sciences",
-    College: "College of Engineering Sciences & Technology",
-    Id: 99,
-  },
-  {
-    name: "Weapons Engineering",
-    School: "Defense Engineering & Military Sciences",
-    College: "College of Engineering Sciences & Technology",
-    Id: 100,
-  },
+
   {
     name: "Civil & Construction Engineering",
     School: "Engineering Sciences & Technology",
-    College: "College of Engineering Sciences & Technology",
-    Id: 101,
+    College: "College of Engineering And Computing Sciences",
+    Id: 16,
   },
   {
-    name: "Consumer Products Technology",
+    name: "Mechatronics Engineering",
     School: "Engineering Sciences & Technology",
-    College: "College of Engineering Sciences & Technology",
-    Id: 102,
+    College: "College of Engineering And Computing Sciences",
+    Id: 17,
   },
   {
-    name: "Industrial Engineering",
+    name: "Industrial & Production Engineering",
     School: "Engineering Sciences & Technology",
-    College: "College of Engineering Sciences & Technology",
-    Id: 103,
+    College: "College of Engineering And Computing Sciences",
+    Id: 18,
   },
+
   {
-    name: "Industrial & Product Design",
-    School: "Engineering Sciences & Technology",
-    College: "College of Engineering Sciences & Technology",
-    Id: 104,
+    name: "Aerospace Engineering",
+    School: "Power Engineering",
+    College: "College of Engineering And Computing Sciences",
+    Id: 19,
   },
+
   {
-    name: "Mechanical & Mechatronics Engineering",
-    School: "Engineering Sciences & Technology",
-    College: "College of Engineering Sciences & Technology",
-    Id: 105,
+    name: "Electrical Engineering",
+    School: "Power Engineering",
+    College: "College of Engineering And Computing Sciences",
+    Id: 20,
   },
+
   {
-    name: "Railways & Transports Systems Engineering",
-    School: "Engineering Sciences & Technology",
-    College: "College of Engineering Sciences & Technology",
-    Id: 106,
+    name: "Systems Engineering",
+    School: "Power Engineering",
+    College: "College of Engineering And Computing Sciences",
+    Id: 21,
   },
+
   {
-    name: "Chemical & Petroleum Engineering",
-    School: "Power Engineering & Geophysics",
-    College: "College of Engineering Sciences & Technology",
-    Id: 107,
+    name: "Chemical Engineering",
+    School: "Power Engineering",
+    College: "College of Engineering And Computing Sciences",
+    Id: 22,
   },
+
   {
-    name: "Electricity & Power Engineering",
-    School: "Power Engineering & Geophysics",
-    College: "College of Engineering Sciences & Technology",
-    Id: 108,
-  },
-  {
-    name: "Geophysics Engineering",
-    School: "Power Engineering & Geophysics",
-    College: "College of Engineering Sciences & Technology",
-    Id: 109,
-  },
-  {
-    name: "Materials & Metallurgical Engineering",
-    School: "Power Engineering & Geophysics",
-    College: "College of Engineering Sciences & Technology",
-    Id: 110,
-  },
-  {
-    name: "Mining & Mineral Engineering",
-    School: "Power Engineering & Geophysics",
-    College: "College of Engineering Sciences & Technology",
-    Id: 111,
-  },
-  {
-    name: "Oil & Gas Engineering",
-    School: "Power Engineering & Geophysics",
-    College: "College of Engineering Sciences & Technology",
-    Id: 112,
-  },
-  {
-    name: "Doctor of Dentistry/Doctor of Public Health",
+    name: "Dentistry",
     School: "Dentistry",
     College: "TriState College of Health & Allied Medical Sciences",
-    Id: 113,
+    Id: 23,
+  },
+
+  {
+    name: "Optometry",
+    School: "Allied Health",
+    College: "TriState College of Health & Allied Medical Sciences",
+    Id: 24,
+  },
+
+  {
+    name: "Audiology",
+    School: "Allied Health",
+    College: "TriState College of Health & Allied Medical Sciences",
+    Id: 25,
+  },
+
+  {
+    name: "Nutrition & Dietetics",
+    School: "Allied Health",
+    College: "TriState College of Health & Allied Medical Sciences",
+    Id: 26,
+  },
+
+  {
+    name: "Physiology",
+    School: "Basic Medical Sciences",
+    College: "TriState College of Health & Allied Medical Sciences",
+    Id: 27,
+  },
+
+  {
+    name: "Optometry",
+    School: "Medicine",
+    College: "TriState College of Health & Allied Medical Sciences",
+    Id: 28,
   },
   {
-    name: "Dental Technology",
-    School: "Dentistry",
+    name: "Anatomy",
+    School: "Basic Medical Sciences",
     College: "TriState College of Health & Allied Medical Sciences",
-    Id: 114,
+    Id: 29,
   },
   {
-    name: "Behavioral Sciences",
-    School: "Human Development",
+    name: "Biochemistry",
+    School: "Basic Medical Sciences",
     College: "TriState College of Health & Allied Medical Sciences",
-    Id: 115,
+    Id: 30,
   },
+
   {
-    name: "Exercise Science",
-    School: "Human Development",
+    name: "Medical Laboratory Science",
+    School: "Allied Health",
     College: "TriState College of Health & Allied Medical Sciences",
-    Id: 116,
+    Id: 31,
   },
+
   {
-    name: "Clinical Counseling & Mental Health",
-    School: "Human Development",
+    name: "Pharmaceutical Sciences",
+    School: "Pharmaceutical Sciences",
     College: "TriState College of Health & Allied Medical Sciences",
-    Id: 117,
+    Id: 32,
   },
+
   {
-    name: "Developmental Psychology & Child Development",
-    School: "Human Development",
+    name: "Clinical Sciences",
+    School: "Clinical Sciences",
     College: "TriState College of Health & Allied Medical Sciences",
-    Id: 118,
-  },
-  {
-    name: "Educational Psychology",
-    School: "Human Development",
-    College: "TriState College of Health & Allied Medical Sciences",
-    Id: 119,
-  },
-  {
-    name: "Industrial/Organizational Psychology",
-    School: "Human Development",
-    College: "TriState College of Health & Allied Medical Sciences",
-    Id: 120,
-  },
-  {
-    name: "Medical Sociology",
-    School: "Human Development",
-    College: "TriState College of Health & Allied Medical Sciences",
-    Id: 121,
+    Id: 33,
   },
   {
     name: "Nursing",
     School: "Nursing",
     College: "TriState College of Health & Allied Medical Sciences",
-    Id: 122,
-  },
-  {
-    name: "Nutrition & Dietetics",
-    School: "Nursing",
-    College: "TriState College of Health & Allied Medical Sciences",
-    Id: 123,
-  },
-  {
-    name: "Occupational Safety & Health",
-    School: "Nursing",
-    College: "TriState College of Health & Allied Medical Sciences",
-    Id: 124,
-  },
-  {
-    name: "Physical Education",
-    School: "Nursing",
-    College: "TriState College of Health & Allied Medical Sciences",
-    Id: 125,
-  },
-  {
-    name: "Physical Therapy",
-    School: "Physical Therapy",
-    College: "TriState College of Health & Allied Medical Sciences",
-    Id: 126,
-  },
-  {
-    name: "Occupational Therapy",
-    School: "Physical Therapy",
-    College: "TriState College of Health & Allied Medical Sciences",
-    Id: 127,
-  },
-  {
-    name: "Public Health & Community Health",
-    School: "Public Health",
-    College: "TriState College of Health & Allied Medical Sciences",
-    Id: 128,
-  },
-  {
-    name: "Rehabilitation & Human Services",
-    School: "Rehabilitation & Human Services",
-    College: "TriState College of Health & Allied Medical Sciences",
-    Id: 129,
-  },
-  {
-    name: "Social Work",
-    School: "Social Work",
-    College: "TriState College of Health & Allied Medical Sciences",
-    Id: 130,
-  },
-  {
-    name: "Clinical Psychology",
-    School: "Human Behavior & Development",
-    College: "TriState College of Psychology & Human Development Sciences",
-    Id: 131,
-  },
-  {
-    name: "Community & Environmental Psychology",
-    School: "Human Behavior & Development",
-    College: "TriState College of Psychology & Human Development Sciences",
-    Id: 132,
-  },
-  {
-    name: "Counseling Psychology",
-    School: "Human Behavior & Development",
-    College: "TriState College of Psychology & Human Development Sciences",
-    Id: 133,
-  },
-  {
-    name: "General Psychology",
-    School: "Human Behavior & Development",
-    College: "TriState College of Psychology & Human Development Sciences",
-    Id: 134,
-  },
-  {
-    name: "Human Development",
-    School: "Human Behavior & Development",
-    College: "TriState College of Psychology & Human Development Sciences",
-    Id: 135,
-  },
-  {
-    name: "Industrial & Organizational Psychology",
-    School: "Human Behavior & Development",
-    College: "TriState College of Psychology & Human Development Sciences",
-    Id: 136,
-  },
-  {
-    name: "Psychometrics & Quantitative Psychology",
-    School: "Human Behavior & Development",
-    College: "TriState College of Psychology & Human Development Sciences",
-    Id: 137,
-  },
-  {
-    name: "School Psychology",
-    School: "Human Behavior & Development",
-    College: "TriState College of Psychology & Human Development Sciences",
-    Id: 138,
-  },
-  {
-    name: "Sociology",
-    School: "Human Behavior & Development",
-    College: "TriState College of Psychology & Human Development Sciences",
-    Id: 139,
-  },
-  {
-    name: "Anthropology",
-    School: "Social Sciences & Cultural Studies",
-    College: "TriState College of Social Sciences & Cultural Studies",
-    Id: 140,
-  },
-  {
-    name: "Development Studies",
-    School: "Social Sciences & Cultural Studies",
-    College: "TriState College of Social Sciences & Cultural Studies",
-    Id: 141,
-  },
-  {
-    name: "Economic Development",
-    School: "Social Sciences & Cultural Studies",
-    College: "TriState College of Social Sciences & Cultural Studies",
-    Id: 142,
-  },
-  {
-    name: "History",
-    School: "Social Sciences & Cultural Studies",
-    College: "TriState College of Social Sciences & Cultural Studies",
-    Id: 143,
-  },
-  {
-    name: "International Relations",
-    School: "Social Sciences & Cultural Studies",
-    College: "TriState College of Social Sciences & Cultural Studies",
-    Id: 144,
-  },
-  {
-    name: "Journalism",
-    School: "Social Sciences & Cultural Studies",
-    College: "TriState College of Social Sciences & Cultural Studies",
-    Id: 145,
-  },
-  {
-    name: "Linguistics",
-    School: "Social Sciences & Cultural Studies",
-    College: "TriState College of Social Sciences & Cultural Studies",
-    Id: 146,
-  },
-  {
-    name: "Mass Communication",
-    School: "Social Sciences & Cultural Studies",
-    College: "TriState College of Social Sciences & Cultural Studies",
-    Id: 147,
-  },
-  {
-    name: "Political Science",
-    School: "Social Sciences & Cultural Studies",
-    College: "TriState College of Social Sciences & Cultural Studies",
-    Id: 148,
-  },
-  {
-    name: "Public Administration",
-    School: "Social Sciences & Cultural Studies",
-    College: "TriState College of Social Sciences & Cultural Studies",
-    Id: 149,
-  },
-  {
-    name: "Religious Studies",
-    School: "Social Sciences & Cultural Studies",
-    College: "TriState College of Social Sciences & Cultural Studies",
-    Id: 150,
-  },
-  {
-    name: "Sociology",
-    School: "Social Sciences & Cultural Studies",
-    College: "TriState College of Social Sciences & Cultural Studies",
-    Id: 151,
-  },
-  {
-    name: "Women & Gender Studies",
-    School: "Social Sciences & Cultural Studies",
-    College: "TriState College of Social Sciences & Cultural Studies",
-    Id: 152,
-  },
-  {
-    name: "Biblical & Religious Education",
-    School: "Religious Studies & Theology",
-    College: "TriState College of Religious Studies & Theology",
-    Id: 153,
-  },
-  {
-    name: "Islamic Studies",
-    School: "Religious Studies & Theology",
-    College: "TriState College of Religious Studies & Theology",
-    Id: 154,
-  },
-  {
-    name: "Religious Education",
-    School: "Religious Studies & Theology",
-    College: "TriState College of Religious Studies & Theology",
-    Id: 155,
-  },
-  {
-    name: "Theology",
-    School: "Religious Studies & Theology",
-    College: "TriState College of Religious Studies & Theology",
-    Id: 156,
-  },
-  {
-    name: "Social Policy & Administration",
-    School: "Social Work & Social Welfare",
-    College: "TriState College of Social Work & Social Welfare",
-    Id: 157,
-  },
-  {
-    name: "Social Welfare",
-    School: "Social Work & Social Welfare",
-    College: "TriState College of Social Work & Social Welfare",
-    Id: 158,
-  },
-  {
-    name: "Urban & Regional Planning",
-    School: "Urban & Regional Planning",
-    College: "TriState College of Urban & Regional Planning",
-    Id: 159,
-  },
-  {
-    name: "Women & Gender Studies",
-    School: "Women & Gender Studies",
-    College: "TriState College of Women & Gender Studies",
-    Id: 160,
-  },
-  {
-    name: "Elder Care",
-    School: "Gerontology & Elder Care",
-    College: "TriState College of Gerontology & Elder Care",
-    Id: 161,
-  },
-  {
-    name: "Gerontology",
-    School: "Gerontology & Elder Care",
-    College: "TriState College of Gerontology & Elder Care",
-    Id: 162,
-  },
-  {
-    name: "Human Development & Family Studies",
-    School: "Human Development & Family Studies",
-    College: "TriState College of Human Development & Family Studies",
-    Id: 163,
-  },
-  {
-    name: "Family & Child Studies",
-    School: "Human Development & Family Studies",
-    College: "TriState College of Human Development & Family Studies",
-    Id: 164,
-  },
-  {
-    name: "Nutrition & Dietetics",
-    School: "Nutrition & Dietetics",
-    College: "TriState College of Nutrition & Dietetics",
-    Id: 165,
-  },
-  {
-    name: "Clinical Nutrition",
-    School: "Nutrition & Dietetics",
-    College: "TriState College of Nutrition & Dietetics",
-    Id: 166,
-  },
-  {
-    name: "Dietetics",
-    School: "Nutrition & Dietetics",
-    College: "TriState College of Nutrition & Dietetics",
-    Id: 167,
-  },
-  {
-    name: "Food Science & Technology",
-    School: "Nutrition & Dietetics",
-    College: "TriState College of Nutrition & Dietetics",
-    Id: 168,
-  },
-  {
-    name: "Nutrition Science",
-    School: "Nutrition & Dietetics",
-    College: "TriState College of Nutrition & Dietetics",
-    Id: 169,
-  },
-  {
-    name: "Public Health",
-    School: "Public Health",
-    College: "TriState College of Public Health",
-    Id: 170,
-  },
-  {
-    name: "Social Work",
-    School: "Social Work",
-    College: "TriState College of Social Work",
-    Id: 171,
-  },
-  {
-    name: "Developmental Psychology",
-    School: "Psychology",
-    College: "TriState College of Psychology",
-    Id: 172,
-  },
-  {
-    name: "Forensic Psychology",
-    School: "Psychology",
-    College: "TriState College of Psychology",
-    Id: 173,
-  },
-  {
-    name: "Industrial & Organizational Psychology",
-    School: "Psychology",
-    College: "TriState College of Psychology",
-    Id: 174,
-  },
-  {
-    name: "School Psychology",
-    School: "Psychology",
-    College: "TriState College of Psychology",
-    Id: 175,
-  },
-  {
-    name: "Social Psychology",
-    School: "Psychology",
-    College: "TriState College of Psychology",
-    Id: 176,
-  },
-  {
-    name: "Agricultural Education",
-    School: "Education",
-    College: "TriState College of Education",
-    Id: 177,
-  },
-  {
-    name: "Curriculum & Instruction",
-    School: "Education",
-    College: "TriState College of Education",
-    Id: 178,
-  },
-  {
-    name: "Early Childhood Education",
-    School: "Education",
-    College: "TriState College of Education",
-    Id: 179,
-  },
-  {
-    name: "Educational Leadership & Administration",
-    School: "Education",
-    College: "TriState College of Education",
-    Id: 180,
-  },
-  {
-    name: "Educational Technology",
-    School: "Education",
-    College: "TriState College of Education",
-    Id: 181,
-  },
-  {
-    name: "Elementary Education",
-    School: "Education",
-    College: "TriState College of Education",
-    Id: 182,
-  },
-  {
-    name: "Higher Education Administration",
-    School: "Education",
-    College: "TriState College of Education",
-    Id: 183,
-  },
-  {
-    name: "Secondary Education",
-    School: "Education",
-    College: "TriState College of Education",
-    Id: 184,
-  },
-  {
-    name: "Special Education",
-    School: "Education",
-    College: "TriState College of Education",
-    Id: 185,
-  },
-  {
-    name: "Teacher Education",
-    School: "Education",
-    College: "TriState College of Education",
-    Id: 186,
-  },
-  {
-    name: "Adult Education",
-    School: "Continuing & Adult Education",
-    College: "TriState College of Continuing & Adult Education",
-    Id: 187,
-  },
-  {
-    name: "Distance Education",
-    School: "Continuing & Adult Education",
-    College: "TriState College of Continuing & Adult Education",
-    Id: 188,
-  },
-  {
-    name: "Adult Learning",
-    School: "Continuing & Adult Education",
-    College: "TriState College of Continuing & Adult Education",
-    Id: 189,
-  },
-  {
-    name: "Continuing Education",
-    School: "Continuing & Adult Education",
-    College: "TriState College of Continuing & Adult Education",
-    Id: 190,
+    Id: 34,
   },
 ];
 
@@ -2036,6 +1110,59 @@ export const schoolResourceContents = [
     title: "Events and Announcements",
     description:
       "Stay updated with the latest university events and announcements. We host a variety of academic, cultural, and social events to engage and inform our community.",
+  },
+];
+
+export const WhyUsData = [
+  {
+    title: "Curriculum Design",
+    description:
+      "Our curriculum is comprehensive, practical, and regularly updated to reflect the latest industry standards. We achieve this by implementing the Maranatha Institute of Science and Technology curriculum and working closely with industry leaders. This ensures that our students are equipped  with the skills, knowledge, and expertise required by employers, making them competitive in the job market upon graduation.",
+  },
+  {
+    title: "Experiential Learning",
+    description:
+      "Our structured internship schemes and cooperative programs offer students vital industry exposure, while our collaborative  projects with industry partners allow students to tackle real-world business challenges",
+  },
+  {
+    title: "Innovation and Research",
+    description:
+      "We foster research collaborations that yield innovative outcomes for both the university and industry sectors. Our shared research spaces and initiatives equip students and faculty with cuttingedge technology and industry know-how",
+  },
+  {
+    title: "Faculty Expertise",
+    description:
+      "Our faculty benefits from insights of industry specialists via guest lectures and workshops. Academic staff are encouraged to take sabbaticals within the industry to enhance their practical  knowledge and teaching approach.",
+  },
+  {
+    title: "Resource Sharing",
+    description:
+      "Our collaboration includes shared access to facilities and high-quality equipment enriched with industry inputs such as specialized software and practical case studies.  ",
+  },
+  {
+    title: "Career Pathways",
+    description:
+      "We organise campus recruitment and networking events to connect students directly with industry professionals. Our career services are tailored to meet the expectations and requirements of our industry partners.",
+  },
+  {
+    title: "Continuous Professional Development",
+    description:
+      "We provide industry-expert-led certification programs and tailor-made training to meet the learning needs of professionals, ensuring they stay at the forefront of industry trends and technological advancements.",
+  },
+  {
+    title: "Investment in Education",
+    description:
+      "Industry-funded scholarships and grants help facilitate exceptional learning environments. Corporate entities investing in academia are eligible for tax incentives and recognition.",
+  },
+  {
+    title: "Entrepreneurship and Innovation Support",
+    description:
+      "Our incubators and accelerators support entrepreneurship and innovation through mentorship, funding, and entrepreneurial courses incorporating industry expertise.",
+  },
+  {
+    title: "Strategic Influence and Consultation",
+    description:
+      "We collaborate with industry leaders to promote education policies that bolster economic growth and job creation. Our advisory teams include influential figures who help shape our long-term institutional and educational strategies",
   },
 ];
 
@@ -2171,7 +1298,7 @@ export const foodFeatures = [
   {
     title: "Friendly and Knowledgeable Staff",
     description:
-      "Our staff is dedicated to providing excellent service and helping you make the best dining choices.",
+      "Our staff are dedicated to providing excellent service and helping you make the best dining choices.",
   },
   {
     title: "Special Dietary Accommodations",

@@ -39,12 +39,21 @@ const Gallery = () => {
                   <Grid item sm={6} md={4} className="p-2">
                     <ImageViewer>
                       <img
-                        src={item.img}
+                        src={`${process.env.REACT_APP_API_URL}/uploads/images/${item.image}`}
                         alt={item.title}
                         className="border rounded-lg shadow-lg"
                       />
                     </ImageViewer>
-                    <Typography>{item.title}</Typography>
+                    <Typography
+                      sx={{
+                        textAlign: "center", // Center the text
+                        fontSize: "16px", // Adjust the font size
+                        fontWeight: "bold", // Set the font weight
+                        color: "#333", // Change the text color
+                        marginTop: "8px", // Add some top margin
+                      }}>
+                      {item.title}
+                    </Typography>
                   </Grid>
                 ))}
               </>

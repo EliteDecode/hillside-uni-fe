@@ -1,5 +1,11 @@
 import { Box, Grid } from "@mui/material";
-import { BsDribbble, BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+import {
+  BsDribbble,
+  BsFacebook,
+  BsInstagram,
+  BsLinkedin,
+  BsTwitter,
+} from "react-icons/bs";
 
 import React from "react";
 import logo from "../../assets/logo.png";
@@ -35,13 +41,22 @@ const NavFooter = () => {
     };
   }, []);
   return (
-    <Box>
+    <Box className="relative">
+      <a
+        href=" https://wa.link/fh0igg"
+        style={{ position: "fixed", bottom: "50px", right: "20px" }}
+        className="flex items-center space-x-3 px-3 py-2 bg-[#5e0001] rounded-md shadow-lg">
+        <span className="text-[12px] font-semibold text-[#f7f7f7]">
+          Chat with an Admission Advisor
+        </span>
+        <img src={require("../../assets/whatsapp.png")} width="25px" />
+      </a>
       <Box
         className={` ${isVisible ? "block" : "hidden"}`}
         style={{
           position: "fixed",
           bottom: "50px",
-          right: "50px",
+          left: "20px",
           cursor: "pointer",
         }}>
         <img
@@ -71,7 +86,7 @@ const NavFooter = () => {
                           fontSize: "15px",
                         },
                       }}>
-                      Okemisi-Ekiti
+                      Okemesi-Ekiti
                     </Typography>
                     <Typography
                       variant="h4"
@@ -87,18 +102,15 @@ const NavFooter = () => {
                     </Typography>
                   </Box>
 
-                  <Box className="my-3">
+                  <Box className="">
                     <Typography
                       variant="h4"
                       sx={{
-                        fontSize: "11px",
+                        fontSize: "15px",
                         fontWeight: "bold",
-                        opacity: "1",
-                        "@media (max-width: 567px)": {
-                          fontSize: "14px",
-                        },
+                        opacity: "0.6",
                       }}>
-                      +234-805-797-5157
+                      For Admission Enquiries
                     </Typography>
                     <Typography
                       variant="h4"
@@ -110,44 +122,20 @@ const NavFooter = () => {
                           fontSize: "14px",
                         },
                       }}>
-                      enquiries@hust.edu.ng.ng
-                    </Typography>
-                  </Box>
-
-                  <Typography
-                    variant="h4"
-                    sx={{
-                      fontSize: "15px",
-                      fontWeight: "bold",
-                      opacity: "0.6",
-                    }}>
-                    For Admission Enquiries
-                  </Typography>
-
-                  <Box className="my-3">
-                    <Typography
-                      variant="h4"
-                      sx={{
-                        fontSize: "11px",
-                        fontWeight: "bold",
-                        opacity: "1",
-                        "@media (max-width: 567px)": {
-                          fontSize: "14px",
-                        },
-                      }}>
-                      +234-805-797-5157
+                      admission@hust.edu.ng
                     </Typography>
                     <Typography
                       variant="h4"
                       sx={{
                         fontSize: "11px",
                         fontWeight: "bold",
+                        marginTop: 2,
                         opacity: "1",
                         "@media (max-width: 567px)": {
                           fontSize: "14px",
                         },
                       }}>
-                      enquiries@hust.edu.ng.ng
+                      Call: +234 911 942 9029
                     </Typography>
                   </Box>
                 </Box>
@@ -169,30 +157,30 @@ const NavFooter = () => {
                   <ul className="sm:space-y-1 space-y-1 footer-list">
                     <li>
                       <a
-                        href=""
+                        href="/About/vision&misson"
                         className="font-semibold opacity-70 text-[13px]">
                         Our Mission
                       </a>
                     </li>
                     <li>
                       <a
-                        href=""
+                        href="/About/vision&misson"
                         className="font-semibold opacity-70 text-[13px]">
                         Our Vision
                       </a>
                     </li>
                     <li>
                       <a
-                        href=""
+                        href="/About/corevalues"
                         className="font-semibold opacity-70 text-[13px]">
                         Our Core Values
                       </a>
                     </li>
                     <li>
                       <a
-                        href=""
+                        href="/About/objectives"
                         className="font-semibold opacity-70 text-[13px]">
-                        Our Strategic Positions
+                        Our Objectivess
                       </a>
                     </li>
                   </ul>
@@ -207,30 +195,30 @@ const NavFooter = () => {
                   <ul className="sm:space-y-1 space-y-1 footer-list">
                     <li>
                       <a
-                        href=""
+                        href="/resources/library"
                         className="font-semibold opacity-70 text-[13px]">
                         Library
                       </a>
                     </li>
                     <li>
                       <a
-                        href=""
+                        href="/resources/ict"
                         className="font-semibold opacity-70 text-[13px]">
-                        Registry
+                        ICT
                       </a>
                     </li>
                     <li>
                       <a
-                        href=""
+                        href="/resources/hr"
                         className="font-semibold opacity-70 text-[13px]">
-                        Consultancy
+                        Human Resources
                       </a>
                     </li>
                     <li>
                       <a
-                        href=""
+                        href="/resources/studentAffairs"
                         className="font-semibold opacity-70 text-[13px]">
-                        Training Manual
+                        Student Affairs
                       </a>
                     </li>
                   </ul>
@@ -247,21 +235,21 @@ const NavFooter = () => {
                   <ul className="sm:space-y-1 space-y-1 footer-list">
                     <li>
                       <a
-                        href=""
+                        href="/admissions"
                         className="font-semibold opacity-70 text-[13px]">
                         How to Apply
                       </a>
                     </li>
                     <li>
                       <a
-                        href=""
+                        href="/admissions"
                         className="font-semibold opacity-70 text-[13px]">
                         Requirements
                       </a>
                     </li>
                     <li>
                       <a
-                        href=""
+                        href="/admissions"
                         className="font-semibold opacity-70 text-[13px]">
                         Tuition Fees
                       </a>
@@ -278,21 +266,21 @@ const NavFooter = () => {
                   <ul className="sm:space-y-1 space-y-1 footer-list">
                     <li>
                       <a
-                        href=""
+                        href="/student life/residence"
                         className="font-semibold opacity-70 text-[13px]">
                         Residence
                       </a>
                     </li>
                     <li>
                       <a
-                        href=""
+                        href="/student life/socials"
                         className="font-semibold opacity-70 text-[13px]">
                         Socials
                       </a>
                     </li>
                     <li>
                       <a
-                        href=""
+                        href="/student life/sports"
                         className="font-semibold opacity-70 text-[13px]">
                         Sports
                       </a>
@@ -311,21 +299,21 @@ const NavFooter = () => {
                   <ul className="sm:space-y-1 space-y-1 footer-list">
                     <li>
                       <a
-                        href=""
+                        href="/academics/colleges&schools"
                         className="font-semibold opacity-70 text-[13px]">
                         Colleges
                       </a>
                     </li>
                     <li>
                       <a
-                        href=""
+                        href="/academics/calender"
                         className="font-semibold opacity-70 text-[13px]">
                         Academic Calender
                       </a>
                     </li>
                     <li>
                       <a
-                        href=""
+                        href="/academics/programmes"
                         className="font-semibold opacity-70 text-[13px]">
                         Academic Programmes
                       </a>
@@ -342,23 +330,23 @@ const NavFooter = () => {
                   <ul className="sm:space-y-1 space-y-1 footer-list">
                     <li>
                       <a
-                        href=""
+                        href="/home/news"
                         className="font-semibold opacity-70 text-[13px]">
                         News
                       </a>
                     </li>
                     <li>
                       <a
-                        href=""
+                        href="/home/events"
                         className="font-semibold opacity-70 text-[13px]">
                         Events
                       </a>
                     </li>
                     <li>
                       <a
-                        href=""
+                        href="/home/gallery"
                         className="font-semibold opacity-70 text-[13px]">
-                        Articles
+                        Gallery
                       </a>
                     </li>
                   </ul>
@@ -378,25 +366,27 @@ const NavFooter = () => {
           />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <Footer.Icon
-              href="google.com"
-              className="text-white"
-              icon={BsFacebook}
-            />
-            <Footer.Icon
-              href="google.com"
+              href="https://instagram.com/hust_uni?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="
               className="text-white"
               icon={BsInstagram}
             />
+
             <Footer.Icon
-              href="google.com"
+              href="https://web.facebook.com/profile.php?id=100093139260751&notif_id=1699872689708600&notif_t=profile_plus_admin_invite&ref=notif"
+              className="text-white"
+              icon={BsFacebook}
+            />
+
+            <Footer.Icon
+              href="https://twitter.com/Hust_uni"
               className="text-white"
               icon={BsTwitter}
             />
 
             <Footer.Icon
-              href="google.com"
+              href="https://www.linkedin.com/company/hillside-university-of-science-and-technology-okemesi-ekiti"
               className="text-white"
-              icon={BsDribbble}
+              icon={BsLinkedin}
             />
           </div>
         </div>

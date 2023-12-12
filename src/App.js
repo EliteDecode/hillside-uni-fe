@@ -4,6 +4,7 @@ import {
   Routes,
   Route,
   Navigate,
+  Redirect,
 } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Academics from "./pages/Academics/Academics";
@@ -35,6 +36,10 @@ import PublicInformation from "./pages/PublicInformation/PublicInformation";
 import ContactUsPage from "./pages/ContactUsPage/ContactUsPage";
 import SingleNews from "./pages/SingleNews/SingleNews";
 import SingleEvents from "./pages/SingleEvents/SingleEvents";
+import Directors from "./pages/Directors/Directors";
+import GoverningBody from "./pages/GoverningBody/GoverningBody";
+import Managements from "./pages/Managements/Managements";
+import AdvertPage from "./pages/AdvertPage/AdvertPage";
 
 // import Admission from "./components/Admission";
 // import StudentLife from "./components/StudentLife";
@@ -94,6 +99,23 @@ const App = () => {
         <Route path="/admission" element={<Admission />} />
 
         <Route path="/public information" element={<PublicInformation />} />
+        <Route
+          path="/Board of Directors/Board of Directors"
+          element={<Directors />}
+        />
+        <Route
+          path="/Board of Directors/Governing council"
+          element={<GoverningBody />}
+        />
+        <Route
+          path="/Board of Directors/Managements"
+          element={<Managements />}
+        />
+        <Route path="/Public Information/Advert" element={<AdvertPage />} />
+        <Route
+          path="/careers"
+          element={<Navigate to="/Public Information/Advert" replace />}
+        />
         <Route path="/contact" element={<ContactUsPage />} />
       </Routes>
     </Router>

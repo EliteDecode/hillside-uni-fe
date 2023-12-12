@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import "aos/dist/aos.css";
-
+import { ToastContainer } from "react-toastify";
 import { AppProvider } from "./utils/context";
 import { ApiProvider } from "./utils/apiContext";
 
@@ -17,5 +17,6 @@ root.render(
         <App />
       </ApiProvider>
     </AppProvider>
+    <ToastContainer />
   </React.StrictMode>
 );

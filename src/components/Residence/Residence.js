@@ -12,7 +12,7 @@ const Residence = () => {
       data-aos-duration="1200"
       data-aos-easing="ease-in-sine">
       <Box className="container">
-        <Title title="Halls of Residence" subtitle=" Our Halls of Residence" />
+        <Title title="" subtitle=" Halls of Residence" />
         <Box className="p-3 shadow-md rounded-md bg-white">
           <Grid container rowSpacing={4}>
             <Grid item sm={12} md={6} className="my-4 ">

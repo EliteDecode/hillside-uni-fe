@@ -9,21 +9,26 @@ import College from "../../components/Colleges/College";
 import Programs from "../../components/Programs/Programs";
 import Calender from "../../components/Calender/Calender";
 import AdmissionPage from "../../components/AdmissionPage/AdmissionPage";
+import Applications from "../../components/Application/Application";
+import Disclaimer from "../../components/general/Disclaimer";
 
 const Admission = () => {
   const { closeSubmenu } = useGlobalContext();
+  const [open, setOpen] = React.useState(false);
 
   useEffect(() => {
     AOS.init();
     window.scrollTo(0, 0);
+    setOpen(true);
   }, []);
 
   return (
     <div>
       <Navbar />
+      <Disclaimer setOpen={setOpen} open={open} />
       <div onMouseOver={closeSubmenu}>
         <SubHeros section="admission" />
-        <AdmissionPage />
+        <Applications main={true} />
         <Subscribe />
         <NavFooter />
       </div>

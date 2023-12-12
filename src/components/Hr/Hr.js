@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Grid,
   ListItem,
   ListItemAvatar,
@@ -11,6 +12,7 @@ import Title from "../general/Title";
 import hrImg from "../../assets/hr.jpg";
 import { libraryFeatures, schoolResourceContents } from "../../utils/data";
 import { Avatar } from "antd";
+import { Link } from "react-router-dom";
 const Hr = () => {
   return (
     <Box
@@ -56,6 +58,30 @@ const Hr = () => {
                           }}>
                           {resource.description}
                         </Typography>
+                        <Box>
+                          {resource.title === "Job Openings" && (
+                            <Link to="/Public information/advert">
+                              <Button
+                                size="small"
+                                variant="contained"
+                                disableElevation
+                                sx={{
+                                  bgcolor: "#5e0001",
+                                  marginTop: 2,
+                                  fontSize: "11px",
+                                  fontWeight: "bold",
+                                  textTransform: "capitalize",
+                                  "&:hover": {
+                                    bgcolor: "#fff",
+                                    color: "#5e0001",
+                                    border: "1px solid #5e0001",
+                                  },
+                                }}>
+                                Click here
+                              </Button>
+                            </Link>
+                          )}
+                        </Box>
                       </Box>
                     </Grid>
                   ))}

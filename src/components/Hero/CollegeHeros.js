@@ -41,8 +41,8 @@ const CollegeHeros = ({ section, title }) => {
                 textTransform: "uppercase",
 
                 "@media (max-width: 567px)": {
-                  fontSize: "44px",
-                  lineHeight: "3.5rem",
+                  fontSize: "38px",
+                  lineHeight: "2.8rem",
                 },
               }}>
               {title ? `DEPARTMENT OF ${title} ` : section}

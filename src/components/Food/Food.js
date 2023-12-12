@@ -13,7 +13,7 @@ const Food = () => {
       data-aos-duration="1200"
       data-aos-easing="ease-in-sine">
       <Box className="container">
-        <Title title="Food Services" subtitle=" Our Food Services" />
+        <Title title="" subtitle="Food Service" />
         <Box className="p-3 shadow-md rounded-md bg-white">
           <Grid container rowSpacing={4}>
             <Grid item sm={12} md={6} className="my-4 ">

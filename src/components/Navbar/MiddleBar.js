@@ -28,15 +28,17 @@ const MiddleBar = () => {
       <Box className="container">
         <nav className="nav" onMouseOver={handleSubmenu}>
           <div className="nav-center py-2  flex items-center justify-between">
-            <div className=" flex justify-between items-center w-[15%] ">
-              <img src={logo} className="nav-logo" alt="" />
+            <div className=" flex justify-between items-center w-[10%] ">
+              <Link to="/">
+                <img src={logo} className="nav-logo" alt="" />
+              </Link>
             </div>
-            <div className=" flex items-center justify-between w-[83%]">
+            <div className=" flex items-center justify-between w-[90%]">
               <ul className="nav-links space-x-1 flex items-center  ">
                 {mainLinks.map((link, index) => (
                   <Link to={`/${link.page}`} onClick={closeSubmenu}>
                     <li
-                      className={`flex px-2  py-0.5 items-center ${
+                      className={`flex px-1.5  py-0.5 items-center ${
                         location.pathname
                           .replace(/%20| /g, "")
                           .includes(`/${link.page.replace(/%20| /g, "")}`)
@@ -54,19 +56,21 @@ const MiddleBar = () => {
                   </Link>
                 ))}
                 <li>
-                  <Button
-                    size="small"
-                    variant="contained"
-                    disableElevation
-                    sx={{
-                      bgcolor: "#5e0001",
-                      color: "#fff",
-                      fontSize: "12px",
-                      fontWeight: "bold",
-                      marginLeft: 5,
-                    }}>
-                    Explore
-                  </Button>
+                  <Link to="/academics">
+                    <Button
+                      size="small"
+                      variant="contained"
+                      disableElevation
+                      sx={{
+                        bgcolor: "#5e0001",
+                        color: "#fff",
+                        fontSize: "12px",
+                        fontWeight: "bold",
+                        marginLeft: 5,
+                      }}>
+                      Explore
+                    </Button>
+                  </Link>
                 </li>
               </ul>
             </div>

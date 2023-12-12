@@ -9,6 +9,8 @@ import Residence from "../../components/Residence/Residence";
 import Sport from "../../components/Sports/Sport";
 import Socials from "../../components/Socials/Socials";
 import Food from "../../components/Food/Food";
+import Security from "../../components/Resources/Security";
+import Ambience from "../../components/Resources/Ambience";
 
 const StudentLife = () => {
   const { closeSubmenu } = useGlobalContext();
@@ -27,6 +29,8 @@ const StudentLife = () => {
         <Sport />
         <Food />
         <Socials />
+        <Security />
+        <Ambience />
 
         <Subscribe />
         <NavFooter />

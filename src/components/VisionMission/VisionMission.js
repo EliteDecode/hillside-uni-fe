@@ -14,7 +14,7 @@ const VisionMission = () => {
       data-aos-easing="ease-in-sine"
       className="mb-5">
       <Box className="container">
-        <Title title="Mission & Vision" subtitle="Our Mission & Vision" />
+        <Title title="" subtitle="Our Mission & Vision" />
         <Box>
           <Grid container rowSpacing={8} columnSpacing={2}>
             <Grid item sm={12} md={4}>
@@ -45,10 +45,9 @@ const VisionMission = () => {
                     {" "}
                     To
                   </span>{" "}
-                  generate, disseminate, advance knowledge, and educate students
-                  in science and technology to bring this knowledge to finding
-                  solutions to the major challenges facing society and the
-                  world’s challenges in the 21st century.
+                  lead the charge in educating and disseminating knowledge in
+                  science and technology and to channel that knowledge toward
+                  solving society’s challenges
                 </Typography>
               </Box>
             </Grid>
@@ -78,13 +77,11 @@ const VisionMission = () => {
                   }}>
                   <span className="text-[25px] font-bold text-[#1d6400]">
                     {" "}
-                    Our
+                    To
                   </span>{" "}
-                  Vision To be an international University recognized and noted
-                  for innovation and self-reliance projecting culturally sound
-                  and disciplined researchers and products who are committed to
-                  learning for gainful engagement for the proper education of
-                  the total man.
+                  To be a prestigious international university that champions
+                  innovation, self -reliance, and the development of culturally
+                  savvy and disciplined researchers and products.
                 </Typography>
               </Box>
             </Grid>
@@ -113,14 +110,14 @@ const VisionMission = () => {
                     lineHeight: "1.3rem",
                   }}>
                   <span className="text-[25px] font-bold text-[#5e0001]">
-                    {" "}
-                    The
+                    To
                   </span>{" "}
-                  Goal is to be an international University recognized and noted
-                  for innovation and self-reliance projecting culturally sound
-                  and disciplined researchers and products who are committed to
-                  learning for gainful engagement for the proper education of
-                  the total man.
+                  establish our university as a globally renowned institution,
+                  celebrated for its commitment to innovation, self-reliance,
+                  and the development of culturally astute and disciplined
+                  researchers and products. Our aim is to empower individuals
+                  who are dedicated to learning for the betterment of society,
+                  with a focus on holistic education.
                 </Typography>
               </Box>
             </Grid>

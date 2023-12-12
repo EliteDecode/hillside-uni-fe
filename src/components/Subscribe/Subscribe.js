@@ -1,9 +1,13 @@
+import React from "react";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as Yup from "yup";
 import { Box, Button, Typography } from "@mui/material";
 import { Input } from "antd";
-import React from "react";
 import subscribeImg from "../../assets/subscribe2.png";
+import { useApiGlobalContext } from "../../utils/apiContext";
 
 const Subscribe = () => {
+  const { subLoading, addSubscribers } = useApiGlobalContext();
   return (
     <Box
       className="subscribe"
@@ -29,39 +33,61 @@ const Subscribe = () => {
                 fontSize: "20px",
               },
             }}>
-            Stay Updated On the Latest Happenings In the University
+            Stay Updated On the latest happenings In the University
           </Typography>
 
-          <Box className="flex bg-white border mt-5 rounded-xl px-2 sm:py-1 py-0.5  w-full items-center">
-            <Input
-              placeholder="Subscribe to our newsletter"
-              style={{
-                border: "none",
-                boxShadow: "none",
-                background: "transparent",
-                color: "#5e0001",
-                fontWeight: "bold",
-                fontSize: "13px",
-              }}
-            />
-            <Button
-              type="submit"
-              className="hover:bg-#f7f7f7 hover:text-[#5e0001] hover:border-[#5e0001]"
-              sx={{
-                background: "#5e0001",
-                borderRadius: "25px",
-                padding: "10px 4px",
-                fontSize: "12px",
-                fontWeight: "bold",
-                width: "20%",
-                color: "#fff",
-                "@media (max-width:767px)": {
-                  fontSize: "9px",
-                },
-              }}>
-              Subscribe
-            </Button>
-          </Box>
+          <Formik
+            initialValues={{ email: "" }}
+            validationSchema={Yup.object().shape({
+              email: Yup.string()
+                .email("Invalid email address")
+                .required("Email is required"),
+            })}
+            onSubmit={(values) => {
+              const email = values.email;
+              addSubscribers({ email: email });
+            }}>
+            <Form className="w-full">
+              <Box className="flex bg-white border mt-5 rounded-xl px-2 sm:py-1 py-0.5  w-full items-center">
+                <Field
+                  type="email"
+                  name="email"
+                  placeholder="Subscribe to our newsletter"
+                  as={Input}
+                  style={{
+                    border: "none",
+                    boxShadow: "none",
+                    background: "transparent",
+                    color: "#5e0001",
+                    fontWeight: "bold",
+                    fontSize: "13px",
+                  }}
+                />
+                <Button
+                  type="submit"
+                  className="hover:bg-#f7f7f7 hover:text-[#5e0001] hover:border-[#5e0001]"
+                  sx={{
+                    background: "#5e0001",
+                    borderRadius: "25px",
+                    padding: "10px 4px",
+                    fontSize: "12px",
+                    fontWeight: "bold",
+                    width: "20%",
+                    color: "#fff",
+                    "@media (max-width:767px)": {
+                      fontSize: "9px",
+                    },
+                  }}>
+                  {subLoading ? "Please wait..." : "Subscribe"}
+                </Button>
+              </Box>
+              <ErrorMessage
+                name="email"
+                component="div"
+                className="text-red-600"
+              />
+            </Form>
+          </Formik>
         </Box>
       </Box>
     </Box>
