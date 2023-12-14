@@ -40,6 +40,8 @@ import Directors from "./pages/Directors/Directors";
 import GoverningBody from "./pages/GoverningBody/GoverningBody";
 import Managements from "./pages/Managements/Managements";
 import AdvertPage from "./pages/AdvertPage/AdvertPage";
+import TuitionFeePage from "./pages/TuitionFeePage/TuitionFeePage";
+import Requirements from "./pages/Requirements/Requirements";
 
 // import Admission from "./components/Admission";
 // import StudentLife from "./components/StudentLife";
@@ -97,6 +99,9 @@ const App = () => {
         <Route path="/student life/socials" element={<SocialPage />} />
 
         <Route path="/admission" element={<Admission />} />
+        <Route path="/admission" element={<Admission />} />
+        <Route path="/admission/requirements" element={<Requirements />} />
+        <Route path="/admission/tuition fees" element={<TuitionFeePage />} />
 
         <Route path="/public information" element={<PublicInformation />} />
         <Route

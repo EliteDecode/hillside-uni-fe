@@ -13,7 +13,7 @@ const Applications = ({ main }) => {
       data-aos-duration="1200"
       data-aos-easing="ease-in-sine">
       <Box className="container">
-        <Title title="How to Apply" subtitle="Get Admitted" />
+        <Title title=" Apply Now" subtitle="Get Admitted" />
 
         <Box className="" sx={{ position: "relative" }}>
           <Grid container className="">
@@ -61,7 +61,7 @@ const Applications = ({ main }) => {
                   </Typography>
 
                   <Box className="mt-16">
-                    <Link to="">
+                    <Link to="https://admissions.hust.edu.ng/">
                       <Button
                         size="large"
                         variant="outlined"
@@ -78,7 +78,7 @@ const Applications = ({ main }) => {
                             border: "1px solid #fff",
                           },
                         }}>
-                        COMING SOON
+                        APPLY NOW
                       </Button>
                     </Link>
                   </Box>

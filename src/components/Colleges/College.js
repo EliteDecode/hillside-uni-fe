@@ -13,7 +13,7 @@ import Title from "../general/Title";
 import { colleges } from "../../utils/data";
 import { Link } from "react-router-dom";
 
-const College = () => {
+const College = ({ requirements }) => {
   return (
     <Box
       id="Colleges and Schools"
@@ -22,7 +22,10 @@ const College = () => {
       data-aos-duration="1200"
       data-aos-easing="ease-in-sine">
       <Box className="container">
-        <Title title="Colleges" subtitle="Our Colleges" />
+        <Title
+          title={requirements ? "Requirements for each Colleges" : "Colleges"}
+          subtitle="Our Colleges"
+        />
 
         <Box>
           <Grid container spacing={2}>

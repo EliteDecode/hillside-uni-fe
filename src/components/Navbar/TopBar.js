@@ -3,6 +3,7 @@ import React from "react";
 import { TopLinks } from "../../utils/data";
 import { LocationOn, MailTwoTone, PhoneCallback } from "@mui/icons-material";
 import { Typography } from "antd";
+import { Link } from "react-router-dom";
 
 const TopBar = () => {
   return (
@@ -11,35 +12,37 @@ const TopBar = () => {
         <Box className=" flex flex-wrap items-center justify-between  ">
           <Box className="flex items-center sm:justify-around justify-between sm:w-auto  w-full space-x-1 sm:mb-0 mb-2">
             <Box className="space-x-4 flex ">
-              <a href={require("../../assets/brochure.pdf")} download>
-                <Button
-                  size="small"
-                  variant="contained"
-                  disableElevation
-                  sx={{
-                    bgcolor: "#fff",
-                    color: "#5e0001",
-                    fontSize: "10px",
-                    fontWeight: "bold",
-                  }}>
-                  Download brochure
-                </Button>
-              </a>
-              <Box className="sm:block hidden">
-                <Button
-                  size="small"
-                  variant="contained"
-                  disableElevation
-                  sx={{
-                    bgcolor: "#fff",
-                    color: "#5e0001",
-                    fontSize: "10px",
-                    fontWeight: "bold",
-                    marginBottom: "2%",
-                  }}>
-                  Click here to Apply
-                </Button>
-              </Box>
+              {/* <a href={require("../../assets/brochure.pdf")} download>
+              </a> */}
+              <Button
+                size="small"
+                variant="contained"
+                disableElevation
+                sx={{
+                  bgcolor: "#fff",
+                  color: "#5e0001",
+                  fontSize: "10px",
+                  fontWeight: "bold",
+                }}>
+                Download brochure
+              </Button>
+              <Link to="https://admissions.hust.edu.ng/">
+                <Box className="sm:block hidden">
+                  <Button
+                    size="small"
+                    variant="contained"
+                    disableElevation
+                    sx={{
+                      bgcolor: "#fff",
+                      color: "#5e0001",
+                      fontSize: "10px",
+                      fontWeight: "bold",
+                      marginBottom: "2%",
+                    }}>
+                    Click here to Apply
+                  </Button>
+                </Box>
+              </Link>
             </Box>
             <Box className="space-x-2 flex">
               <Button

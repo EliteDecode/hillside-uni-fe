@@ -8,9 +8,11 @@ import SubHeros from "../../components/Hero/SubHeros";
 import College from "../../components/Colleges/College";
 import Programs from "../../components/Programs/Programs";
 import Calender from "../../components/Calender/Calender";
-import AdmissionPage from "../../components/AdmissionPage/AdmissionPage";
+
 import Applications from "../../components/Application/Application";
 import Disclaimer from "../../components/general/Disclaimer";
+import AdmissionRequirements from "../../components/AdmissionPage/AdmissionRequirements";
+import AdmissionProcedures from "../../components/AdmissionPage/AdmissionProcedure";
 
 const Admission = () => {
   const { closeSubmenu } = useGlobalContext();
@@ -28,6 +30,8 @@ const Admission = () => {
       <Disclaimer setOpen={setOpen} open={open} />
       <div onMouseOver={closeSubmenu}>
         <SubHeros section="admission" />
+        <AdmissionRequirements />
+        <AdmissionProcedures />
         <Applications main={true} />
         <Subscribe />
         <NavFooter />

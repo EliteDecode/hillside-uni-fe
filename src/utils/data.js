@@ -91,8 +91,16 @@ export const sublinks = [
     page: "Admission",
     links: [
       { label: "How to Apply", icon: <FaBook />, url: "Admission" },
-      { label: "Requirements", icon: <FaBook />, url: "Admission" },
-      { label: "Tuition Fees", icon: <FaBook />, url: "Admission" },
+      {
+        label: "Requirements",
+        icon: <FaBook />,
+        url: "Admission/requirements",
+      },
+      {
+        label: "Tuition Fees",
+        icon: <FaBook />,
+        url: "Admission/tuition fees",
+      },
     ],
   },
   {

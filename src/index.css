@@ -504,7 +504,9 @@ admissions */
 }
 
 /* Events section */
-.events-section {
+.events-section,
+.tuitionfee-section,
+.requirements-section {
   background: url("/src/assets/events.jpg");
   background-size: cover;
   padding: "15% 0%";
