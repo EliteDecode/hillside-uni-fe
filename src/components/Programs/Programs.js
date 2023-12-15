@@ -21,7 +21,7 @@ const Programs = () => {
         <Title title="Academic Programmes" subtitle="Our Programmes" />
 
         <Grid container className="rounded-xl shadow-md cursor-pointer">
-          <Grid
+          {/* <Grid
             item
             sm={12}
             md={6}
@@ -80,11 +80,11 @@ const Programs = () => {
                 </Grid>
               </List>
             </Box>
-          </Grid>
+          </Grid> */}
           <Grid
             item
             sm={12}
-            md={6}
+            md={12}
             style={{ background: "#f7f7f7" }}
             sx={{
               padding: "1% 3%",
@@ -141,7 +141,7 @@ const Programs = () => {
               </List>
             </Box>
           </Grid>
-          <Box className="sm:p-5 p-0">
+          {/* <Box className="sm:p-5 p-0">
             <Button
               size="small"
               variant="contained"
@@ -159,7 +159,7 @@ const Programs = () => {
               }}>
               See all Programmes
             </Button>
-          </Box>
+          </Box> */}
         </Grid>
       </Box>
     </Box>

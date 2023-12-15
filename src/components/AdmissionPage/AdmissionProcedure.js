@@ -19,7 +19,7 @@ const AdmissionProcedures = () => {
           <List>
             <ListItem>
               <ListItemText
-                primary="1. Open your browser and log on to hust.edu.ng/admissions"
+                primary="1. Open your browser and log on to hust.edu.ng/admission"
                 secondary="Instructions: Follow the provided URL to access the admission page, or click the apply now button below"
               />
             </ListItem>

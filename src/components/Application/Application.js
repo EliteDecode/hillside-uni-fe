@@ -45,7 +45,7 @@ const Applications = ({ main }) => {
                       opacity: "0.8",
                       marginTop: "2%",
                     }}>
-                    2023/2024 Applications Coming Soon
+                    2023/2024 Applications Now Opened.
                   </Typography>
                   <Typography
                     variant="h6"

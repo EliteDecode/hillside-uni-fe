@@ -30,8 +30,8 @@ const Admission = () => {
       <Disclaimer setOpen={setOpen} open={open} />
       <div onMouseOver={closeSubmenu}>
         <SubHeros section="admission" />
-        <AdmissionRequirements />
-        <AdmissionProcedures />
+        {/* <AdmissionRequirements />
+        <AdmissionProcedures /> */}
         <Applications main={true} />
         <Subscribe />
         <NavFooter />

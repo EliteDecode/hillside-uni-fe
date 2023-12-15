@@ -68,21 +68,23 @@ const TopBar = () => {
               ))}
             </Box>
           </Box>
-          <Box className="sm:hidden block">
-            <Button
-              size="small"
-              variant="contained"
-              disableElevation
-              sx={{
-                bgcolor: "#fff",
-                color: "#5e0001",
-                fontSize: "10px",
-                fontWeight: "bold",
-                marginBottom: "2%",
-              }}>
-              Click here to Apply
-            </Button>
-          </Box>
+          <Link to="https://admissions.hust.edu.ng/">
+            <Box className="sm:hidden block">
+              <Button
+                size="small"
+                variant="contained"
+                disableElevation
+                sx={{
+                  bgcolor: "#fff",
+                  color: "#5e0001",
+                  fontSize: "10px",
+                  fontWeight: "bold",
+                  marginBottom: "2%",
+                }}>
+                Click here to Apply
+              </Button>
+            </Box>
+          </Link>
           <Box className="sm:flex hidden flex-wrap items-center sm:space-x-4 space-x-1 ">
             <Box className="flex items-center sm:mr-0 mr-4 ">
               <LocationOn sx={{ color: "#f7f7f790", fontSize: "14px" }} />
