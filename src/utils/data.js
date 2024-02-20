@@ -96,10 +96,20 @@ export const sublinks = [
         icon: <FaBook />,
         url: "Admission/requirements",
       },
+    ],
+  },
+  {
+    page: "Fees",
+    links: [
       {
-        label: "Tuition Fees",
+        label: "Fees",
         icon: <FaBook />,
-        url: "Admission/tuition fees",
+        url: "Admission/fees",
+      },
+      {
+        label: "Funding Options",
+        icon: <FaBook />,
+        url: "Admission/funding",
       },
     ],
   },
@@ -113,6 +123,16 @@ export const sublinks = [
         label: "Student Affairs",
         icon: <FaBook />,
         url: "Resources/studentAffairs",
+      },
+      {
+        label: "Disclaimer",
+        icon: <FaBook />,
+        url: "Public Information",
+      },
+      {
+        label: "University Adverts",
+        icon: <FaBook />,
+        url: "Public Information/Advert",
       },
     ],
   },
@@ -155,21 +175,21 @@ export const sublinks = [
     ],
   },
 
-  {
-    page: "Public Information",
-    links: [
-      {
-        label: "Disclaimer",
-        icon: <FaBook />,
-        url: "Public Information",
-      },
-      {
-        label: "University Adverts",
-        icon: <FaBook />,
-        url: "Public Information/Advert",
-      },
-    ],
-  },
+  // {
+  //   page: "Public Information",
+  //   links: [
+  //     {
+  //       label: "Disclaimer",
+  //       icon: <FaBook />,
+  //       url: "Public Information",
+  //     },
+  //     {
+  //       label: "University Adverts",
+  //       icon: <FaBook />,
+  //       url: "Public Information/Advert",
+  //     },
+  //   ],
+  // },
   {
     page: "Contact",
     links: [
@@ -197,6 +217,10 @@ export const mainLinks = [
     sublinks: true,
   },
   {
+    page: "Fees",
+    sublinks: true,
+  },
+  {
     page: "Resources",
     sublinks: true,
   },
@@ -204,10 +228,10 @@ export const mainLinks = [
     page: "Student Life",
     sublinks: true,
   },
-  {
-    page: "Public Information",
-    sublinks: true,
-  },
+  // {
+  //   page: "Public Information",
+  //   sublinks: true,
+  // },
   {
     page: "Board of Directors",
     sublinks: true,
@@ -1392,5 +1416,57 @@ export const foodFeatures = [
     title: "Hours to Suit Your Schedule",
     description:
       "Hillside Superstores have flexible operating hours to accommodate your busy university life.",
+  },
+];
+
+export const fundingOptions = [
+  {
+    title: "Bonded Student Loans Repayment Schemes (Federal/States/Corporate)",
+    points: [
+      "Funded through a Federal, State, or Corporate body Student Loan Scheme",
+      "Settled in cash on an established repayment schedule",
+      "Collateralized certificates released at maturity",
+      "Presentation of 'Certificate of Non-Indebtedness' required",
+    ],
+  },
+  {
+    title:
+      "Bonded Student Scholarship Service Schemes (Federal/States/Corporate/Development Agencies)",
+    points: [
+      "Funded through a Federal, State, or Corporate body Student Scholarship Scheme",
+      "Student undertakes post-graduation professional services",
+      "One year of service for each year of sponsorship",
+      "Collateralized certificates released at maturity",
+      "Presentation of 'Certificate of Service Release' required",
+    ],
+  },
+  {
+    title: "Bonded MiST Mediated Student Loans Scheme",
+    points: [
+      "Corporate Student Loan Scheme mediated by the MiST system",
+      "Settled in cash on an established repayment schedule",
+      "Collateralized certificates released at maturity",
+      "Presentation of 'Certificate of Non-Indebtedness' required",
+      "Duly executed by MiST",
+    ],
+  },
+  {
+    title: "Bonded MiST Scholarship Service Schemes",
+    points: [
+      "Funded through MiST mediated Student Scholarship Funds",
+      "Student undertakes post-graduation professional services",
+      "One year of service for each year of sponsorship",
+      "Collateralized certificates released at maturity",
+      "Presentation of 'Certificate of Service Release' required",
+      "Duly executed by the MiST organization",
+    ],
+  },
+  {
+    title: "Direct Personal Student Sponsorship",
+    points: [
+      "Non-Bonded direct program funding through student’s own resources",
+      "Uncollateralized certificates released on full completion of the course of study",
+      "Certificates released upon payment of all fees due",
+    ],
   },
 ];

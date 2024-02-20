@@ -18,7 +18,7 @@ const Management = () => {
             <Grid item sm={12} md={2}>
               <Box>
                 <img
-                  src={require("../../assets/vice.png")}
+                  src={require("../../assets/vc.jpg")}
                   className="rounded-md w-[70%]"
                 />
                 <Typography
@@ -321,39 +321,55 @@ const Management = () => {
               <Typography
                 variant="subtitle2"
                 sx={{ fontSize: "13px", opacity: "0.9" }}>
-                Dr Janet Ola is a seasoned administrator, counselor, educator,
-                mentor, radio speaker, and child psychologist. She comes to us
-                with a wealth of experience from home and abroad. At home, Dr
-                Ola worked at various levels as a teacher, an accountant, and
-                Director of women ministries in the Seventh day Adventist
-                church. Dr Janet Ola holds a bachelor's degree in business
-                administration 1979, a Masters degree in developmental
-                psychology 1988, and a doctorate degree in educational
-                psychology Ed.D 2003. <br />
-                <br /> All from her reputable almamata, Andrews University,
-                Berrien Springs ,Michigan USA. Prior to coming back to Nigeria,
-                Doctorate Dr. Janet Ola worked with young people in the
-                Residential Services of Southwest Michigan, Niles Michigan, as a
-                care provider for youths with disabilities as well as delinquent
-                youths. <br /> She also worked with Logan community services in
-                South Bend, Indiana, as program coordinator for youths with
-                behavioral challenges 1999 to 2003 She has also worked as a
-                counselor for Babcock Univeristy from 2004 to 2006, pioneering
-                the student support center. Dr Janet was the vice president for
-                student development in the reputable Babcock University from
-                2006 to 2015. <br />
+                Dr. Janet Ola: A Visionary Leader in Education and Family
+                Development at Hillside University Hillside University proudly
+                welcomes Dr. Janet Ola, a distinguished figure in the fields of
+                education, psychology, and leadership, as a key member of our
+                Student Development Office. Dr. Ola has a distinguished career
+                that highlights her extensive knowledge and global experience,
+                making her a priceless asset to our academic community. Starting
+                her professional journey in the United States, Dr. Ola worked
+                with dedication at Southwest Residential Services and Logan
+                Community Services, where she honed her skills in supporting
+                children and youth with special needs. Her compassionate
+                approach in these early years laid the foundation for a career
+                characterized by empathy and effective leadership.
                 <br />
-                Since leaving Babcock, Dr. Ola has worked as the CEO of Heritage
-                Family Life Services. Counseling and coaching troubled families.
-                She also speaks on a radio program, 'Parenting Tips for Busy
-                moms and dad'on Hope FM every week. She has authored two books,
-                'coping with stress in the parsonage,' 'more than a maid,' and
-                also coauthored another book 'Parents, youths and tertiary
-                education'. She has been happily married to the love of her life
-                for 48 years. She is a mother and a grandmother. More
-                importantly, she is a friend of Jesus. There is no doubt that
-                Dr. Ola will be an asset to Hillside University student
-                development. Office.
+                <br /> In Nigeria, Dr. Ola's career flourished in diverse roles.
+                As the Director of Women's Ministry for the Seventh-Day
+                Adventist Church, she guided spiritual growth and community
+                development for over a decade. Her transformative leadership
+                continued as Vice President for Student Development at Babcock
+                University from 2006 to 2015, where she earned numerous awards
+                for her innovative initiatives. <br />
+                Since leaving Babcock University, Dr. Ola has been the CEO of
+                Heritage Family Life Services, providing tailored coaching to
+                families, children, and couples. Her insights into family
+                dynamics are further shared through her weekly radio program
+                "Parenting for Busy Moms and Dads" on HOPE FM, making her a
+                trusted voice in family life coaching.
+                <br />
+                An accomplished author, Dr. Ola has penned the bestsellers
+                "Coping with Stress in the Parsonage" and "More Than a Maid".
+                Her literary contributions extend to co-authoring parenting
+                magazines and the insightful book "Parents, Youths and Tertiary
+                Education.". Dr. Ola's academic achievements : Bachelor's Degree
+                in Business Administration (1979) Andrews University Berrien
+                Springs, Michigan, U.S.A. Master's Degree in Developmental
+                Psychology (1988) Andrews University, Berrien Springs Michigan,
+                U.S.A. Doctoral Degree in Educational Psychology Ed.D. (2003)
+                Andrews University, Berrien Springs,Michigan, U.S.A.
+                <br />
+                In her personal life, Dr. Ola's 48-year marriage to Professor
+                Joseph Ola, her role as a mother and grandmother, her counseling
+                skills, coupled with her deep faith reflect the values she
+                brings to her professional endeavors. As Dr. Ola joins Hillside
+                University, her wealth of experience in educational and
+                administrative roles, combined with her passion for nurturing
+                young minds and families, make her an exemplary addition to our
+                institution. We are confident that her presence will greatly
+                enhance the development and success of our students and the
+                university community at large.
               </Typography>
             </Grid>
           </Grid>

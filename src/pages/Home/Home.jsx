@@ -30,10 +30,10 @@ const Home = () => {
       <Disclaimer setOpen={setOpen} open={open} />
       <div onMouseOver={closeSubmenu}>
         <Hero />
+        <Applications />
         <News items={news} loading={loading} category="news" />
         <Events />
         <CoreValues />
-        <Applications />
         <Gallery />
         <Subscribe />
         <NavFooter />

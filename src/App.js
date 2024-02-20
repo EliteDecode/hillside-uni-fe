@@ -42,6 +42,7 @@ import Managements from "./pages/Managements/Managements";
 import AdvertPage from "./pages/AdvertPage/AdvertPage";
 import TuitionFeePage from "./pages/TuitionFeePage/TuitionFeePage";
 import Requirements from "./pages/Requirements/Requirements";
+import Funding from "./pages/Funding/Funding";
 
 // import Admission from "./components/Admission";
 // import StudentLife from "./components/StudentLife";
@@ -101,7 +102,17 @@ const App = () => {
         <Route path="/admission" element={<Admission />} />
         <Route path="/admission" element={<Admission />} />
         <Route path="/admission/requirements" element={<Requirements />} />
-        <Route path="/admission/tuition fees" element={<TuitionFeePage />} />
+        <Route path="/admission/fees" element={<TuitionFeePage />} />
+        <Route
+          path="/fees"
+          element={<Navigate to="/admission/fees" replace />}
+        />
+        <Route path="/admission/funding" element={<Funding />} />
+
+        <Route
+          path="/funding"
+          element={<Navigate to="/admission/funding" replace />}
+        />
 
         <Route path="/public information" element={<PublicInformation />} />
         <Route

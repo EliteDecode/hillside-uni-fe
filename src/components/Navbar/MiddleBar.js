@@ -3,7 +3,7 @@ import logo from "../../assets/logo.png";
 import { FaBars, FaCaretDown } from "react-icons/fa";
 import { useGlobalContext } from "../../utils/context";
 import { mainLinks } from "../../utils/data";
-import { Box, Button } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import { Link, useLocation } from "react-router-dom";
 
 const MiddleBar = () => {
@@ -25,15 +25,23 @@ const MiddleBar = () => {
   };
   return (
     <Box className="sticky top-0 z-10 border bg-white">
+      <Box className="bg-gray-100 text-center py-3 ">
+        <Typography
+          variant="h6"
+          sx={{ fontWeight: "bolder", fontSize: "14px", color: "#5e0001" }}>
+          HILLSIDE UNIVERSITY OF SCIENCE AND TECHNOLOGY <br /> OKE-MESI , EKITI
+          STATE, NIGERIA.
+        </Typography>
+      </Box>
       <Box className="container">
         <nav className="nav" onMouseOver={handleSubmenu}>
           <div className="nav-center py-2  flex items-center justify-between">
-            <div className=" flex justify-between items-center w-[10%] ">
+            <div className=" flex justify-between items-center sm:w-[10%] w-[30%] ">
               <Link to="/">
                 <img src={logo} className="nav-logo" alt="" />
               </Link>
             </div>
-            <div className=" flex items-center justify-between w-[90%]">
+            <div className=" flex items-center justify-between w-[83%]">
               <ul className="nav-links space-x-1 flex items-center  ">
                 {mainLinks.map((link, index) => (
                   <Link to={`/${link.page}`} onClick={closeSubmenu}>
@@ -66,7 +74,7 @@ const MiddleBar = () => {
                         color: "#fff",
                         fontSize: "12px",
                         fontWeight: "bold",
-                        marginLeft: 5,
+                        marginLeft: 3,
                       }}>
                       Explore
                     </Button>
@@ -75,7 +83,7 @@ const MiddleBar = () => {
               </ul>
             </div>
             <button className="btn toggle-btn" onClick={openSidebar}>
-              <FaBars className="text-[45px] border rounded-md p-2" />
+              <FaBars className="text-[50px] border rounded-md p-2" />
             </button>
           </div>
         </nav>

@@ -358,12 +358,12 @@ const NavFooter = () => {
       </Box>
       <Box>
         <div className="w-full bg-gray-700 px-4 py-6 sm:flex sm:items-center sm:justify-between">
-          <Footer.Copyright
+          {/* <Footer.Copyright
             by="Purplebee tech"
             href="#"
             year={2023}
             className="text-white"
-          />
+          /> */}
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <Footer.Icon
               href="https://instagram.com/hust_uni?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="

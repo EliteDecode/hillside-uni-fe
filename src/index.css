@@ -437,7 +437,8 @@ Stripe Styles
 
 /* about page */
 
-.about-section {
+.about-section,
+.fundingoptions-section {
   background: url("/src/assets/about.jpg");
   background-size: cover;
   padding: "15% 0%";
@@ -505,7 +506,7 @@ admissions */
 
 /* Events section */
 .events-section,
-.tuitionfee-section,
+.fees-section,
 .requirements-section {
   background: url("/src/assets/events.jpg");
   background-size: cover;
@@ -787,4 +788,15 @@ admissions */
   .footer-headers {
     font-size: 17px !important;
   }
+}
+
+/* styles.css (or your Tailwind CSS file) */
+
+.wrap-text {
+  white-space: normal !important;
+  word-wrap: break-word !important;
+}
+
+.MuiDataGrid-cellContent {
+  font-weight: bold !important;
 }

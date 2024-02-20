@@ -25,7 +25,7 @@ const TuitionFeePage = () => {
     <div>
       <Navbar />
       <div onMouseOver={closeSubmenu}>
-        <SubHeros section="tuition fee" />
+        <SubHeros section="fees" />
 
         <TuitionFee />
         <Subscribe />

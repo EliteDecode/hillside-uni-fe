@@ -59,8 +59,19 @@ const Applications = ({ main }) => {
                     teaching, learning and promotes the development of
                     excellence and innovation.
                   </Typography>
+                  <Typography
+                    variant="h6"
+                    style={{
+                      color: "#fff",
+                      opacity: "0.6",
+                      fontSize: "13px",
+                      marginTop: "2%",
+                    }}>
+                    Please note that admission processing fee is 5,000 naira
+                    only.
+                  </Typography>
 
-                  <Box className="mt-16">
+                  <Box className="mt-5 text-center">
                     <Link to="https://admissions.hust.edu.ng/">
                       <Button
                         size="large"
@@ -81,6 +92,23 @@ const Applications = ({ main }) => {
                         APPLY NOW
                       </Button>
                     </Link>
+                    <Typography
+                      sx={{
+                        fontWeight: "bold",
+                        marginTop: 2,
+                        color: "#fff",
+                        // Add styles for mobile
+                        "@media(max-width: 600px)": {
+                          fontSize: "14px", // Adjust font size for better mobile visibility
+                        },
+                      }}>
+                      Call us on:{" "}
+                      <a
+                        href="tel:+2349119429029"
+                        style={{ textDecoration: "underline", color: "#fff" }}>
+                        +234 911 942 9029
+                      </a>
+                    </Typography>
                   </Box>
                 </Box>
               </Box>
