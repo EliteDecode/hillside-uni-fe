@@ -291,6 +291,14 @@ export const heroContents = [
     btn1: "Explore",
     btn2: "Contact Us",
   },
+  {
+    class: "content-4",
+    subtitle: "",
+    title: "",
+    subtitle2: "",
+    btn1: "",
+    btn2: "",
+  },
 ];
 
 export const newsArray = [
@@ -660,24 +668,9 @@ export const undergraduatePrograms = [
     meaning: "A bachelor's degree in Agriculture",
   },
   {
-    name: "Bachelor of Technology",
-    shortName: "B.Tech",
-    meaning: "A bachelor's degree in Technology",
-  },
-  {
     name: "Bachelor of Science",
     shortName: "B.Sc",
     meaning: "A bachelor's degree in Science",
-  },
-  {
-    name: "Bachelor of Fine Arts",
-    shortName: "B.F.A",
-    meaning: "A bachelor's degree in Fine Arts",
-  },
-  {
-    name: "Bachelor of Architecture",
-    shortName: "B.Arch",
-    meaning: "A bachelor's degree in Architecture",
   },
   {
     name: "Bachelor of Engineering",
@@ -699,11 +692,6 @@ export const undergraduatePrograms = [
     shortName: "BNSC/RN/RM",
     meaning:
       "A combined program in Nursing Science with Registered Nurse and Registered Midwife qualifications",
-  },
-  {
-    name: "Diploma in Nursing and Integrated Science",
-    shortName: "DNIS",
-    meaning: "A diploma program in Nursing and Integrated Science",
   },
 ];
 

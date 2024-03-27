@@ -63,58 +63,60 @@ const Hero = () => (
                 {content.subtitle2}
               </Typography>
 
-              <Box
-                className="mt-8 space-x-4"
-                data-aos="fade-down"
-                data-aos-duration="800">
-                <Link
-                  to={`${
-                    content.btn1 === "Apply Now"
-                      ? "/admission"
-                      : content.btn1 === "Explore"
-                      ? "/academics"
-                      : content.btn1 === "About Us"
-                      ? "/about"
-                      : "/"
-                  }`}>
-                  <ButtonCustome
-                    size="small"
-                    color="#5e0001"
-                    text={content.btn1}
-                    type="fill"
-                    capitalzie={false}
-                  />
-                </Link>
-                <Link
-                  to={`${
-                    content.btn2 === "Academics"
-                      ? "/academics"
-                      : content.btn2 === "Latest News"
-                      ? "/news"
-                      : content.btn2 === "Contact Us"
-                      ? "/contact"
-                      : "/"
-                  }`}>
-                  <Button
-                    size="small"
-                    variant="outlined"
-                    disableElevation
-                    sx={{
-                      bgcolor: "#fff",
-                      color: "#5e0001",
-                      fontSize: "12px",
-                      fontWeight: "bold",
-                      border: "1px solid #fff",
-                      "&:hover": {
-                        bgcolor: "transparent",
-                        color: "#fff",
+              {content.btn2 && (
+                <Box
+                  className="mt-8 space-x-4"
+                  data-aos="fade-down"
+                  data-aos-duration="800">
+                  <Link
+                    to={`${
+                      content.btn1 === "Apply Now"
+                        ? "/admission"
+                        : content.btn1 === "Explore"
+                        ? "/academics"
+                        : content.btn1 === "About Us"
+                        ? "/about"
+                        : "/"
+                    }`}>
+                    <ButtonCustome
+                      size="small"
+                      color="#5e0001"
+                      text={content.btn1}
+                      type="fill"
+                      capitalzie={false}
+                    />
+                  </Link>
+                  <Link
+                    to={`${
+                      content.btn2 === "Academics"
+                        ? "/academics"
+                        : content.btn2 === "Latest News"
+                        ? "/news"
+                        : content.btn2 === "Contact Us"
+                        ? "/contact"
+                        : "/"
+                    }`}>
+                    <Button
+                      size="small"
+                      variant="outlined"
+                      disableElevation
+                      sx={{
+                        bgcolor: "#fff",
+                        color: "#5e0001",
+                        fontSize: "12px",
+                        fontWeight: "bold",
                         border: "1px solid #fff",
-                      },
-                    }}>
-                    {content.btn2}
-                  </Button>
-                </Link>
-              </Box>
+                        "&:hover": {
+                          bgcolor: "transparent",
+                          color: "#fff",
+                          border: "1px solid #fff",
+                        },
+                      }}>
+                      {content.btn2}
+                    </Button>
+                  </Link>
+                </Box>
+              )}
             </Box>
           </Box>
         </Box>

@@ -338,6 +338,15 @@ Stripe Styles
   background-blend-mode: overlay;
 }
 
+.content-4 {
+  background: url("/src/assets/admission.jpg");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0);
+  height: 100vh;
+  background-position: 0px 0px;
+  background-blend-mode: overlay;
+}
+
 .content-2 {
   background: url("/src/assets/slider2.jpg");
   background-size: cover;
@@ -358,6 +367,14 @@ Stripe Styles
 @media (min-width: 0px) and (max-width: 567px) {
   .hero-text {
     transform: translateY(15vh);
+  }
+  .content-4 {
+    background: url("/src/assets/admission.jpg");
+    background-size: contain !important;
+    background-color: rgba(0, 0, 0, 0.25);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-blend-mode: overlay;
   }
 
   .ant-carousel {
