@@ -31,10 +31,10 @@ const Home = () => {
       <div onMouseOver={closeSubmenu}>
         <Hero />
         <Applications />
-        <News items={news} loading={loading} category="news" />
+        <News items={news} loading={loading} category="news" route="home" />
         <Events />
         <CoreValues />
-        <Gallery />
+        <Gallery route="home" />
         <Subscribe />
         <NavFooter />
       </div>

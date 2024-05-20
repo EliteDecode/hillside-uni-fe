@@ -76,6 +76,8 @@ const Hero = () => (
                         ? "/academics"
                         : content.btn1 === "About Us"
                         ? "/about"
+                        : content.btn1.includes("Remedial")
+                        ? "/admission/remedial"
                         : "/"
                     }`}>
                     <ButtonCustome
@@ -94,6 +96,8 @@ const Hero = () => (
                         ? "/news"
                         : content.btn2 === "Contact Us"
                         ? "/contact"
+                        : content.btn2.includes("Remedial")
+                        ? "/admission/remedial"
                         : "/"
                     }`}>
                     <Button

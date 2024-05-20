@@ -5,12 +5,12 @@ import logo from "../../assets/logo.png";
 import { newsArray } from "../../utils/data";
 import { Avatar, Card } from "antd";
 import ButtonCustome from "../general/ButtonCustome";
-import { useApiGlobalContext } from "../../utils/apiContext";
 import NewsLoader from "../Loader/NewsLoader";
 import { Link } from "react-router-dom";
 
 const { Meta } = Card;
-const News = ({ items, loading, category }) => {
+const News = ({ items, loading, category, route }) => {
+  const filtered = route === "home" ? items?.slice(0, 6) : items;
   return (
     <Box
       id="All News"
@@ -26,10 +26,11 @@ const News = ({ items, loading, category }) => {
             {newsArray.map((news, index) => {
               return <NewsLoader />;
             })}
+            \
           </Grid>
         ) : (
           <Grid container spacing={4}>
-            {items?.slice(0, 6).map((news, index) => {
+            {filtered?.map((news, index) => {
               const { image, title, description, createdAt, id, eventsDate } =
                 news;
 
@@ -43,16 +44,18 @@ const News = ({ items, loading, category }) => {
                     cover={
                       <img
                         alt="Logo of poster"
+                        className="sm:h-[37vh] h-full"
                         src={`${process.env.REACT_APP_API_URL}/uploads/images/${image}`}
                       />
                     }>
-                    <Meta
-                      title={title}
-                      description={
-                        description.length > 200
-                          ? ` ${description.slice(0, 200)}...`
-                          : description
-                      }
+                    <Meta title={title} />
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html:
+                          description.length > 200
+                            ? ` ${description.slice(0, 200)}...`
+                            : description,
+                      }}
                     />
                     <Box className="flex items-center justify-between mt-8">
                       <Box className="flex space-x-2 items-center">
@@ -87,6 +90,16 @@ const News = ({ items, loading, category }) => {
             })}
           </Grid>
         )}
+
+        <Box style={{ marginTop: 10 }}>
+          <Link to="/home/news" className="mt-10">
+            <ButtonCustome
+              size="medium"
+              color="#1d6400"
+              text="View More News"
+            />
+          </Link>
+        </Box>
       </Box>
     </Box>
   );

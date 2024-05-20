@@ -71,6 +71,7 @@ const CoreValues = () => {
           <Grid item sm={12} md={6} className="w-full">
             <Box className="w-full ">
               <Collapse
+                accordion={true}
                 items={reasonsToChooseUs}
                 defaultActiveKey={["1"]}
                 size="large"

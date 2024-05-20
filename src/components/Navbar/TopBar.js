@@ -7,100 +7,101 @@ import { Link } from "react-router-dom";
 
 const TopBar = () => {
   return (
-    <Box className="py-2 px-0.5 custom-bg-red">
-      <Box className="container">
-        <Box className=" flex flex-wrap items-center justify-between  ">
-          <Box className="flex items-center sm:justify-around justify-between sm:w-auto  w-full space-x-1 sm:mb-0 mb-2">
-            <Box className="space-x-4 flex ">
-              {/* <a href={require("../../assets/brochure.pdf")} download>
+    <>
+      <Box className="py-2 px-0.5 custom-bg-red">
+        <Box className="container">
+          <Box className=" flex flex-wrap items-center justify-between  ">
+            <Box className="flex items-center sm:justify-around justify-between sm:w-auto  w-full space-x-1 sm:mb-0 mb-2">
+              <Box className="space-x-4 flex ">
+                {/* <a href={require("../../assets/brochure.pdf")} download>
               </a> */}
-              <Button
-                size="small"
-                variant="contained"
-                disableElevation
-                sx={{
-                  bgcolor: "#fff",
-                  color: "#5e0001",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                }}>
-                Download brochure
-              </Button>
-              <Link to="https://admissions.hust.edu.ng/">
-                <Box className="sm:block hidden">
-                  <Button
-                    size="small"
-                    variant="contained"
-                    disableElevation
-                    sx={{
-                      bgcolor: "#fff",
-                      color: "#5e0001",
-                      fontSize: "10px",
-                      fontWeight: "bold",
-                      marginBottom: "2%",
-                    }}>
-                    Click here to Apply
-                  </Button>
-                </Box>
-              </Link>
+                <Button
+                  size="small"
+                  variant="contained"
+                  disableElevation
+                  sx={{
+                    bgcolor: "#fff",
+                    color: "#5e0001",
+                    fontSize: "10px",
+                    fontWeight: "bold",
+                  }}>
+                  Download brochure
+                </Button>
+                <Link to="https://admissions.hust.edu.ng/">
+                  <Box className="sm:block hidden">
+                    <Button
+                      size="small"
+                      variant="contained"
+                      disableElevation
+                      sx={{
+                        bgcolor: "#fff",
+                        color: "#5e0001",
+                        fontSize: "10px",
+                        fontWeight: "bold",
+                        marginBottom: "2%",
+                      }}>
+                      Click here to Apply
+                    </Button>
+                  </Box>
+                </Link>
+              </Box>
+              <Box className="space-x-2 flex">
+                <Button
+                  size="small"
+                  variant="contained"
+                  disableElevation
+                  sx={{
+                    bgcolor: "#f7f7f780",
+                    color: "#5e0001",
+                    fontSize: "10px",
+                    fontWeight: "bold",
+                    "&:hover": {
+                      background: "#5e0001",
+                      color: "#fff",
+                    },
+                  }}>
+                  Follow Us
+                </Button>
+              </Box>
+              <Box className="flex space-x-2 items-center">
+                {TopLinks.map((icon, index) => (
+                  <Box key={index}>{icon}</Box>
+                ))}
+              </Box>
             </Box>
-            <Box className="space-x-2 flex">
-              <Button
-                size="small"
-                variant="contained"
-                disableElevation
-                sx={{
-                  bgcolor: "#f7f7f780",
-                  color: "#5e0001",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                  "&:hover": {
-                    background: "#5e0001",
-                    color: "#fff",
-                  },
-                }}>
-                Follow Us
-              </Button>
-            </Box>
-            <Box className="flex space-x-2 items-center">
-              {TopLinks.map((icon, index) => (
-                <Box key={index}>{icon}</Box>
-              ))}
-            </Box>
-          </Box>
-          <Link to="https://admissions.hust.edu.ng/">
-            <Box className="sm:hidden block">
-              <Button
-                size="small"
-                variant="contained"
-                disableElevation
-                sx={{
-                  bgcolor: "#fff",
-                  color: "#5e0001",
-                  fontSize: "10px",
-                  fontWeight: "bold",
-                  marginBottom: "2%",
-                }}>
-                Click here to Apply
-              </Button>
-            </Box>
-          </Link>
-          <Box className="sm:flex hidden flex-wrap items-center sm:space-x-4 space-x-1 ">
-            <Box className="flex items-center sm:mr-0 mr-4 ">
-              <LocationOn sx={{ color: "#f7f7f790", fontSize: "14px" }} />
-              <Typography
-                variant="subtitle2"
-                style={{
-                  color: "#f7f7f7",
-                  fontSize: "9px",
-                  fontWeight: "bold",
-                }}>
-                okemesi, Ekiti , Nigeria
-              </Typography>
-            </Box>
+            <Link to="https://admissions.hust.edu.ng/">
+              <Box className="sm:hidden block">
+                <Button
+                  size="small"
+                  variant="contained"
+                  disableElevation
+                  sx={{
+                    bgcolor: "#fff",
+                    color: "#5e0001",
+                    fontSize: "10px",
+                    fontWeight: "bold",
+                    marginBottom: "2%",
+                  }}>
+                  Click here to Apply
+                </Button>
+              </Box>
+            </Link>
+            <Box className="sm:flex hidden flex-wrap items-center sm:space-x-4 space-x-1 ">
+              <Box className="flex items-center sm:mr-0 mr-4 ">
+                <LocationOn sx={{ color: "#f7f7f790", fontSize: "14px" }} />
+                <Typography
+                  variant="subtitle2"
+                  style={{
+                    color: "#f7f7f7",
+                    fontSize: "9px",
+                    fontWeight: "bold",
+                  }}>
+                  okemesi, Ekiti , Nigeria
+                </Typography>
+              </Box>
 
-            <Box className="flex items-center sm:mt-0 mt-1 ">
-              {/* <PhoneCallback sx={{ color: "#f7f7f790", fontSize: "14px" }} />
+              <Box className="flex items-center sm:mt-0 mt-1 ">
+                {/* <PhoneCallback sx={{ color: "#f7f7f790", fontSize: "14px" }} />
               <Typography
                 variant="subtitle2"
                 style={{
@@ -110,11 +111,20 @@ const TopBar = () => {
                 }}>
                 +234-(901)-070-7383
               </Typography> */}
+              </Box>
             </Box>
           </Box>
         </Box>
       </Box>
-    </Box>
+      <Box className="bg-gray-100 text-center py-3 ">
+        <Typography
+          variant="h6"
+          sx={{ fontWeight: "bold", fontSize: "14px", color: "#5e0001" }}>
+          HILLSIDE UNIVERSITY OF SCIENCE AND TECHNOLOGY <br /> OKE-MESI , EKITI
+          STATE, NIGERIA.
+        </Typography>
+      </Box>
+    </>
   );
 };
 

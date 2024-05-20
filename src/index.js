@@ -7,6 +7,11 @@ import { ToastContainer } from "react-toastify";
 import { AppProvider } from "./utils/context";
 import { ApiProvider } from "./utils/apiContext";
 
+import ReactGA from "react-ga4";
+ReactGA.initialize("G-ZXRZMECQH4");
+
+ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+
 const container = document.getElementById("root");
 const root = createRoot(container);
 

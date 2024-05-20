@@ -15,7 +15,7 @@ const Subscribe = () => {
       data-aos-duration="1200"
       data-aos-easing="ease-in-sine">
       <Box className="container">
-        <Box className="text-center flex items-center flex-col sm:w-[60%] w-full m-auto">
+        <Box className="text-center flex items-center flex-col sm:w-[65%] w-full m-auto">
           <Box>
             <img
               src={subscribeImg}
@@ -34,6 +34,17 @@ const Subscribe = () => {
               },
             }}>
             Stay Updated On the latest happenings In the University
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: "14px",
+              color: "#f7f7f7",
+              opacity: "0.7",
+              "@media (max-width: 767px)": {
+                fontSize: "12px",
+              },
+            }}>
+            Please provide your email address below.
           </Typography>
 
           <Formik

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 
@@ -76,12 +76,11 @@ const ApiProvider = ({ children }) => {
       );
       setNews(data?.data);
       setLoading(false);
-      console.log(data);
 
       return data;
     } catch (error) {
       setLoading(true);
-      console.log(error);
+
       // toast.error(error?.response?.data?.error);
       // toast.error(error?.message);
       // toast.error(error?.response?.data?.message);
@@ -117,7 +116,7 @@ const ApiProvider = ({ children }) => {
       return data;
     } catch (error) {
       setLoading(true);
-      console.log(error);
+
       // toast.error(error?.response?.data?.error);
       // toast.error(error?.message);
       // toast.error(error?.response?.data?.message);
@@ -130,14 +129,13 @@ const ApiProvider = ({ children }) => {
       const data = await axios.get(
         `${process.env.REACT_APP_API_URL}/gallery/published-gallery`
       );
-      setGallery(data?.data);
+      setGallery(data?.data.reverse());
       setLoading(false);
-      console.log(data);
 
       return data;
     } catch (error) {
       setLoading(true);
-      console.log(error);
+
       // toast.error(error?.response?.data?.error);
       // toast.error(error?.message);
       // toast.error(error?.response?.data?.message);
@@ -173,7 +171,7 @@ const ApiProvider = ({ children }) => {
       return data;
     } catch (error) {
       setLoading(true);
-      console.log(error);
+
       // toast.error(error?.response?.data?.error);
       // toast.error(error?.message);
       // toast.error(error?.response?.data?.message);
@@ -192,7 +190,7 @@ const ApiProvider = ({ children }) => {
       return data;
     } catch (error) {
       setLoading(true);
-      console.log(error);
+
       // toast.error(error?.response?.data?.error);
       // toast.error(error?.message);
       // toast.error(error?.response?.data?.message);

@@ -36,6 +36,14 @@ export default function Disclaimer({ setOpen, open }) {
             OFFICIAL NOTICE
           </Typography>
           <img src={require("../../assets/disclaimer.jpg")} />
+          <Box className="mt-10">
+            <buuton
+              className="border py-1.5 px-8 mt-10 cursor-pointer rounded-md text-white bg-teal-600"
+              onClick={handleClose}
+              style={{ marginTop: 20 }}>
+              Close
+            </buuton>
+          </Box>
         </Box>
       </Modal>
     </div>

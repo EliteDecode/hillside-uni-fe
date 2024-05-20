@@ -25,14 +25,6 @@ const MiddleBar = () => {
   };
   return (
     <Box className="sticky top-0 z-10 border bg-white">
-      <Box className="bg-gray-100 text-center py-3 ">
-        <Typography
-          variant="h6"
-          sx={{ fontWeight: "bolder", fontSize: "14px", color: "#5e0001" }}>
-          HILLSIDE UNIVERSITY OF SCIENCE AND TECHNOLOGY <br /> OKE-MESI , EKITI
-          STATE, NIGERIA.
-        </Typography>
-      </Box>
       <Box className="container">
         <nav className="nav" onMouseOver={handleSubmenu}>
           <div className="nav-center py-2  flex items-center justify-between">

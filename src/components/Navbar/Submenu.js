@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import { useGlobalContext } from "../../utils/context";
 import { Link as LinkScroll, animateScroll as scroll } from "react-scroll";
 import { Link, useLocation } from "react-router-dom";
+import { Box } from "@mui/material";
+import ReactGA from "react-ga4";
 
 const Submenu = () => {
   const pagelocation = useLocation();
@@ -28,7 +30,13 @@ const Submenu = () => {
     }
   }, [page, location, links]);
 
-  console.log(pagelocation.pathname);
+  const handleAnalytics = () => {
+    ReactGA.event({
+      category: "User Interaction",
+      action: "Button Clicked",
+      label: "Remedial Form Download",
+    });
+  };
 
   return (
     <aside
@@ -43,14 +51,49 @@ const Submenu = () => {
           {links.map((link, index) => {
             const { url, icon, label } = link;
             return (
-              <React.Fragment key={index}>
-                <Link
-                  to={`/${url}`}
-                  className=" w-full text-[11px] flex items-center">
-                  <span> {icon}</span>{" "}
-                  <span className="text-[12px]">{label}</span>
-                </Link>
-              </React.Fragment>
+              <Box className="mb-5" key={index}>
+                {url === "staff portal" ? (
+                  <a
+                    href="staff.hust.edu.ng"
+                    className=" w-full text-[11px] flex items-center">
+                    <span> {icon}</span>{" "}
+                    <span className="text-[12px]">{label}</span>
+                  </a>
+                ) : (
+                  <Link
+                    to={`/${url}`}
+                    className=" w-full text-[11px] flex items-center">
+                    <span> {icon}</span>{" "}
+                    <span className="text-[12px]">{label}</span>
+                  </Link>
+                )}
+
+                <ul className="-mt-2 px-5 ">
+                  {link?.sublinks?.map((item, index) => (
+                    <>
+                      {item.url === "Admission/remedial/form" ? (
+                        <a
+                          className="text-[11px] list-disc"
+                          onClick={handleAnalytics}
+                          href={require("../../assets/remedial.pdf")}
+                          download
+                          style={{ fontSize: "11px" }}>
+                          - {item.label}
+                        </a>
+                      ) : (
+                        <Link to={`/${item.url}`}>
+                          <li
+                            className="text-[11px] list-disc"
+                            key={index}
+                            style={{ listStyle: "disc" }}>
+                            - {item.label}
+                          </li>
+                        </Link>
+                      )}
+                    </>
+                  ))}
+                </ul>
+              </Box>
             );
           })}
         </div>

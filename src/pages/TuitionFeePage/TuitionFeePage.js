@@ -12,9 +12,19 @@ import WhyUs from "../../components/WhyUs/WhyUs";
 import BoardOfRegeants from "../../components/BoardOfRegeants/BoardOfRegeants";
 import GoverningCouncil from "../../components/GoverningCouncil/GoverningCouncil";
 import TuitionFee from "../../components/TuitionFee/TuitionFee";
+import { useParams } from "react-router-dom";
 
 const TuitionFeePage = () => {
   const { closeSubmenu } = useGlobalContext();
+
+  const { year } = useParams();
+
+  const getSession =
+    year == "23-24"
+      ? "2023-2024 Session"
+      : year == "24-25"
+      ? "2024-2025 Session"
+      : "";
 
   useEffect(() => {
     AOS.init();
@@ -25,8 +35,7 @@ const TuitionFeePage = () => {
     <div>
       <Navbar />
       <div onMouseOver={closeSubmenu}>
-        <SubHeros section="fees" />
-
+        <SubHeros section={`Fees for ${getSession}`} />
         <TuitionFee />
         <Subscribe />
         <NavFooter />

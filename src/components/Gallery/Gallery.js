@@ -5,10 +5,11 @@ import Title from "../general/Title";
 import { galleryImages } from "../../utils/data";
 import { ImageViewer } from "react-image-viewer-dv";
 import { useApiGlobalContext } from "../../utils/apiContext";
-import { Typography } from "antd";
 
-const Gallery = () => {
+const Gallery = ({ route }) => {
   const { gallery, loading } = useApiGlobalContext();
+
+  const filtered = route === "home" ? gallery?.slice(0, 6) : gallery;
 
   return (
     <Box
@@ -35,16 +36,16 @@ const Gallery = () => {
               </>
             ) : (
               <>
-                {gallery?.map((item) => (
+                {filtered?.map((item) => (
                   <Grid item sm={6} md={4} className="p-2">
                     <ImageViewer>
                       <img
                         src={`${process.env.REACT_APP_API_URL}/uploads/images/${item.image}`}
                         alt={item.title}
-                        className="border rounded-lg shadow-lg"
+                        className="border rounded-lg shadow-lg sm:h-[37vh] h-full"
                       />
                     </ImageViewer>
-                    <Typography
+                    {/* <Typography
                       sx={{
                         textAlign: "center", // Center the text
                         fontSize: "16px", // Adjust the font size
@@ -53,7 +54,7 @@ const Gallery = () => {
                         marginTop: "8px", // Add some top margin
                       }}>
                       {item.title}
-                    </Typography>
+                    </Typography> */}
                   </Grid>
                 ))}
               </>

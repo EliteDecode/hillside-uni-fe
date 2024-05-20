@@ -4,8 +4,16 @@ import Title from "../general/Title";
 import applicationImg from "../../assets/application1.jpg";
 import applicationImg2 from "../../assets/apply2.jpg";
 import { Link } from "react-router-dom";
+import ReactGA from "react-ga4";
 
 const Applications = ({ main }) => {
+  const handleAnalytics = () => {
+    ReactGA.event({
+      category: "User Interaction",
+      action: "Button Clicked",
+      label: "Apply now Form Clicked",
+    });
+  };
   return (
     <Box
       className=" py-10 bg-[#f7f7f7]"
@@ -72,7 +80,9 @@ const Applications = ({ main }) => {
                   </Typography>
 
                   <Box className="mt-5 text-center">
-                    <Link to="https://admissions.hust.edu.ng/">
+                    <Link
+                      to="https://admissions.hust.edu.ng/"
+                      onClick={handleAnalytics}>
                       <Button
                         size="large"
                         variant="outlined"

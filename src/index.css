@@ -187,8 +187,8 @@ Stripe Styles
   transform: scale(1);
 }
 .sidebar {
-  width: 90vw;
-  height: 95vh;
+  width: 100vw;
+  height: 100%;
   max-width: var(--fixed-width);
   background: var(--clr-white);
   border-radius: var(--radius);
@@ -338,6 +338,15 @@ Stripe Styles
   background-blend-mode: overlay;
 }
 
+.content-5 {
+  background: url("/src/assets/slider4x.jpg");
+  background-size: contain;
+  height: 100vh;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
 .content-4 {
   background: url("/src/assets/admission.jpg");
   background-size: cover;
@@ -468,7 +477,8 @@ Stripe Styles
 /* 
 admissions */
 
-.admission-section {
+.admission-section,
+.remedialadmission-section {
   background: url("/src/assets/about.jpg");
   background-size: cover;
   padding: "15% 0%";
@@ -524,7 +534,11 @@ admissions */
 /* Events section */
 .events-section,
 .fees-section,
-.requirements-section {
+.Feesfor2024-2025Session-section,
+.Feesfor2023-2024Session-section,
+.Feesfor2025-2026Session-section,
+.requirements-section,
+.AdmissionProcedures-section {
   background: url("/src/assets/events.jpg");
   background-size: cover;
   padding: "15% 0%";

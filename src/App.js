@@ -43,6 +43,10 @@ import AdvertPage from "./pages/AdvertPage/AdvertPage";
 import TuitionFeePage from "./pages/TuitionFeePage/TuitionFeePage";
 import Requirements from "./pages/Requirements/Requirements";
 import Funding from "./pages/Funding/Funding";
+import Remedial from "./pages/Admission/Remedial";
+import RemedialRequirements from "./pages/Requirements/RemedialRequirements";
+import RemedialHowToApply from "./pages/Requirements/RemedialHowToApply";
+import HowToApply from "./pages/Requirements/HowToApply";
 
 // import Admission from "./components/Admission";
 // import StudentLife from "./components/StudentLife";
@@ -101,17 +105,32 @@ const App = () => {
 
         <Route path="/admission" element={<Admission />} />
         <Route path="/admission" element={<Admission />} />
+        <Route path="/admission/remedial" element={<Remedial />} />
         <Route path="/admission/requirements" element={<Requirements />} />
-        <Route path="/admission/fees" element={<TuitionFeePage />} />
+        <Route
+          path="/admission/remedial/requirements"
+          element={<RemedialRequirements />}
+        />
+        <Route
+          path="/admission/remedial/apply"
+          element={<RemedialHowToApply />}
+        />
+        <Route path="/admission/apply" element={<HowToApply />} />
+        <Route path="/fees/fees/:year" element={<TuitionFeePage />} />
         <Route
           path="/fees"
-          element={<Navigate to="/admission/fees" replace />}
+          element={<Navigate to="/fees/fees/:year" replace />}
         />
-        <Route path="/admission/funding" element={<Funding />} />
+        <Route path="/fees/funding" element={<Funding />} />
 
         <Route
           path="/funding"
-          element={<Navigate to="/admission/funding" replace />}
+          element={<Navigate to="/fees/funding" replace />}
+        />
+
+        <Route
+          path="/remedial"
+          element={<Navigate to="/admission/remedial" replace />}
         />
 
         <Route path="/public information" element={<PublicInformation />} />

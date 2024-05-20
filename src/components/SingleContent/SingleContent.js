@@ -11,13 +11,9 @@ import {
 import React from "react";
 import Title from "../general/Title";
 import logo from "../../assets/logo.png";
-import { newsArray, upcomingEvents } from "../../utils/data";
-import { Avatar, Card } from "antd";
-import NewsLoader from "../Loader/NewsLoader";
+import { upcomingEvents } from "../../utils/data";
+import { Avatar } from "antd";
 import EventsLoader from "../Loader/EventsLoader";
-import { Link } from "react-router-dom";
-
-const { Meta } = Card;
 const SingleContent = ({ item, category, others, loading }) => {
   return (
     <Box
@@ -40,7 +36,13 @@ const SingleContent = ({ item, category, others, loading }) => {
                 />
 
                 <div className="p-4">
-                  <p className="text-[16px] my-3">{item?.description}</p>
+                  <div
+                    className="text-[16px] my-3"
+                    dangerouslySetInnerHTML={{
+                      __html: item?.description,
+                    }}
+                  />
+
                   <div className="flex items-center justify-between w-full">
                     <p className="font-bold text-[13px]">
                       {" "}

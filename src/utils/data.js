@@ -90,11 +90,44 @@ export const sublinks = [
   {
     page: "Admission",
     links: [
-      { label: "How to Apply", icon: <FaBook />, url: "Admission" },
       {
-        label: "Requirements",
+        label: "Remedial ",
         icon: <FaBook />,
-        url: "Admission/requirements",
+        url: "Admission/remedial",
+        sublinks: [
+          {
+            label: "How to Apply",
+            icon: <FaBook />,
+            url: "Admission/remedial/apply",
+          },
+          {
+            label: "Requirements",
+            icon: <FaBook />,
+            url: "Admission/remedial/requirements",
+          },
+          {
+            label: "Application Form",
+            icon: <FaBook />,
+            url: "Admission/remedial/form",
+          },
+        ],
+      },
+      {
+        label: "Undergraduate ",
+        icon: <FaBook />,
+        url: "Admission",
+        sublinks: [
+          {
+            label: "How to Apply",
+            icon: <FaBook />,
+            url: "Admission/apply",
+          },
+          {
+            label: "Requirements",
+            icon: <FaBook />,
+            url: "Admission/requirements",
+          },
+        ],
       },
     ],
   },
@@ -102,14 +135,19 @@ export const sublinks = [
     page: "Fees",
     links: [
       {
-        label: "Fees",
+        label: "2024/2025 Fees",
         icon: <FaBook />,
-        url: "Admission/fees",
+        url: "Fees/fees/24-25",
+      },
+      {
+        label: "2023/2024 Fees",
+        icon: <FaBook />,
+        url: "Fees/fees/23-24",
       },
       {
         label: "Funding Options",
         icon: <FaBook />,
-        url: "Admission/funding",
+        url: "Fees/funding",
       },
     ],
   },
@@ -120,7 +158,7 @@ export const sublinks = [
       { label: "Human Resources", icon: <FaBook />, url: "Resources/hr" },
       { label: "ICT Department", icon: <FaBook />, url: "Resources/ict" },
       {
-        label: "Student Affairs",
+        label: "Student Development",
         icon: <FaBook />,
         url: "Resources/studentAffairs",
       },
@@ -133,6 +171,11 @@ export const sublinks = [
         label: "University Adverts",
         icon: <FaBook />,
         url: "Public Information/Advert",
+      },
+      {
+        label: "Staff Portal",
+        icon: <FaBook />,
+        url: "staff portal",
       },
     ],
   },
@@ -155,10 +198,10 @@ export const sublinks = [
   },
 
   {
-    page: "Board of Directors",
+    page: "Our Team",
     links: [
       {
-        label: "Board of Regents",
+        label: "Board of Regent",
         icon: <FaBook />,
         url: "Board of Directors/Board of Directors",
       },
@@ -168,7 +211,7 @@ export const sublinks = [
         url: "Board of Directors/Governing council",
       },
       {
-        label: "Managements",
+        label: "Principal Officers",
         icon: <FaBook />,
         url: "Board of Directors/Managements",
       },
@@ -233,7 +276,7 @@ export const mainLinks = [
   //   sublinks: true,
   // },
   {
-    page: "Board of Directors",
+    page: "Our Team",
     sublinks: true,
   },
   {
@@ -265,6 +308,14 @@ export const TopLinks = [
 
 export const heroContents = [
   {
+    class: "content-5",
+    subtitle: "",
+    title: "",
+    subtitle2: "",
+    btn1: "",
+    btn2: "",
+  },
+  {
     class: "content-1",
     subtitle: "Welcome to",
     title: "Hillside University of Science and Technology",
@@ -291,6 +342,7 @@ export const heroContents = [
     btn1: "Explore",
     btn2: "Contact Us",
   },
+
   {
     class: "content-4",
     subtitle: "",
@@ -1299,12 +1351,7 @@ export const studentAffairsPoints = [
     description:
       "Access a wealth of academic resources, including libraries, research centers, and laboratories. These resources are designed to enhance your learning and research experience, providing valuable tools for academic success.",
   },
-  {
-    icon: <Home />,
-    title: "Housing Assistance",
-    description:
-      "Our housing assistance program helps students find safe and convenient living arrangements, both on and off-campus. We aim to provide comfortable living spaces that support your academic pursuits.",
-  },
+
   {
     icon: <SportsEsports />,
     title: "Sports and Recreation",
