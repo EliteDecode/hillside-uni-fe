@@ -9,8 +9,10 @@ import {
   agricultureCollegeRows2324,
   agricultureCollegeRows2425,
   businessCollegeRows2324,
+  businessCollegeRows2425,
   columns,
   columnsAcc,
+  columnsFeeding,
   engineeringCollegeRows2324,
   engineeringCollegeRows2425,
   feedingData,
@@ -38,7 +40,7 @@ const TuitionFee = () => {
     year == "23-24"
       ? businessCollegeRows2324
       : year == "24-25"
-      ? agricultureCollegeRows2425
+      ? businessCollegeRows2425
       : "";
   const engineeringData =
     year == "23-24"
@@ -60,7 +62,7 @@ const TuitionFee = () => {
           <h1 className="text-3xl font-bold mb-4">
             HILLSIDE UNIVERSITY OF SCIENCE AND TECHNOLOGY (HUST) SCHOOL FEE
             STRUCTURE FOR{" "}
-            {year == "23-24" ? "2023/2024" : year == "24-25" ? "2024/2025" : ""}{" "}
+            {year == "23-24" ? "2024/2025" : year == "24-25" ? "2024/2025" : ""}{" "}
             SESSION
           </h1>
 
@@ -89,6 +91,7 @@ const TuitionFee = () => {
             <Grid container spacing={4}>
               <Grid
                 item
+                className=""
                 sm={12}
                 md={12}
                 style={{ width: "100%", overflowX: "scroll" }}>
@@ -115,6 +118,7 @@ const TuitionFee = () => {
                 </div>
               </Grid>
               <Grid
+                className=""
                 item
                 sm={12}
                 md={12}
@@ -142,6 +146,7 @@ const TuitionFee = () => {
                 </div>
               </Grid>
               <Grid
+                className=""
                 item
                 sm={12}
                 md={12}
@@ -169,6 +174,7 @@ const TuitionFee = () => {
                 </div>
               </Grid>
               <Grid
+                className=""
                 item
                 sm={12}
                 md={12}
@@ -196,6 +202,7 @@ const TuitionFee = () => {
                 </div>
               </Grid>
               <Grid
+                className=""
                 item
                 sm={12}
                 md={12}
@@ -227,6 +234,7 @@ const TuitionFee = () => {
               </Grid>
 
               <Grid
+                className=""
                 item
                 sm={12}
                 md={12}
@@ -239,7 +247,7 @@ const TuitionFee = () => {
                     FEEDING (OPTIONAL)
                   </Typography>
                   <DataGrid
-                    columns={columnsAcc}
+                    columns={columnsFeeding}
                     rows={feedingData}
                     autoHeight
                     autoWidth={false}
@@ -258,6 +266,7 @@ const TuitionFee = () => {
               </Grid>
 
               <Grid
+                className=""
                 item
                 sm={12}
                 md={12}
@@ -265,6 +274,7 @@ const TuitionFee = () => {
                 <OthersTable />
               </Grid>
               <Grid
+                className=""
                 item
                 sm={12}
                 md={12}
@@ -280,7 +290,7 @@ const TuitionFee = () => {
                       <li style={{ listStyle: "none" }}>
                         <strong>i.</strong> The fee structure above is for
                         installment payment. However, students can make a
-                        one-off payment of the total fees.
+                        one-off payment of the total fee.
                       </li>
                       <li style={{ listStyle: "none" }}>
                         <strong>ii.</strong> The columns represent the fees
@@ -290,25 +300,28 @@ const TuitionFee = () => {
                         <strong>iii.</strong> To calculate your total cost
                         payable for the first semester, check for the column
                         that states your program, and add up the amount for
-                        accommodation and the amount for OTHERS as specified for
-                        your program. For example, to calculate the total cost
-                        payable for the first semester for Medicine Program; add
-                        up the Tuition Cost (2,100,000) + Accommodation
-                        (390,000) + Others (372,000) = First Semester Fee
-                        (N2,862,000) or A1 + B1 + C1 = First Semester
+                        tuition, accommodation, feeding option ( 2 meals or 3
+                        meals per day) and the amount for other fees as
+                        specified for your program. <br />
+                        For example, to calculate the total cost payable for the
+                        first semester for Medicine Program; add up the Tuition
+                        Cost (2,100,000) + Accommodation (250,000) + 2-meal
+                        option feeding (235,200) + Others (372,000) = First
+                        Semester Fee <strong>(N2,957,200)</strong> or A1 + B1 +
+                        C1 + D1 = First Semester
                       </li>
                       <li style={{ listStyle: "none" }}>
                         <strong>iv.</strong> To calculate the total cost payable
                         for the second semester, follow through as indicated in
                         (ii) above, with the details on the Second semester
-                        column (That is; A2 + B2 + C2 = Second Semester)
+                        column (That is; A2 + B2 + C2 + D2 = Second Semester)
                       </li>
                       <li style={{ listStyle: "none" }}>
                         <strong>v.</strong> What constitute OTHERS include; IT
                         Competence and Technology, Sports, Student Activities,
                         Health Insurance and Medicals, Lab Fees (for
                         Engineering, medical science students and other
-                        science-related discipline), and E-Book.
+                        science-related discipline), and E-Book
                       </li>
                     </ol>
                   </div>

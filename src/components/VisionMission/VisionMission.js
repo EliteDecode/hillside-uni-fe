@@ -79,7 +79,7 @@ const VisionMission = () => {
                     {" "}
                     To
                   </span>{" "}
-                  To be a prestigious international university that champions
+                  be a prestigious international university that champions
                   innovation, self -reliance, and the development of culturally
                   savvy and disciplined researchers and products.
                 </Typography>

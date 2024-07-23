@@ -14,119 +14,7 @@ const BoardOfRegeants = () => {
         <Title title="HUST" subtitle="Board of Regents" />
 
         <Box className="bg-[#f8f7f7] shadow-md cursor-pointer">
-          <Grid container spacing={4} className="rounded-xl  p-5 ">
-            <Grid item sm={12} md={2}>
-              <Box>
-                <img
-                  src={require("../../assets/mr laoye.png")}
-                  className="rounded-md"
-                />
-                <Typography
-                  variant="subtitle2"
-                  sx={{ fontSize: "11px", fontWeight: "bold", marginTop: 1 }}>
-                  MR LAOYE JAIYEOLA
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item sm={12} md={10}>
-              <Typography
-                variant="subtitle2"
-                sx={{ fontSize: "13px", opacity: "0.9" }}>
-                Mr. ‘Laoye Jaiyeola is the CEO of the Nigerian Economic Summit
-                Group (NESG). He serves on the Board of Nigerian Improving
-                Business Environment for prosperity (NIBEP); he is a member of
-                the National Advisory Board for Impact Investing in Nigeria, and
-                he sits as Chairman of Kainos Edge Consulting Limited. He is a
-                visionary leader with over 35 years banking experience and 18
-                years of Board leadership experience.
-                <br />
-                <br />
-                He worked with CBN for over 15 years before he joined Kakawa
-                Discount House Limited (now FBN Quest), where he became MD/CEO
-                for about a decade. He is a past president of the Chartered
-                Institute of Bankers of Nigeria (CIBN), a trustee of the
-                Financial Markets Dealers Association, and a pioneer Board
-                member of FMDQ OTC Securities Exchange. 'Laoye is a Fellow of
-                both CIBN and ICAN; a Member of the Chartered Institute of
-                Bankers, Scotland; and a Fellow of the Senior Executive Program,
-                Harvard Kennedy School of Government
-              </Typography>
-            </Grid>
-          </Grid>
-
-          <hr />
-
-          <Grid container spacing={4} className="rounded-xl p-5 ">
-            <Grid item sm={12} md={2}>
-              <Box>
-                <img
-                  src={require("../../assets/prof chinedum.png")}
-                  className="rounded-md"
-                />
-                <Typography
-                  variant="subtitle2"
-                  sx={{ fontSize: "11px", fontWeight: "bold", marginTop: 1 }}>
-                  PROF. (MRS) CHINEDUM PEACE BABALOLA (NEE ANYABUIKE)
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item sm={12} md={10}>
-              <Typography
-                variant="subtitle2"
-                sx={{ fontSize: "13px", opacity: "0.9" }}>
-                Chinedum Peace Babalola, the Vice -Chancellor of Chrisland
-                University Abeokuta is a Pharmacist, a Professor of
-                Pharmaceutical Chemistry & Pharmacokinetics and a past Dean of
-                Faculty of Pharmacy, University of Ibadan. She obtained B.Pharm,
-                MSc. and PhD. degrees from Obafemi Awolowo University, Ile -Ife,
-                Doctor of Pharmacy (PharmD) from University of Benin, post
-                -doctoral fellowship from University of British Columbia,
-                Vancouver, Canada and Post Graduate Diploma in Industrial
-                Advanced Pharmacy Training (IPAT), jointly from Kilimanjaro
-                School of Pharmacy Tanzania & Purdue University, USA.
-                <br />
-                <br />
-                Chinedum is a graduate of the prestigious Lagos and Postgraduate
-                Certificate in Advanced Management Programme (AMP35) from Lagos
-                Business School (LBS). She also attended the Chief Executive
-                Management program of the Lagos Business School as well as IESE
-                Barcelona. She has enjoyed over 25 grants and fellowships
-                including a MacArthur grant (approx. $1m) to set up the Centre
-                for Drug Discovery, Development and Production (CDDDP) in
-                University of Ibadan (first of its kind in West Africa).
-                <br />
-                <br />
-                Prof Babalola has recorded many firsts and awards including
-                being the first female pharmacist to become Professor and Dean
-                in UI; first female pharmacist inducted Fellow of Academy of
-                Sciences - (FAS); first female Nigerian inducted Fellow of
-                African Academy of Sciences (FAAS). Other fellows are Fellow of
-                Pharmaceutical Society of Nigeria (FPSN), Fellow of Nigeria
-                Academy of Pharmacy (FNAPharm) & Fellow of West African
-                Postgraduate College (FCPharm). Babalola is the first female
-                Professor in UI and first female Pharmacist in Nigeria to become
-                a Vice -Chancellor.
-                <br />
-                <br />
-                She was selected twice (2016 & 2018) as one of 10 most
-                influential female scientists in Nigeria and by ELA as one of
-                the 100 leading Women in Science in Africa (2021). Babalola has
-                received several prizes and awards including the prestigious
-                African Union Kwame Nkrumah Regional Prize for Scientific
-                Excellence in 2019, making her an African Union (AU) Laureate.
-                <br />
-                <br />
-                As a Vice -Chancellor, Babalola has grown Chrisland University
-                from a population of less than 60 students to about 1,200
-                students in five years, obtained full accreditation for all
-                mature programmes, established College of Basic Medical Sciences
-                (including Nursing, Physiotherapy and Medical lab science) and
-                College of Law. She has over 100 publications (peer -reviewed)
-                and has supervised and mentored over 50 postgraduate students.
-              </Typography>
-            </Grid>
-          </Grid>
-          <hr />
+          {" "}
           <Grid container spacing={4} className="rounded-xl p-5 ">
             <Grid item sm={12} md={2}>
               <Box>
@@ -137,7 +25,8 @@ const BoardOfRegeants = () => {
                 <Typography
                   variant="subtitle2"
                   sx={{ fontSize: "11px", fontWeight: "bold", marginTop: 1 }}>
-                  PROF. EMERITUS FUNMI TOGONU - BICKERSTETH
+                  PROF. EMERITUS FUNMI TOGONU - BICKERSTETH{" "}
+                  <b>(Acting CHANCELLOR)</b>
                 </Typography>
               </Box>
             </Grid>
@@ -220,7 +109,117 @@ const BoardOfRegeants = () => {
               </Typography>
             </Grid>
           </Grid>
-
+          <hr />
+          <Grid container spacing={4} className="rounded-xl  p-5 ">
+            <Grid item sm={12} md={2}>
+              <Box>
+                <img
+                  src={require("../../assets/mr laoye.png")}
+                  className="rounded-md"
+                />
+                <Typography
+                  variant="subtitle2"
+                  sx={{ fontSize: "11px", fontWeight: "bold", marginTop: 1 }}>
+                  MR LAOYE JAIYEOLA <b>(Founder/Pro-Chancellor)</b>
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item sm={12} md={10}>
+              <Typography
+                variant="subtitle2"
+                sx={{ fontSize: "13px", opacity: "0.9" }}>
+                Mr. ‘Laoye Jaiyeola is the CEO of the Nigerian Economic Summit
+                Group (NESG). He serves on the Board of Nigerian Improving
+                Business Environment for prosperity (NIBEP); he is a member of
+                the National Advisory Board for Impact Investing in Nigeria, and
+                he sits as Chairman of Kainos Edge Consulting Limited. He is a
+                visionary leader with over 35 years banking experience and 18
+                years of Board leadership experience.
+                <br />
+                <br />
+                He worked with CBN for over 15 years before he joined Kakawa
+                Discount House Limited (now FBN Quest), where he became MD/CEO
+                for about a decade. He is a past president of the Chartered
+                Institute of Bankers of Nigeria (CIBN), a trustee of the
+                Financial Markets Dealers Association, and a pioneer Board
+                member of FMDQ OTC Securities Exchange. 'Laoye is a Fellow of
+                both CIBN and ICAN; a Member of the Chartered Institute of
+                Bankers, Scotland; and a Fellow of the Senior Executive Program,
+                Harvard Kennedy School of Government
+              </Typography>
+            </Grid>
+          </Grid>
+          <hr />
+          <Grid container spacing={4} className="rounded-xl p-5 ">
+            <Grid item sm={12} md={2}>
+              <Box>
+                <img
+                  src={require("../../assets/prof chinedum.png")}
+                  className="rounded-md"
+                />
+                <Typography
+                  variant="subtitle2"
+                  sx={{ fontSize: "11px", fontWeight: "bold", marginTop: 1 }}>
+                  PROF. (MRS) CHINEDUM PEACE BABALOLA (NEE ANYABUIKE)
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item sm={12} md={10}>
+              <Typography
+                variant="subtitle2"
+                sx={{ fontSize: "13px", opacity: "0.9" }}>
+                Chinedum Peace Babalola, the Vice -Chancellor of Chrisland
+                University Abeokuta is a Pharmacist, a Professor of
+                Pharmaceutical Chemistry & Pharmacokinetics and a past Dean of
+                Faculty of Pharmacy, University of Ibadan. She obtained B.Pharm,
+                MSc. and PhD. degrees from Obafemi Awolowo University, Ile -Ife,
+                Doctor of Pharmacy (PharmD) from University of Benin, post
+                -doctoral fellowship from University of British Columbia,
+                Vancouver, Canada and Post Graduate Diploma in Industrial
+                Advanced Pharmacy Training (IPAT), jointly from Kilimanjaro
+                School of Pharmacy Tanzania & Purdue University, USA.
+                <br />
+                <br />
+                Chinedum is a graduate of the prestigious Lagos and Postgraduate
+                Certificate in Advanced Management Programme (AMP35) from Lagos
+                Business School (LBS). She also attended the Chief Executive
+                Management program of the Lagos Business School as well as IESE
+                Barcelona. She has enjoyed over 25 grants and fellowships
+                including a MacArthur grant (approx. $1m) to set up the Centre
+                for Drug Discovery, Development and Production (CDDDP) in
+                University of Ibadan (first of its kind in West Africa).
+                <br />
+                <br />
+                Prof Babalola has recorded many firsts and awards including
+                being the first female pharmacist to become Professor and Dean
+                in UI; first female pharmacist inducted Fellow of Academy of
+                Sciences - (FAS); first female Nigerian inducted Fellow of
+                African Academy of Sciences (FAAS). Other fellows are Fellow of
+                Pharmaceutical Society of Nigeria (FPSN), Fellow of Nigeria
+                Academy of Pharmacy (FNAPharm) & Fellow of West African
+                Postgraduate College (FCPharm). Babalola is the first female
+                Professor in UI and first female Pharmacist in Nigeria to become
+                a Vice -Chancellor.
+                <br />
+                <br />
+                She was selected twice (2016 & 2018) as one of 10 most
+                influential female scientists in Nigeria and by ELA as one of
+                the 100 leading Women in Science in Africa (2021). Babalola has
+                received several prizes and awards including the prestigious
+                African Union Kwame Nkrumah Regional Prize for Scientific
+                Excellence in 2019, making her an African Union (AU) Laureate.
+                <br />
+                <br />
+                As a Vice -Chancellor, Babalola has grown Chrisland University
+                from a population of less than 60 students to about 1,200
+                students in five years, obtained full accreditation for all
+                mature programmes, established College of Basic Medical Sciences
+                (including Nursing, Physiotherapy and Medical lab science) and
+                College of Law. She has over 100 publications (peer -reviewed)
+                and has supervised and mentored over 50 postgraduate students.
+              </Typography>
+            </Grid>
+          </Grid>
           <hr />
           <Grid container spacing={4} className="rounded-xl p-5 ">
             <Grid item sm={12} md={2}>
@@ -266,7 +265,6 @@ const BoardOfRegeants = () => {
               </Typography>
             </Grid>
           </Grid>
-
           <hr />
           <Grid container spacing={4} className="rounded-xl p-5 ">
             <Grid item sm={12} md={2}>

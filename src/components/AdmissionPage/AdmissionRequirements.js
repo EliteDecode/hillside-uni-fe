@@ -33,14 +33,14 @@ const AdmissionRequirements = () => {
             variant="subtitle2"
             gutterBottom
             sx={{ fontWeight: "bold" }}>
-            2023/2024 ACADEMIC SESSION
+            2024/2025 ACADEMIC SESSION
           </Typography>
 
           <Typography variant="body1" paragraph>
             Hillside University of Science and Technology, Okemesi, Ekiti State,
             a Best-in-Class University of Health Sciences & Technology, is
             currently accepting applications for admissions into its various
-            disruptive innovation programmes for the 2023/2024 academic session.{" "}
+            disruptive innovation programmes for the 2024/2025 academic session.{" "}
             <br /> Interested applicants are to fill out an application form
             click “apply now” and follow directions until submission of
             application. All Hillside programmes are approved by the National

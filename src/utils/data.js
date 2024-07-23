@@ -14,7 +14,6 @@ import {
   Support,
   Work,
   Group,
-  Home,
   SportsEsports,
 } from "@mui/icons-material";
 
@@ -79,7 +78,7 @@ export const sublinks = [
         url: "Academics/calender",
       },
       {
-        label: "Academic Programmes",
+        label: "Academic Degrees Offered",
         icon: <FaBook />,
         url: "Academics/programmes",
       },
@@ -135,15 +134,11 @@ export const sublinks = [
     page: "Fees",
     links: [
       {
-        label: "2024/2025 Fees",
+        label: "Fees",
         icon: <FaBook />,
-        url: "Fees/fees/24-25",
+        url: "Fees",
       },
-      {
-        label: "2023/2024 Fees",
-        icon: <FaBook />,
-        url: "Fees/fees/23-24",
-      },
+
       {
         label: "Funding Options",
         icon: <FaBook />,
@@ -307,6 +302,14 @@ export const TopLinks = [
 /* Hero Content */
 
 export const heroContents = [
+  // {
+  //   class: "content-6",
+  //   subtitle: "",
+  //   title: "",
+  //   subtitle2: "",
+  //   btn1: "",
+  //   btn2: "",
+  // },
   {
     class: "content-5",
     subtitle: "",

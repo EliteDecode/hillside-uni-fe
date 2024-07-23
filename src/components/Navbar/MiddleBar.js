@@ -33,7 +33,7 @@ const MiddleBar = () => {
                 <img src={logo} className="nav-logo" alt="" />
               </Link>
             </div>
-            <div className=" flex items-center justify-between w-[83%]">
+            <div className=" flex items-center justify-end  w-[83%]">
               <ul className="nav-links space-x-1 flex items-center  ">
                 {mainLinks.map((link, index) => (
                   <Link to={`/${link.page}`} onClick={closeSubmenu}>
@@ -47,7 +47,7 @@ const MiddleBar = () => {
                       }`}
                       key={index}>
                       <button
-                        className={`link-btn flex items-center  font-semibold text-[13px] `}
+                        className={`link-btn flex items-center  font-semibold text-[15px] `}
                         onMouseOver={displaySubmenu}>
                         {link.page}
                       </button>

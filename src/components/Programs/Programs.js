@@ -18,7 +18,7 @@ const Programs = () => {
       data-aos-duration="1200"
       data-aos-easing="ease-in-sine">
       <Box className="container">
-        <Title title="Academic Programmes" subtitle="Our Programmes" />
+        <Title title="Academic Degrees Offered" subtitle="Our Degrees" />
 
         <Grid container className="rounded-xl shadow-md cursor-pointer">
           {/* <Grid
@@ -96,7 +96,7 @@ const Programs = () => {
               <Typography
                 variant="h5"
                 sx={{ fontSize: "20px", fontWeight: "bold", marginBottom: 3 }}>
-                Undergraduate Programmes
+                Undergraduate Degrees
               </Typography>
               <List
                 sx={{

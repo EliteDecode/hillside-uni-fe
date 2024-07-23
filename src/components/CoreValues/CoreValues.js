@@ -2,12 +2,14 @@ import { Box, Grid } from "@mui/material";
 import React from "react";
 import Title from "../general/Title";
 import { coreValues, reasonsToChooseUs } from "../../utils/data";
-import { Avatar, Collapse } from "antd";
+import { Avatar, Collapse, Typography } from "antd";
 import ButtonCustome from "../general/ButtonCustome";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
+import ReactAudioPlayer from "react-audio-player";
+import anthem from "../../assets/Anthem.mp3";
 
 const CoreValues = () => {
   return (
@@ -66,6 +68,11 @@ const CoreValues = () => {
                   ))}
                 </Grid>
               </List>
+
+              <Box>
+                <Typography className="font-bold ">HUSTLERS ANTHEM</Typography>
+                <ReactAudioPlayer src={anthem} controls />
+              </Box>
             </Box>
           </Grid>
           <Grid item sm={12} md={6} className="w-full">

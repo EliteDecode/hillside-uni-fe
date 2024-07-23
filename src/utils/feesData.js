@@ -470,115 +470,115 @@ export const engineeringCollegeRows2425 = [
   },
 ];
 
-const columnsInt = [
-  { field: "programme", headerName: "PROGRAMME", width: 320 },
-  { field: "fee", headerName: "FEE ($)", width: 250 },
-];
+// const columnsInt = [
+//   { field: "programme", headerName: "PROGRAMME", width: 320 },
+//   { field: "fee", headerName: "FEE ($)", width: 250 },
+// ];
 
-const tristateCollegeRowsInt = [
-  { id: 1, programme: "Medicine", fee: (15000).toLocaleString() },
-  { id: 2, programme: "Dentistry", fee: (15000).toLocaleString() },
-  { id: 3, programme: "Pharmacy", fee: (15000).toLocaleString() },
-  { id: 4, programme: "Nursing", fee: (10000).toLocaleString() },
-  {
-    id: 5,
-    programme: "Medical Laboratory Science",
-    fee: (10000).toLocaleString(),
-  },
-  { id: 6, programme: "Optometry", fee: (10000).toLocaleString() },
-  { id: 7, programme: "Physiology", fee: (5000).toLocaleString() },
-  { id: 8, programme: "Anatomy", fee: (5000).toLocaleString() },
-  { id: 9, programme: "Audiology", fee: (5000).toLocaleString() },
-];
+// const tristateCollegeRowsInt = [
+//   { id: 1, programme: "Medicine", fee: (15000).toLocaleString() },
+//   { id: 2, programme: "Dentistry", fee: (15000).toLocaleString() },
+//   { id: 3, programme: "Pharmacy", fee: (15000).toLocaleString() },
+//   { id: 4, programme: "Nursing", fee: (10000).toLocaleString() },
+//   {
+//     id: 5,
+//     programme: "Medical Laboratory Science",
+//     fee: (10000).toLocaleString(),
+//   },
+//   { id: 6, programme: "Optometry", fee: (10000).toLocaleString() },
+//   { id: 7, programme: "Physiology", fee: (5000).toLocaleString() },
+//   { id: 8, programme: "Anatomy", fee: (5000).toLocaleString() },
+//   { id: 9, programme: "Audiology", fee: (5000).toLocaleString() },
+// ];
 
-const agricultureCollegeRowsInt = [
-  { id: 1, programme: "Agribusiness", fee: (5000).toLocaleString() },
-  {
-    id: 2,
-    programme: "Agricultural Economics",
-    fee: (5000).toLocaleString(),
-  },
-  {
-    id: 3,
-    programme: "Petroleum Chemistry",
-    fee: (5000).toLocaleString(),
-  },
-  {
-    id: 4,
-    programme: "Biochemistry",
-    fee: (5000).toLocaleString(),
-  },
-  {
-    id: 5,
-    programme: "Forensic Science",
-    fee: (5000).toLocaleString(),
-  },
-  {
-    id: 6,
-    programme: "Microbiology",
-    fee: (5000).toLocaleString(),
-  },
-  {
-    id: 7,
-    programme: "Environmental Management and Toxicology",
-    fee: (5000).toLocaleString(),
-  },
-];
+// const agricultureCollegeRowsInt = [
+//   { id: 1, programme: "Agribusiness", fee: (5000).toLocaleString() },
+//   {
+//     id: 2,
+//     programme: "Agricultural Economics",
+//     fee: (5000).toLocaleString(),
+//   },
+//   {
+//     id: 3,
+//     programme: "Petroleum Chemistry",
+//     fee: (5000).toLocaleString(),
+//   },
+//   {
+//     id: 4,
+//     programme: "Biochemistry",
+//     fee: (5000).toLocaleString(),
+//   },
+//   {
+//     id: 5,
+//     programme: "Forensic Science",
+//     fee: (5000).toLocaleString(),
+//   },
+//   {
+//     id: 6,
+//     programme: "Microbiology",
+//     fee: (5000).toLocaleString(),
+//   },
+//   {
+//     id: 7,
+//     programme: "Environmental Management and Toxicology",
+//     fee: (5000).toLocaleString(),
+//   },
+// ];
 
-const engineeringCollegeRowsInt = [
-  {
-    id: 1,
-    programme: "Computer & Artificial Intelligence",
-    fee: (7500).toLocaleString(),
-  },
-  { id: 2, programme: "Cyber Security", fee: (7500).toLocaleString() },
-  { id: 3, programme: "Data Science", fee: (7500).toLocaleString() },
-  {
-    id: 4,
-    programme: "Software Engineering",
-    fee: (7500).toLocaleString(),
-  },
-  {
-    id: 5,
-    programme: "Civil & Construction Engineering",
-    fee: (10000).toLocaleString(),
-  },
-  {
-    id: 6,
-    programme: "Mechanical Engineering",
-    fee: (10000).toLocaleString(),
-  },
-  {
-    id: 7,
-    programme: "Mechatronic Engineering",
-    fee: (10000).toLocaleString(),
-  },
-  {
-    id: 8,
-    programme: "Industrial & Production Engineering",
-    fee: (10000).toLocaleString(),
-  },
-  {
-    id: 9,
-    programme: "Chemical Engineering",
-    fee: (10000).toLocaleString(),
-  },
-  {
-    id: 10,
-    programme: "Electrical Engineering",
-    fee: (10000).toLocaleString(),
-  },
-  {
-    id: 11,
-    programme: "Aerospace Engineering",
-    fee: (10000).toLocaleString(),
-  },
-  {
-    id: 12,
-    programme: "Systems Engineering",
-    fee: (10000).toLocaleString(),
-  },
-];
+// const engineeringCollegeRowsInt = [
+//   {
+//     id: 1,
+//     programme: "Computer & Artificial Intelligence",
+//     fee: (7500).toLocaleString(),
+//   },
+//   { id: 2, programme: "Cyber Security", fee: (7500).toLocaleString() },
+//   { id: 3, programme: "Data Science", fee: (7500).toLocaleString() },
+//   {
+//     id: 4,
+//     programme: "Software Engineering",
+//     fee: (7500).toLocaleString(),
+//   },
+//   {
+//     id: 5,
+//     programme: "Civil & Construction Engineering",
+//     fee: (10000).toLocaleString(),
+//   },
+//   {
+//     id: 6,
+//     programme: "Mechanical Engineering",
+//     fee: (10000).toLocaleString(),
+//   },
+//   {
+//     id: 7,
+//     programme: "Mechatronic Engineering",
+//     fee: (10000).toLocaleString(),
+//   },
+//   {
+//     id: 8,
+//     programme: "Industrial & Production Engineering",
+//     fee: (10000).toLocaleString(),
+//   },
+//   {
+//     id: 9,
+//     programme: "Chemical Engineering",
+//     fee: (10000).toLocaleString(),
+//   },
+//   {
+//     id: 10,
+//     programme: "Electrical Engineering",
+//     fee: (10000).toLocaleString(),
+//   },
+//   {
+//     id: 11,
+//     programme: "Aerospace Engineering",
+//     fee: (10000).toLocaleString(),
+//   },
+//   {
+//     id: 12,
+//     programme: "Systems Engineering",
+//     fee: (10000).toLocaleString(),
+//   },
+// ];
 
 export const columns = [
   { field: "programme", headerName: "PROGRAMME", width: 320 },
@@ -593,45 +593,56 @@ export const columnsAcc = [
     headerName: "PROGRAM",
     width: 320,
   },
-  { field: "firstSemester", headerName: "FIRST SEMESTER (A1)", width: 250 },
-  { field: "secondSemester", headerName: "SECOND SEMESTER (A2)", width: 250 },
-  { field: "total", headerName: "TOTAL", width: 250 },
+  { field: "firstSemester", headerName: "FIRST SEMESTER (B1)", width: 250 },
+  { field: "secondSemester", headerName: "SECOND SEMESTER (B2)", width: 250 },
+  { field: "total", headerName: "TOTAL FEE (N)", width: 250 },
 ];
 
 export const accommodationData = [
   {
     id: 1,
     program: "All Programs",
-    firstSemester: (390000).toLocaleString(),
-    secondSemester: (260000).toLocaleString(),
-    total: (650000).toLocaleString(),
+    firstSemester: (250000).toLocaleString(),
+    secondSemester: (250000).toLocaleString(),
+    total: (500000).toLocaleString(),
   },
+];
+
+export const columnsFeeding = [
+  {
+    field: "program",
+    headerName: "PROGRAM",
+    width: 320,
+  },
+  { field: "firstSemester", headerName: "FIRST SEMESTER (C1)", width: 250 },
+  { field: "secondSemester", headerName: "SECOND SEMESTER (C2)", width: 250 },
+  { field: "total", headerName: "TOTAL FEE (N)", width: 250 },
 ];
 
 export const feedingData = [
   {
     id: 1,
     program: "2 Meals Option",
-    firstSemester: (182000).toLocaleString(),
-    secondSemester: (182000).toLocaleString(),
-    total: (364000).toLocaleString(),
+    firstSemester: (235200).toLocaleString(),
+    secondSemester: (235200).toLocaleString(),
+    total: (470400).toLocaleString(),
   },
   {
     id: 2,
     program: "3 Meals Option",
-    firstSemester: (273000).toLocaleString(),
-    secondSemester: (273000).toLocaleString(),
-    total: (546000).toLocaleString(),
+    firstSemester: (352800).toLocaleString(),
+    secondSemester: (352800).toLocaleString(),
+    total: (705600).toLocaleString(),
   },
 ];
 
-const businessCollegeRowsInt = [
-  { id: 1, programme: "Accounting", fee: (5000).toLocaleString() },
-  { id: 2, programme: "Economics", fee: (5000).toLocaleString() },
-  {
-    id: 3,
-    programme: "Logistics & Supply Chain Management",
-    fee: (5000).toLocaleString(),
-  },
-  { id: 4, programme: "Mass Communication", fee: (5000).toLocaleString() },
-];
+// const businessCollegeRowsInt = [
+//   { id: 1, programme: "Accounting", fee: (5000).toLocaleString() },
+//   { id: 2, programme: "Economics", fee: (5000).toLocaleString() },
+//   {
+//     id: 3,
+//     programme: "Logistics & Supply Chain Management",
+//     fee: (5000).toLocaleString(),
+//   },
+//   { id: 4, programme: "Mass Communication", fee: (5000).toLocaleString() },
+// ];

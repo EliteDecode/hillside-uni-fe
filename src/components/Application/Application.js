@@ -53,7 +53,7 @@ const Applications = ({ main }) => {
                       opacity: "0.8",
                       marginTop: "2%",
                     }}>
-                    2023/2024 Applications Now Opened.
+                    2024/2025 Applications Now Opened.
                   </Typography>
                   <Typography
                     variant="h6"
@@ -75,7 +75,7 @@ const Applications = ({ main }) => {
                       fontSize: "13px",
                       marginTop: "2%",
                     }}>
-                    Please note that admission processing fee is 5,000 naira
+                    Please note that admission processing fee is 10,000 naira
                     only.
                   </Typography>
 

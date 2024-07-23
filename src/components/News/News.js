@@ -26,7 +26,6 @@ const News = ({ items, loading, category, route }) => {
             {newsArray.map((news, index) => {
               return <NewsLoader />;
             })}
-            \
           </Grid>
         ) : (
           <Grid container spacing={4}>

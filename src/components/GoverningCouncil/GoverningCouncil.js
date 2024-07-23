@@ -1,8 +1,69 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import React from "react";
 import Title from "../general/Title";
+import prof_owolabi from "../../assets/board/owlabi.jpg";
+import dr_makinde from "../../assets/board/Adeola Makinde.jpg";
+import aisha from "../../assets/board/aisha.jpg";
+import tifase from "../../assets/board/Tifase.jpg";
+import iranloye from "../../assets/board/iranloye.jpg";
+import lawanson from "../../assets/board/Chidinma Lawanson.jpg";
+import olaniyi from "../../assets/board/Olaniy Arije.jpg";
+import leye from "../../assets/board/leye jaiyeola.jpg";
+import prof_kehinde from "../../assets/board/kehinde.jpg";
+import dr_salami from "../../assets/board/dr salami.jpg";
+import franca from "../../assets/board/franca.jpg";
+import dr_folakemi from "../../assets/board/Dr (Mrs) Folakemi Olomojobi.jpg";
+import dr_oluchi from "../../assets/board/oluchi.jpg";
+import daramola from "../../assets/board/daramola.jpg";
+import kadira from "../../assets/board/kadaria.jpg";
+import prof_olugbenga from "../../assets/board/olugbenga.jpg";
+import dapo from "../../assets/board/dapo.jpg";
+import loaye from "../../assets/mr laoye.png";
 
 const GoverningCouncil = () => {
+  const members = [
+    {
+      name: "Mr Laoye Jaiyeola",
+      image: loaye,
+      position: "Founder/Pro-Chancellor",
+    },
+    { name: "Prof. Gbadebo Owolabi ", image: prof_owolabi, position: "Member" },
+    { name: "Dr Adeola Makinde", image: dr_makinde, position: "Member" },
+    { name: "Aisha Abubakar", image: aisha, position: "Member" },
+    { name: "Onyeche Tifase", image: tifase, position: "Member" },
+    { name: "Oluyemisi Iranloye", image: iranloye, position: "Member" },
+    { name: "Mr. Dapo Oriola", image: dapo, position: "Member" },
+    { name: "Chidinma Lawanson", image: lawanson, position: "Member" },
+    { name: "Dr Olaniyi Ezekiel Arije", image: olaniyi, position: "Member" },
+    { name: "Leye Jaiyeola", image: leye, position: "Member" },
+    {
+      name: "Prof. Kehinde Sunday Oluwadiya",
+      image: prof_kehinde,
+      position: "Member",
+    },
+    { name: "Dr Adedoyin Salami", image: dr_salami, position: "Member" },
+    { name: "Mrs Chukwuonwo Franca Elochi", image: franca, position: "Member" },
+    { name: "Dr Folakemi Olomojobi", image: dr_folakemi, position: "Member" },
+    {
+      name: "Dr Eucharia Oluchi Nwaichi",
+      image: dr_oluchi,
+      position: "Member",
+    },
+    {
+      name: "Daramola Olanipekun Solomon",
+      image: daramola,
+      position: "Member",
+    },
+    { name: "Mrs. Kadaria Ahmed", image: kadira, position: "Member" },
+    {
+      name: "Prof. Olugbenga Okunlola",
+      image: prof_olugbenga,
+      position: "Member",
+    },
+
+    // Add all 16 members here
+  ];
+
   return (
     <Box
       id="Core Values"
@@ -13,111 +74,30 @@ const GoverningCouncil = () => {
       <Box className="container">
         <Title title="HUST" subtitle="Governing Council" />
 
-        <Box className="bg-[#f8f7f7] shadow-md cursor-pointer">
-          <Grid container spacing={4} className="rounded-xl  p-5 ">
-            <Grid item sm={12} md={2}>
-              <Box>
-                <img
-                  src={require("../../assets/chancellor.png")}
-                  className="rounded-md"
-                />
-                <Typography
-                  variant="subtitle2"
-                  sx={{ fontSize: "11px", fontWeight: "bold", marginTop: 1 }}>
-                  PROF. JAMES A. MAKINDE (Pro-Chancellor and Chair Governing
-                  Council)
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item sm={12} md={10}>
-              <Typography
-                variant="subtitle2"
-                sx={{ fontSize: "13px", opacity: "0.9" }}>
-                President/CEO, Mist EDUCARE GLOBAL, LTD. Chancellor & Chairman,
-                Maranatha Institutes Of Science & Technology (Mist)
-                Pro-chancellor & Chairman, Governing Council, Hillside
-                University Of Science & Technology (Hust) Executive
-                Director/Chief Operating Officer, Tristate Healthcare System
-                Emeritus President/Vice-chancellor, Professor Of Politics,
-                Administration & Religion Babcock University. <br />
-                <br />
-                <ul>
-                  <li>
-                    Ph.D., Political Science, First Class (Bordeaux France,
-                    1989)
-                  </li>
-                  <li>
-                    Ph.D. Coursework in Social Policy & Social Research in
-                    Criminology, (Loma Linda, 2004)
-                  </li>
-                  <li>
-                    M.Phil., African Political Studies, (Bordeaux France, 1985)
-                  </li>
-                  <li>
-                    M.A. Religion - Historical Theology, (Andrews USA, 1980)
-                  </li>
-                  <li>M.A. History, (Andrews, 1980)</li>
-                  <li>
-                    Diploma, French Language Studies, (Clermont Ferrand France,
-                    1984)
-                  </li>
-                  <li>
-                    B.A. Comb. Hons., Business Admin. & History (Beirut Lebanon,
-                    1978)
-                  </li>
-                </ul>
-                <br />
-                <br />
-                DRIVING VISION: His overarching focus for the twenty-five year
-                period between 1991-2015 was the actualization of a conceptual
-                design, structural gestation and administrative nurturing of
-                “Project Babcock” - Nigeria’s “flagship” private university - a
-                disruptive millennial institutional innovation which, in 1999
-                radically transformed the Nigerian university system and higher
-                education as a whole.
-                <br />
-                <br />
-                The Babcock legacy effectively became the blueprint in
-                governance structure, curriculum innovation and students
-                services that succeeding private and even State institutions and
-                new generation Federal universities in the country, we’re
-                modeled albeit imperfectly. That pioneering vision with the
-                licensing in 1999, has within 21 years, transformed a single
-                institution into a blossoming industry comprising 136 out of the
-                nation’s 230 universities, more than Federal and State
-                government-owned universities combined. The driving inspiration
-                powering the post-Babcock vision built on invaluable wealth
-                nuggets of a 40-year pioneering university experience, is the
-                disruptive reengineering of traditional teacher-focused
-                20-century educational system into a holistic quality of life
-                upgrading, learner-focused discipleship model for
-                entrepreneurial sustainability of university education, by
-                producing 250 consultant physicians, 500 graduate nurses, 2,500
-                engineers and 5,000 technicians annually by 2044, a doubled
-                target output of Nigerian-trained holistic world class S.T.E.A.M
-                professionals to be injected into the global economy annually by
-                2050.
-                <br />
-                <br />
-                That’s because the futuristic entrepreneurial model Maranatha
-                Institutes of Science & Technology (MiST), is a five-dimensional
-                disruptive innovation integrated learning municipal community
-                complex built on: Sciences/Security, Technology/Engineering,
-                Education/Vocational, Agribusiness/Environment, and
-                Medicine/Management (S.T.E.A.M). The MiST curriculum is an
-                impact-structured platform inspired to reinvigorate today’s army
-                of frustrated African youth with purpose-driven life
-                opportunities, against the alluring indignities of an overseas
-                illusory JAPA prosperity that most often translates into deadly
-                nightmares. Anchored on global demand-driven market
-                macroeconomy, it equips the energetic youth and retools
-                exhausted mid-life career professionals, with profitable
-                vocational, industrial and functional life skills, for private
-                enterprise or public employment.
-              </Typography>
-            </Grid>
-          </Grid>
-        </Box>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          {members.map((member, index) => (
+            <div
+              key={index}
+              className="relative bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src={member.image}
+                alt={member.name}
+                className="w-full sm:h-80 h-96 object-fit"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <span className="text-white text-lg etext-center font-semibold">
+                  {member.name}
+                </span>
+              </div>
+              <div className="p-4">
+                <h3 className="text-md font-bold">{member.name}</h3>
+                <h3 className="text-md font-black uppercase ">
+                  {member.position}
+                </h3>
+              </div>
+            </div>
+          ))}
+        </div>
       </Box>
     </Box>
   );

@@ -4,7 +4,6 @@ import {
   Routes,
   Route,
   Navigate,
-  Redirect,
 } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Academics from "./pages/Academics/Academics";
@@ -116,11 +115,12 @@ const App = () => {
           element={<RemedialHowToApply />}
         />
         <Route path="/admission/apply" element={<HowToApply />} />
-        <Route path="/fees/fees/:year" element={<TuitionFeePage />} />
+        <Route path="/fees" element={<TuitionFeePage />} />
         <Route
           path="/fees"
           element={<Navigate to="/fees/fees/:year" replace />}
         />
+        <Route path="/fees" element={<Navigate to="/fees" replace />} />
         <Route path="/fees/funding" element={<Funding />} />
 
         <Route

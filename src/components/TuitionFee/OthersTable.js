@@ -11,8 +11,8 @@ const OthersTable = () => {
       width: 400,
       cellClassName: "wrap-text", // Add a class to the cell to enable text wrapping
     },
-    { field: "firstSemester", headerName: "FIRST SEMESTER (C1)", width: 250 },
-    { field: "secondSemester", headerName: "SECOND SEMESTER (C2)", width: 250 },
+    { field: "firstSemester", headerName: "FIRST SEMESTER (D1)", width: 250 },
+    { field: "secondSemester", headerName: "SECOND SEMESTER (D2)", width: 250 },
     { field: "total", headerName: "TOTAL FEES (N)", width: 250 },
   ];
 
