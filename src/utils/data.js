@@ -139,11 +139,11 @@ export const sublinks = [
         url: "Fees",
       },
 
-      {
-        label: "Funding Options",
-        icon: <FaBook />,
-        url: "Fees/funding",
-      },
+      // {
+      //   label: "Funding Options",
+      //   icon: <FaBook />,
+      //   url: "Fees/funding",
+      // },
     ],
   },
   {
