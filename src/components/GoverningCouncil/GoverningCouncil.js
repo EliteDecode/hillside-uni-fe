@@ -1,24 +1,24 @@
 import { Box } from "@mui/material";
 import React from "react";
-import Title from "../general/Title";
-import prof_owolabi from "../../assets/board/owlabi.jpg";
 import dr_makinde from "../../assets/board/Adeola Makinde.jpg";
-import aisha from "../../assets/board/aisha.jpg";
-import tifase from "../../assets/board/Tifase.jpg";
-import iranloye from "../../assets/board/iranloye.jpg";
 import lawanson from "../../assets/board/Chidinma Lawanson.jpg";
+import dr_folakemi from "../../assets/board/Dr (Mrs) Folakemi Olomojobi.jpg";
 import olaniyi from "../../assets/board/Olaniy Arije.jpg";
-import leye from "../../assets/board/leye jaiyeola.jpg";
-import prof_kehinde from "../../assets/board/kehinde.jpg";
+import tifase from "../../assets/board/Tifase.jpg";
+import aisha from "../../assets/board/aisha.jpg";
+import dapo from "../../assets/board/dapo.jpg";
+import daramola from "../../assets/board/daramola.jpg";
 import dr_salami from "../../assets/board/dr salami.jpg";
 import franca from "../../assets/board/franca.jpg";
-import dr_folakemi from "../../assets/board/Dr (Mrs) Folakemi Olomojobi.jpg";
-import dr_oluchi from "../../assets/board/oluchi.jpg";
-import daramola from "../../assets/board/daramola.jpg";
+import iranloye from "../../assets/board/iranloye.jpg";
 import kadira from "../../assets/board/kadaria.jpg";
+import prof_kehinde from "../../assets/board/kehinde.jpg";
+import leye from "../../assets/board/leye jaiyeola.jpg";
+import dr_oluchi from "../../assets/board/oluchi.jpg";
 import prof_olugbenga from "../../assets/board/olugbenga.jpg";
-import dapo from "../../assets/board/dapo.jpg";
+import prof_owolabi from "../../assets/board/owlabi.jpg";
 import loaye from "../../assets/mr laoye.png";
+import Title from "../general/Title";
 
 const GoverningCouncil = () => {
   const members = [
@@ -45,7 +45,7 @@ const GoverningCouncil = () => {
     { name: "Mrs Chukwuonwo Franca Elochi", image: franca, position: "Member" },
     { name: "Dr Folakemi Olomojobi", image: dr_folakemi, position: "Member" },
     {
-      name: "Dr Eucharia Oluchi Nwaichi",
+      name: "Prof Eucharia Oluchi Nwaichi",
       image: dr_oluchi,
       position: "Member",
     },
@@ -82,7 +82,7 @@ const GoverningCouncil = () => {
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-full sm:h-80 h-96 object-fit"
+                className="w-full sm:h-64 h-96 object-fit"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                 <span className="text-white text-lg etext-center font-semibold">

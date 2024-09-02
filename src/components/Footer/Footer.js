@@ -14,6 +14,7 @@ import { Footer } from "flowbite-react";
 import scrollUp from "../../assets/arrow.png";
 import { useEffect } from "react";
 import { useState } from "react";
+import Chat from "./Chat";
 
 const NavFooter = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -42,15 +43,7 @@ const NavFooter = () => {
   }, []);
   return (
     <Box className="relative">
-      <a
-        href=" https://wa.link/fh0igg"
-        style={{ position: "fixed", bottom: "50px", right: "20px" }}
-        className="flex items-center space-x-3 px-3 py-2 bg-[#5e0001] rounded-md shadow-lg">
-        <span className="text-[12px] font-semibold text-[#f7f7f7]">
-          Chat with an Admission Advisor
-        </span>
-        <img src={require("../../assets/whatsapp.png")} width="25px" />
-      </a>
+      <Chat />
       <Box
         className={` ${isVisible ? "block" : "hidden"}`}
         style={{

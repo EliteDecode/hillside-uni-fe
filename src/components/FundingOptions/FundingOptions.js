@@ -75,50 +75,6 @@ const FundingOptions = () => {
                   </ul>
                 </div>
               ))}
-
-              {/* <div className="mx-auto flex max-w-lg space-y-8 items-start flex-col rounded-3xl bg-[#DCA6F3] p-6 text-center text-gray-900 xl:p-8">
-                <h3 className="text-lg font-normal">Growth</h3>
-                <div className="my-8 flex items-baseline justify-center">
-                  <span className="mr-2 text-5xl font-extrabold">$29</span>
-                  <span className="text-gray-600">/month</span>
-                </div>
-                <p className="font-light text-gray-600 sm:text-sm">
-                  Best option for personal use & for your next project.
-                </p>
-                <a className="cursor-pointer bg-gray-900 w-full rounded-md p-3 text-center text-sm font-semibold text-white shadow-sm hover:-translate-y-1">
-                  Get started
-                </a>
-                <ul
-                  role="list"
-                  className="mb-8 space-y-4 text-left text-gray-600 text-sm">
-                  <li className="flex items-center space-x-3">
-                    <svg
-                      className="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"></path>
-                    </svg>
-                    <span>10,000 visitors</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <svg
-                      className="h-5 w-5 flex-shrink-0 bg-gray-900 rounded-full p-0.5 text-white"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"></path>
-                    </svg>
-                    <span>Unlimited widgets</span>
-                  </li>
-                </ul>
-              </div> */}
             </div>
           </div>
         </div>
